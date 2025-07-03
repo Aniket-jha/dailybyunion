@@ -17,40 +17,40 @@ export default function TestimonialsSection() {
         "Beautiful stay and was blown away by the thoughtful design and attention to detail of the apartment. Can't wait to visit other Sonders in the future.",
       name: "Sarah",
       location: "London",
-      bgColor: "bg-gray-200",
-      borderRadius: "rounded-tl-[40px]", // top-left corner
+      bgColor: "bg-[#9EC6F3]",
+      borderRadius: "rounded-tl-[60px]", // top-left corner
     },
     {
       id: 1,
       quote: "Absolutely perfect for a stay whether you're a solo traveler, couple or a family.",
       name: "Joanne",
       location: "Rome",
-      bgColor: "bg-yellow-200",
-      borderRadius: "rounded-tr-[40px]", // top-right corner
+      bgColor: "bg-[#FFDCDC]",
+      borderRadius: "rounded-tr-[60px]", // top-right corner
     },
     {
       id: 2,
       quote: "Love the app! It works seamlessly and all the information is so clear to make the experience seamless.",
       name: "Jimena",
       location: "Miami",
-      bgColor: "bg-orange-200",
-      borderRadius: "rounded-bl-[40px]", // bottom-left corner
+      bgColor: "bg-[#CB9DF0]",
+      borderRadius: "rounded-bl-[60px]", // bottom-left corner
     },
     {
       id: 3,
       quote: "The location was perfect and the space was exactly what we needed for our weekend getaway.",
       name: "Marcus",
       location: "Barcelona",
-      bgColor: "bg-blue-200",
-      borderRadius: "rounded-br-[40px]", // bottom-right corner
+      bgColor: "bg-[#F6AE99]",
+      borderRadius: "rounded-br-[60px]", // bottom-right corner
     },
     {
       id: 4,
       quote: "Exceptional service and beautiful accommodations. Will definitely be staying again!",
       name: "Elena",
       location: "Paris",
-      bgColor: "bg-purple-200",
-      borderRadius: "rounded-tl-[40px]", // back to top-left (cycle repeats)
+      bgColor: "bg-[#EBD6FB]",
+      borderRadius: "rounded-tl-[60px]", // back to top-left (cycle repeats)
     },
   ]
 
@@ -59,10 +59,10 @@ export default function TestimonialsSection() {
       <div className="mx-auto max-w-7xl">
         {/* Header */}
         <div className="mb-12 sm:mb-16 max-w-full">
-          <h2 className="mb-6 text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-light leading-tight text-gray-900">
+          <h2 className="mb-6 text-3xl font-[PlayfairMedium] sm:text-4xl md:text-5xl lg:text-6xl font-light leading-tight text-gray-900">
             Every stay has a story
           </h2>
-          <p className="text-lg text-gray-700 leading-relaxed max-w-2xl">
+          <p className="text-lg  text-gray-700 leading-relaxed max-w-2xl">
             But don't just take our word for it — see what our guests have to say.
           </p>
         </div>
@@ -104,7 +104,7 @@ export default function TestimonialsSection() {
 
             <Swiper
               modules={[Navigation, Pagination, Autoplay]}
-              spaceBetween={20}
+              spaceBetween={60}
               slidesPerView={1.1}
               centeredSlides={false}
               loop={true}
@@ -134,17 +134,17 @@ export default function TestimonialsSection() {
                 },
                 640: {
                   slidesPerView: 1.5,
-                  spaceBetween: 20,
+                  spaceBetween: 30,
                   centeredSlides: false,
                 },
                 768: {
                   slidesPerView: 2.2,
-                  spaceBetween: 24,
+                  spaceBetween: 40,
                   centeredSlides: false,
                 },
                 1024: {
                   slidesPerView: 3,
-                  spaceBetween: 24,
+                  spaceBetween: 40,
                   centeredSlides: true,
                 },
               }}
@@ -153,7 +153,7 @@ export default function TestimonialsSection() {
               {testimonials.map((testimonial) => (
                 <SwiperSlide key={testimonial.id}>
                   <div
-                    className={`${testimonial.bgColor} ${testimonial.borderRadius} p-6 sm:p-8 min-h-[280px] sm:min-h-[320px] md:min-h-[350px] flex flex-col justify-between`}
+                    className={`${testimonial.bgColor} ${testimonial.borderRadius} p-6 sm:p-8 min-h-[250px] sm:min-h-[280px] md:min-h-[280px] flex flex-col justify-between`}
                   >
                     <blockquote className="text-lg sm:text-xl leading-relaxed text-gray-900 flex-grow mb-6">
                       "{testimonial.quote}"

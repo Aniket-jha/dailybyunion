@@ -56,7 +56,7 @@ export default function NavbarTwo() {
         allowHover={true}
       >
         <MenuHandler>
-          <Typography as="div" variant="small" className="p-1 text-[#75665f]  font-[SohneOne] cursor-pointer  text-[18px] flex items-center">
+          <Typography as="div" variant="small" className="p-1 text-[#75665f]  font-[PlayfairMedium] cursor-pointer  text-[18px] flex items-center">
             <p
               className="flex items-center gap-2"
               selected={isMenuOpen || isMobileMenuOpen}
@@ -122,7 +122,7 @@ export default function NavbarTwo() {
         allowHover={true}
       >
         <MenuHandler>
-          <Typography as="div" variant="small" className="p-1 text-[#75665f]  font-[SohneOne] cursor-pointer  text-[18px] flex items-center">
+          <Typography as="div" variant="small" className="p-1 text-[#75665f]  font-[PlayfairMedium] cursor-pointer  text-[18px] flex items-center">
             <p
               className="flex items-center gap-2"
               selected={isMenuOpen || isMobileMenuOpen}
@@ -175,7 +175,7 @@ export default function NavbarTwo() {
   }
  
   const navList = (
-    <ul className="mb-4 mt-2 flex flex-col font-[SohneTwo] text-[#75665f] tracking-[0px]  lg:mb-0 lg:mt-0 lg:justify-end lg:flex-row lg:items-center lg:gap-6">
+    <ul className="mb-4 mt-2 flex flex-col font-[PlayfairMedium] text-[#75665f] tracking-[0px]  lg:mb-0 lg:mt-0 lg:justify-end lg:flex-row lg:items-center lg:gap-6">
       <ContactNavListMenu />
       {/* <Typography
         as="li"

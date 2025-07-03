@@ -1,16 +1,19 @@
 import { LuInstagram, LuLinkedin, LuFacebook, LuTwitter } from "react-icons/lu"
+import Logo from "../../assets/mainLogo.png"
+import Image from "next/image"
 
 export default function FooterSection() {
   return (
-    <footer className="bg-[#1a3b2e] text-white py-16 px-6 md:py-20 md:px-12 lg:px-16 mx-auto">
+    <footer className="bg-[#343434] text-white py-16 px-6 md:py-20 md:px-12 lg:px-16 mx-auto">
       <div className="mx-auto max-w-7xl">
         {/* Main Footer Content */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12 lg:gap-8 mb-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-16 mb-16">
           {/* Brand and Contact Info */}
-          <div className="lg:col-span-2 space-y-8">
+          <div className="lg:col-span-1 space-y-8">
             {/* Brand */}
             <div>
-              <h2 className="text-2xl md:text-3xl font-light tracking-wider text-white">MINT HOUSE</h2>
+              {/* <h2 className="text-2xl md:text-3xl font-light tracking-wider text-white">THE DAILY STAYS</h2> */}
+              <Image src={Logo}alt="Logo" className="w-[200px] h-[120px] object-cover" />
             </div>
 
             {/* Contact Information */}
@@ -22,12 +25,12 @@ export default function FooterSection() {
 
               <div>
                 <h3 className="text-sm font-medium text-gray-300 mb-2 tracking-wide">CALL</h3>
-                <p className="text-white">1-855-972-9090</p>
+                <p className="text-white">702165226</p>
               </div>
 
               <div>
                 <h3 className="text-sm font-medium text-gray-300 mb-2 tracking-wide">EMAIL</h3>
-                <p className="text-white">info@minthouse.com</p>
+                <p className="text-white">thedailystaysofficial@gmail.com</p>
               </div>
             </div>
           </div>
@@ -58,26 +61,7 @@ export default function FooterSection() {
                   Our Story
                 </a>
               </li>
-              <li>
-                <a href="#" className="text-white hover:text-gray-300 transition-colors duration-200">
-                  Mint House x Locale Integration
-                </a>
-              </li>
-              <li>
-                <a href="#" className="text-white hover:text-gray-300 transition-colors duration-200">
-                  Press Room
-                </a>
-              </li>
-              <li>
-                <a href="#" className="text-white hover:text-gray-300 transition-colors duration-200">
-                  Shop Your Stay
-                </a>
-              </li>
-              <li>
-                <a href="#" className="text-white hover:text-gray-300 transition-colors duration-200">
-                  Careers
-                </a>
-              </li>
+              
               <li>
                 <a href="#" className="text-white hover:text-gray-300 transition-colors duration-200">
                   Contact us
@@ -92,7 +76,7 @@ export default function FooterSection() {
             <ul className="space-y-4">
               <li>
                 <a href="#" className="text-white hover:text-gray-300 transition-colors duration-200">
-                  Mint House for Business
+                  The Daily Stays for Business
                 </a>
               </li>
               <li>
@@ -109,7 +93,7 @@ export default function FooterSection() {
           <div className="flex flex-col md:flex-row justify-between items-start md:items-center space-y-6 md:space-y-0">
             {/* Copyright and Legal Links */}
             <div className="flex flex-col md:flex-row md:items-center space-y-4 md:space-y-0 md:space-x-8">
-              <p className="text-gray-300 text-sm">© Mint House, Inc. 2025 All Rights Reserved.</p>
+              <p className="text-gray-300 text-sm">© The daily stays, Inc. 2025 All Rights Reserved.</p>
               <div className="flex flex-wrap gap-6">
                 <a href="#" className="text-gray-300 hover:text-white text-sm transition-colors duration-200">
                   Terms of Service

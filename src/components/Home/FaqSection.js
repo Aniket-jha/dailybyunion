@@ -72,7 +72,7 @@ export default function FAQSection() {
       <div className="mx-auto max-w-7xl">
         {/* Header */}
         <div className="mb-12">
-          <h2 className="text-3xl md:text-4xl font-light text-gray-900">FAQs</h2>
+          <h2 className="text-3xl md:text-4xl font-[PlayfairMedium] font-light text-gray-900">FAQs</h2>
         </div>
 
         {/* FAQ Items */}

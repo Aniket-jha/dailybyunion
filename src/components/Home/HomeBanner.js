@@ -5,8 +5,9 @@ import { Swiper, SwiperSlide } from "swiper/react"
 import { Autoplay } from "swiper/modules"
 import { IoChevronDown, IoRemove, IoAdd, IoLocationSharp } from "react-icons/io5"
 import Image from "next/image"
-import BannerOne from "../../assets/bannerOne.webp" 
-import BannerTwo from "../../assets/bannerTwo.webp"
+import BannerOne from "../../assets/pcBanner1.png" 
+import BannerTwo from "../../assets/pcBanner2.png"
+import BannerThree from "../../assets/pcBanner3.png"
 
 // Import Swiper styles
 import "swiper/css"
@@ -21,7 +22,7 @@ const HomeBanner = () => {
     <div className="relative lg:pt-0 py-2">
       <Swiper
         spaceBetween={0}
-        className="h-[500px] lg:h-[600px]"
+        className="h-[600px] lg:h-[600px]"
         draggable={true}
         slidesPerView={1}
         autoplay={{
@@ -56,6 +57,17 @@ const HomeBanner = () => {
             />
           </div>
         </SwiperSlide>
+        <SwiperSlide>
+          <div className="relative w-full h-full">
+            <Image
+              className="w-full h-full object-cover"
+              src={BannerThree}
+              alt="Modern apartment interior"
+              width={1200}
+              height={600}
+            />
+          </div>
+        </SwiperSlide>
       </Swiper>
 
       {/* Location Tag */}
@@ -67,12 +79,12 @@ const HomeBanner = () => {
       </div> */}
 
       {/* Booking Form Overlay */}
-      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-10 w-full max-w-5xl px-4">
+      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-10 w-full max-w-[90%] px-2">
         <div className="bg-white rounded-2xl shadow-2xl p-6">
-          <div className="grid grid-cols-1 md:grid-cols-4 lg:grid-cols-5 gap-4 items-end">
+          <div className="grid grid-cols-1 md:grid-cols-4 lg:grid-cols-5 gap-2 items-end">
             {/* Destination */}
             <div className="space-y-2">
-              <label className="text-sm font-semibold text-gray-700 uppercase tracking-wide">DESTINATION</label>
+              <label className="text-sm font-[PlayfairMedium] text-gray-700 uppercase tracking-wide">DESTINATION</label>
               <div className="relative">
                 <select className="w-full p-4 pr-12 text-gray-600 bg-transparent border-0 focus:outline-none appearance-none cursor-pointer text-base">
                   <option>Where to next</option>
@@ -87,7 +99,7 @@ const HomeBanner = () => {
 
             {/* Check In */}
             <div className="space-y-2">
-              <label className="text-sm font-semibold text-gray-700 uppercase tracking-wide">CHECK IN</label>
+              <label className="text-sm font-[PlayfairMedium] text-gray-700 uppercase tracking-wide">CHECK IN</label>
               <div className="relative">
                 <input
                   type="date"
@@ -99,7 +111,7 @@ const HomeBanner = () => {
 
             {/* Check Out */}
             <div className="space-y-2">
-              <label className="text-sm font-semibold text-gray-700 uppercase tracking-wide">CHECK OUT</label>
+              <label className="text-sm font-[PlayfairMedium] text-gray-700 uppercase tracking-wide">CHECK OUT</label>
               <div className="relative">
                 <input
                   type="date"
@@ -111,7 +123,7 @@ const HomeBanner = () => {
 
             {/* Guests */}
             <div className="space-y-2">
-              <label className="text-sm font-semibold text-gray-700 uppercase tracking-wide">GUESTS</label>
+              <label className="text-sm font-[PlayfairMedium] text-gray-700 uppercase tracking-wide">GUESTS</label>
               <div className="flex items-center justify-between p-4">
                 <button
                   onClick={decrementGuests}

@@ -3,10 +3,10 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Autoplay } from "swiper/modules";
 import { IoArrowBack, IoArrowForward } from "react-icons/io5";
 import Image from "next/image";
-import Mahalaxmi from "../../assets/mahalaxmi.png"
+import Mahalaxmi from "../../assets/stays1.png"
 import Juhu from "../../assets/juhu.png"
-import Chembur from "../../assets/chembur.png"
-import Baner from "../../assets/baner.png"
+import Chembur from "../../assets/stays6.png"
+import Baner from "../../assets/stays3.png"
 
 // Import Swiper styles
 import "swiper/css";
@@ -16,31 +16,24 @@ const Stays = () => {
   const slides = [
     {
       id: 1,
-      image: Mahalaxmi, // Fixed: Remove curly braces
+      image: Chembur, // Fixed: Remove curly braces
       title: "Mahalaxmi",
-      subtitle: "South Bombay",
-      category: "luxury"
-    },
-    {
-      id: 2,
-      image: Juhu, // Fixed: Remove curly braces
-      title: "Juhu",
-      subtitle: "",
-      category: "beach"
+      subtitle: "SouthSide",
+      
     },
     {
       id: 3,
-      image: Chembur, // Fixed: Remove curly braces
-      title: "Chembur",
-      subtitle: "Modern amenities with local charm",
-      category: "modern"
+      image: Mahalaxmi, // Fixed: Remove curly braces
+      title: "Santacruz",
+      subtitle: "Varsity",
+     
     },
     {
       id: 4, // Fixed: Changed duplicate id
       image: Baner, // Fixed: Remove curly braces
       title: "Baner",
       subtitle: "Hamlet",
-      category: "contemporary"
+      
     }
   ];
 

@@ -1,6 +1,9 @@
 "use client"
 
 import Image from "next/image"
+import img from "../../assets/corparate5.png"
+import img2 from "../../assets/corparate4.png"
+import img3 from "../../assets/corparate3.png"
 
 const Corporate = () => {
   return (
@@ -39,30 +42,30 @@ const Corporate = () => {
                 {/* Top small image */}
                 <div className="relative overflow-hidden rounded-lg shadow-lg group">
                   <Image
-                    src="/placeholder.svg?height=200&width=250"
+                    src={img}
                     alt="Modern kitchen and living area"
-                    width={200}
-                    height={200}
-                    className="w-full h-32 sm:h-40 lg:h-48 xl:h-56 object-cover transition-transform duration-300 group-hover:scale-105"
+                    width="100%"
+                    // height={200}
+                    className="w-full h-32 sm:h-40 lg:h-56 object-cover transition-transform duration-300 group-hover:scale-105"
                   />
                 </div>
 
                 {/* Bottom small image */}
                 <div className="relative overflow-hidden rounded-lg shadow-lg group">
                   <Image
-                    src="/placeholder.svg?height=200&width=250"
+                    src={img2}
                     alt="Bedroom with modern amenities and TV"
                     width={250}
                     height={200}
-                    className="w-full h-32 sm:h-40 lg:h-48 xl:h-56 object-cover transition-transform duration-300 group-hover:scale-105"
+                    className="w-full h-32 sm:h-40 lg:h-56 object-cover transition-transform duration-300 group-hover:scale-105"
                   />
                 </div>
               </div>
 
               {/* Right Column - Large image */}
-              <div className="relative overflow-hidden rounded-lg shadow-lg group">
+              <div className="relative overflow-hidden rounded-l-lg shadow-lg group">
                 <Image
-                  src="/placeholder.svg?height=400&width=300"
+                  src={img3}
                   alt="Luxury hotel bedroom with elegant curtains and comfortable bed"
                   width={300}
                   height={400}

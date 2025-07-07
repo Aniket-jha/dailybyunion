@@ -1,3 +1,4 @@
+'use client'
 import React, { useState } from "react";
 import {
   Navbar,
@@ -56,7 +57,7 @@ export default function NavbarTwo() {
         allowHover={true}
       >
         <MenuHandler>
-          <Typography as="div" variant="small" className="p-1 text-[#75665f]  font-[PlayfairMedium] cursor-pointer  text-[18px] flex items-center">
+          <Typography as="div" variant="small" className="p-1 text-[#ffffff]  font-[PlayfairMedium] cursor-pointer  text-[18px] flex items-center">
             <p
               className="flex items-center gap-2"
               selected={isMenuOpen || isMobileMenuOpen}
@@ -81,26 +82,26 @@ export default function NavbarTwo() {
         </MenuHandler>
         <MenuList  className="hidden mainMenuItem  bg-gray-100 text-center shadow-lg border-none max-w-screen-xl  lg:block">
         <ul className="grid grid-cols-1   bg-none grid-flow-row gap-y-2 text-center  outline-none outline-0">
-        <MenuItem className="subMenuText1">
-          <Link href="/mumbai" >Mumbai</Link></MenuItem>
-          <MenuItem className="subMenuText1">
-          <Link href="/pune" >Pune</Link></MenuItem>
+        <Link href="/mumbai" >    <MenuItem className="subMenuText1">
+          Mumbai</MenuItem></Link>
+          <Link href="/pune" >   <MenuItem className="subMenuText1">
+         Pune</MenuItem></Link>
           </ul>
         </MenuList>
       </Menu>
       <div className="block lg:hidden">
         <Collapse open={isMobileMenuOpen}>
           
-          <MenuItem className="text-[.8rem] px-2 font-[NeueMedium] py-0">
-          <Link className=""  href="/mumbai" >
+        <Link className=""  href="/mumbai" >   <MenuItem className="text-[.8rem] px-2 font-[NeueMedium] py-0">
+          
          Mumbai
-      </Link>
-      </MenuItem>
-      <MenuItem className="text-[.8rem] px-2 font-[NeueMedium] py-0">
-          <Link className=""  href="/pune" >
+    
+      </MenuItem>  </Link>
+      <Link className=""  href="/pune" >  <MenuItem className="text-[.8rem] px-2 font-[NeueMedium] py-0">
+          
          Pune
-      </Link>
-      </MenuItem>
+     
+      </MenuItem> </Link>
       
         </Collapse>
       </div>
@@ -122,7 +123,7 @@ export default function NavbarTwo() {
         allowHover={true}
       >
         <MenuHandler>
-          <Typography as="div" variant="small" className="p-1 text-[#75665f]  font-[PlayfairMedium] cursor-pointer  text-[18px] flex items-center">
+          <Typography as="div" variant="small" className="p-1 text-[#ffffff]  font-[PlayfairMedium] cursor-pointer  text-[18px] flex items-center">
             <p
               className="flex items-center gap-2"
               selected={isMenuOpen || isMobileMenuOpen}
@@ -175,8 +176,13 @@ export default function NavbarTwo() {
   }
  
   const navList = (
-    <ul className="mb-4 mt-2 flex flex-col font-[PlayfairMedium] text-[#75665f] tracking-[0px]  lg:mb-0 lg:mt-0 lg:justify-end lg:flex-row lg:items-center lg:gap-6">
+    <ul className="mb-4 mt-2 flex flex-col font-[PlayfairMedium] text-[#ffffff] tracking-[0px]  lg:mb-0 lg:mt-0 lg:justify-end lg:flex-row lg:items-center lg:gap-6">
+
+         <div className="block lg:hidden">
+       <AboutNavListMenu />
+       </div>
       <ContactNavListMenu />
+   
       {/* <Typography
         as="li"
        
@@ -206,14 +212,16 @@ export default function NavbarTwo() {
           <Topbar />
         </div> */}
   
-    <Navbar className={` z-[999] ${topNav ? "top-0" : ""} opacity-100 bg-opacity-100 w-[100vw !important] max-w-full  border-none shadow-none  rounded-none  py-2 px-4 lg:px-16 lg:py-2`}>
+    <Navbar className={` z-[999] ${topNav ? "top-0" : ""} opacity-100 bg-opacity-100 w-[100vw !important] max-w-full bg-[#343434]  border-none shadow-none  rounded-none  py-2 px-4 lg:px-16 lg:py-2`}>
       <div className="  grid grid-cols-5 justify-between items-center text-blue-gray-900">
         <div className="col-span-1 flex items-center justify-start gap-12 lg:col-span-3">
        <Link className="" href="/">
         <Image className="w-[120px]" src={Logo} alt="" />
        
        </Link>
+       <div className="lg:block hidden">
        <AboutNavListMenu />
+       </div>
        </div>
         <div className="hidden lg:block  col-span-2 ">{navList}</div>
      

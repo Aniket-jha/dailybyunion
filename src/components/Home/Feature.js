@@ -42,7 +42,7 @@ export default function FeaturesSection() {
           />
         </svg>
       ),
-      title: "Refined Design Philosophy",
+      title: "Design Philosophy",
       description:
         "Each space is thoughtfully curated to balance form and function, blending contemporary aesthetics with comfort and spatial intelligence.",
     },
@@ -73,7 +73,7 @@ export default function FeaturesSection() {
               <div className="mb-6 flex justify-center lg:justify-start">{feature.icon}</div>
 
               {/* Title */}
-              <h3 className="mb-4 text-[1.1px] font-[PlayfairMedium] text-gray-900 md:text-2xl">{feature.title}</h3>
+              <h3 className="mb-4 text-[1.3rem] font-[PlayfairMedium] text-gray-900 md:text-2xl">{feature.title}</h3>
 
               {/* Description */}
               <p className="text-gray-600 text-[0.8rem] leading-relaxed">{feature.description}</p>

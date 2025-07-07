@@ -58,36 +58,40 @@ section {
 }
 /* Base styles for all slides */
 .testimonials-swiper .swiper-slide {
-          opacity: 0.7;
-          transition: opacity 0.3s ease;
-        }
-        
-        .testimonials-swiper .swiper-slide-active {
-          opacity: 1;
-        }
-        
-        .testimonials-swiper .swiper-slide-prev,
-        .testimonials-swiper .swiper-slide-next {
-          opacity: 0.85;
-        }
-        
-        @media (min-width: 768px) {
-          .testimonials-swiper .swiper-slide {
-            opacity: 1;
-          }
-        }
-        
-        .swiper-pagination-custom .swiper-pagination-bullet {
-          width: 12px;
-          height: 12px;
-          border-radius: 50%;
-          background-color: #9ca3af;
-          opacity: 1;
-          cursor: pointer;
-          transition: background-color 0.2s ease;
-          margin: 0 4px;
-        }
-        
-        .swiper-pagination-custom .swiper-pagination-bullet-active {
-          background-color: #1f2937;
-        }
+  opacity: 0.7;
+  transition: opacity 0.3s ease;
+}
+
+.testimonials-swiper .swiper-slide-active {
+  opacity: 1;
+}
+
+.testimonials-swiper .swiper-slide-prev,
+.testimonials-swiper .swiper-slide-next {
+  opacity: 0.85;
+}
+
+@media (min-width: 768px) {
+  .testimonials-swiper .swiper-slide {
+    opacity: 1;
+  }
+}
+
+.swiper-pagination-custom .swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #9ca3af;
+  opacity: 1;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  margin: 0 4px;
+}
+
+.swiper-pagination-custom .swiper-pagination-bullet-active {
+  background-color: #1f2937;
+}
+
+
+
+

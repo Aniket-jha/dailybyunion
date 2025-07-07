@@ -22,15 +22,18 @@ const Corporate = () => {
             </div>
 
             <div className="space-y-4">
-              <p className="text-[0.8rem] font-[NeueRegular] lg:text-[1.1rem] text-gray-700 leading-relaxed">
-                Whether you're packing for a day, a week, or a fortnight, Housr Corporate Stays adapts to your rhythm.
-                Designed for today's busy professionals, we offer—fully serviced spaces, professional housekeeping,
-                laundry on demand, complimentary personal care and shower essentials, and more.
+              <p className="text-[0.8rem] font-[NeueRegular] lg:text-[1.1rem] text-gray-700 leading-relaxed"> 	
+The ultimate short-stay solution for professionals on the move, our spaces are designed for modern individuals who value both efficiency and comfort.
+<br />
+ Whether you're a consultant, digital nomad, or executive on assignment, our fully-furnished accommodations offer a seamless living.
+ 
+ experience with high-speed Wi-Fi, ergonomic workstations, smart access, and premium essentials. Each unit is curated to feel like home while
+ delivering the consistency of a hotel—complete with stocked kitchens, on-demand housekeeping, and local lifestyle recommendations. With tech-enabled
+ check-ins and prime locations near business hubs and transit, we eliminate hassle so you can focus on what matters. Whether for a few nights
+ or a few months, we’re redefining how professionals live, work, and move.
               </p>
 
-              <p className="font-[PlayfairBold] italic text-[1rem] text-[#75665f] lg:text-[1.5rem] uppercase">
-                This is Corporate Stays, elevated!
-              </p>
+              
             </div>
           </div>
 

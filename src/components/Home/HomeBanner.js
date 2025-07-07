@@ -19,10 +19,10 @@ const HomeBanner = () => {
   const decrementGuests = () => setGuests((prev) => Math.max(1, prev - 1))
 
   return (
-    <div className="relative lg:pt-0 py-2">
+    <div className="relative lg:pt-0 ">
       <Swiper
         spaceBetween={0}
-        className="h-[600px] lg:h-[600px]"
+        className="h-[650px] lg:h-[650px]"
         draggable={true}
         slidesPerView={1}
         autoplay={{
@@ -79,27 +79,27 @@ const HomeBanner = () => {
       </div> */}
 
       {/* Booking Form Overlay */}
-      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-10 w-full max-w-[90%] px-2">
-        <div className="bg-white rounded-2xl shadow-2xl p-6">
-          <div className="grid grid-cols-1 md:grid-cols-4 lg:grid-cols-5 gap-2 items-end">
+      <div className="absolute bottom-12 left-1/2 transform -translate-x-1/2 z-10 w-full max-w-[90%] px-0">
+        <div className="bg-white rounded-2xl shadow-2xl p-0">
+          <div className="grid grid-cols-1 md:grid-cols-4 lg:grid-cols-5  ">
             {/* Destination */}
-            <div className="space-y-2">
-              <label className="text-sm font-[PlayfairMedium] text-gray-700 uppercase tracking-wide">DESTINATION</label>
+            <div className="space-y-2 flex border-b-[1px] lg:border-r-[1px] border-[#272727] flex-col items-center">
+              <label className="text-sm pt-4 font-[PlayfairMedium]  text-gray-700 uppercase tracking-wide">DESTINATION</label>
               <div className="relative">
                 <select className="w-full p-4 pr-12 text-gray-600 bg-transparent border-0 focus:outline-none appearance-none cursor-pointer text-base">
                   <option>Where to next</option>
-                  <option>New York City</option>
-                  <option>Los Angeles</option>
-                  <option>Miami</option>
-                  <option>San Francisco</option>
+                  <option>Varsity, Santracruz</option>
+                  <option>Southside, Mahalaxmi</option>
+                  <option>Hamlet, Baner</option>
+                
                 </select>
                 <IoChevronDown className="absolute right-4 top-1/2 transform -translate-y-1/2 w-5 h-5 text-gray-400 pointer-events-none" />
               </div>
             </div>
 
             {/* Check In */}
-            <div className="space-y-2">
-              <label className="text-sm font-[PlayfairMedium] text-gray-700 uppercase tracking-wide">CHECK IN</label>
+            <div className="space-y-2 border-b-[1px] lg:border-r-[1px] border-[#272727] flex flex-col items-center">
+              <label className="text-sm pt-4 font-[PlayfairMedium] text-gray-700 uppercase tracking-wide">CHECK IN</label>
               <div className="relative">
                 <input
                   type="date"
@@ -110,8 +110,8 @@ const HomeBanner = () => {
             </div>
 
             {/* Check Out */}
-            <div className="space-y-2">
-              <label className="text-sm font-[PlayfairMedium] text-gray-700 uppercase tracking-wide">CHECK OUT</label>
+            <div className="space-y-2 border-b-[1px] lg:border-r-[1px] border-[#272727] flex flex-col items-center">
+              <label className="text-sm pt-4 font-[PlayfairMedium] text-gray-700 uppercase tracking-wide">CHECK OUT</label>
               <div className="relative">
                 <input
                   type="date"
@@ -122,8 +122,8 @@ const HomeBanner = () => {
             </div>
 
             {/* Guests */}
-            <div className="space-y-2">
-              <label className="text-sm font-[PlayfairMedium] text-gray-700 uppercase tracking-wide">GUESTS</label>
+            <div className="space-y-2 border-b-[1px] lg:border-r-[1px] border-[#272727] flex flex-col items-center">
+              <label className="text-sm pt-4 font-[PlayfairMedium] text-gray-700 uppercase tracking-wide">GUESTS</label>
               <div className="flex items-center justify-between p-4">
                 <button
                   onClick={decrementGuests}
@@ -144,7 +144,7 @@ const HomeBanner = () => {
 
             {/* Search Button */}
             <div className="md:col-span-1">
-              <button className="w-full bg-emerald-800 hover:bg-emerald-900 bg-black text-white font-semibold py-4 px-8 rounded-xl transition-colors duration-200 text-base tracking-wide">
+              <button className="w-full bg-emerald-800 hover:bg-emerald-900 bg-black text-white font-semibold py-4 px-8 h-[100%] rounded-b-xl lg:rounded-r-xl transition-colors duration-200 text-base tracking-wide">
                 SEARCH
               </button>
             </div>

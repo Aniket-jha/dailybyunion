@@ -81,7 +81,7 @@ export default function FAQSection() {
             <div key={faq.id} className="border-b border-gray-200">
               <button
                 onClick={() => toggleItem(faq.id)}
-                className="w-full py-6 px-4 flex items-center justify-between text-left transition-colors duration-200 focus:outline-none focus:bg-gray-50"
+                className="w-full py-6 lg:px-4 flex items-center justify-between text-left transition-colors duration-200 focus:outline-none focus:bg-gray-50"
                 aria-expanded={openItems.has(faq.id)}
                 aria-controls={`faq-answer-${faq.id}`}
               >

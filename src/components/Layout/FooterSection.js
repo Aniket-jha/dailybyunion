@@ -1,5 +1,5 @@
 import { LuInstagram, LuLinkedin, LuFacebook, LuTwitter } from "react-icons/lu"
-import Logo from "../../assets/mainLogo.png"
+import Logo from "../../assets/Navlogo.png"
 import Image from "next/image"
 
 export default function FooterSection() {
@@ -13,7 +13,7 @@ export default function FooterSection() {
             {/* Brand */}
             <div>
               {/* <h2 className="text-2xl md:text-3xl font-light tracking-wider text-white">THE DAILY STAYS</h2> */}
-              <Image src={Logo}alt="Logo" className="w-[200px] h-[120px] object-cover" />
+              <Image src={Logo}alt="Logo" className="w-[200px] h-[80px] object-cover" />
             </div>
 
             {/* Contact Information */}
@@ -25,7 +25,7 @@ export default function FooterSection() {
 
               <div>
                 <h3 className="text-sm font-medium text-gray-300 mb-2 tracking-wide">CALL</h3>
-                <p className="text-white">702165226</p>
+                <p className="text-white">+91 702165226</p>
               </div>
 
               <div>
@@ -40,7 +40,7 @@ export default function FooterSection() {
             <h3 className="text-sm font-medium text-gray-300 mb-6 tracking-wide">EXPERIENCE</h3>
             <ul className="space-y-4">
               <li>
-                <a href="#" className="text-white hover:text-gray-300 transition-colors duration-200">
+                <a href="https://unionliving.in/community" className="text-white hover:text-gray-300 transition-colors duration-200">
                   Groups and Events
                 </a>
               </li>

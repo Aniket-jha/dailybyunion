@@ -22,7 +22,7 @@ const HomeBanner = () => {
     <div className="relative lg:pt-0 ">
       <Swiper
         spaceBetween={0}
-        className="h-[650px] lg:h-[650px]"
+        className="h-[550px] lg:h-[650px]"
         draggable={true}
         slidesPerView={1}
         autoplay={{
@@ -78,8 +78,8 @@ const HomeBanner = () => {
         </div>
       </div> */}
 
-      {/* Booking Form Overlay */}
-      <div className="absolute bottom-12 left-1/2 transform -translate-x-1/2 z-10 w-full max-w-[90%] px-0">
+      {/* Booking Form Overlay */} 
+      <div className="absolute bottom-12 left-1/2 transform -translate-x-1/2 z-10 top-[10%] lg:top-[80%] w-full max-w-[95%] lg:max-w-[80%] px-0">
         <div className="bg-white rounded-2xl shadow-2xl p-0">
           <div className="grid grid-cols-1 md:grid-cols-4 lg:grid-cols-5  ">
             {/* Destination */}
@@ -144,7 +144,7 @@ const HomeBanner = () => {
 
             {/* Search Button */}
             <div className="md:col-span-1">
-              <button className="w-full bg-emerald-800 hover:bg-emerald-900 bg-black text-white font-semibold py-4 px-8 h-[100%] rounded-b-xl lg:rounded-r-xl transition-colors duration-200 text-base tracking-wide">
+              <button className="w-full bg-emerald-800 hover:bg-emerald-900 bg-black text-white font-semibold py-4 px-8 h-[100%] rounded-b-xl lg:rounded-br-xl transition-colors duration-200 text-base tracking-wide">
                 SEARCH
               </button>
             </div>

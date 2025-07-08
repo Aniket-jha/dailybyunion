@@ -12,9 +12,9 @@ export default function FeaturesSection() {
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M8 21l4-4 4 4" />
         </svg>
       ),
-      title: "Intentional Community",
+      title: "Community with Purpose",
       description:
-        "Designed to foster meaningful connections, Union offers more than just a place to stay—it’s a shared ecosystem for growth, collaboration, and belonging.",
+        "Union is designed to encourage organic connections, offering more than just a place to stay, it’s a space where people can interact, collaborate, and feel at home.",
     },
     {
       icon: (
@@ -27,9 +27,9 @@ export default function FeaturesSection() {
           />
         </svg>
       ),
-      title: "Effortless Living",
+      title: "Seamless Living",
       description:
-        "Our tech-enabled ecosystem ensures a seamless experience—from digital access and fast Wi-Fi to automated services and responsive support.",
+        "From digital entry to reliable Wi-Fi and helpful on-call support, our tech-enabled setup makes daily life easier and more convenient.",
     },
     {
       icon: (
@@ -42,9 +42,9 @@ export default function FeaturesSection() {
           />
         </svg>
       ),
-      title: "Design Philosophy",
+      title: "Thoughtful Design",
       description:
-        "Each space is thoughtfully curated to balance form and function, blending contemporary aesthetics with comfort and spatial intelligence.",
+        "Each unit is carefully planned to offer a blend of comfort, functionality, and clean aesthetics, making the most of space without compromising on style.",
     },
     {
       icon: (
@@ -57,14 +57,14 @@ export default function FeaturesSection() {
           />
         </svg>
       ),
-      title: "Holistic Well-being",
+      title: "Wellness Everyday",
       description:
-        "We prioritize wellness with clean, balanced meals, mental health programs, and community-led experiences that nurture both body and mind.",
+        "We offer simple, nourishing meals, peaceful environments, and community activities that support both mental and physical well-being.",
     },
   ]
 
   return (
-    <section className="bg-gray-50 py-16 px-6 md:py-24 md:px-12 lg:px-16">
+    <section className="bg-gray-50 py-[30px] px-6 md:py-24 md:px-12 lg:px-16">
       <div className="mx-auto max-w-7xl">
         <div className="grid grid-cols-1 gap-12 md:grid-cols-2 lg:grid-cols-4 lg:gap-12">
           {features.map((feature, index) => (

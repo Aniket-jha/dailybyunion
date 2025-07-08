@@ -3,44 +3,12 @@
 import React, { useRef } from 'react';
 import Image from 'next/image';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation, Autoplay } from 'swiper/modules';
+import { Navigation } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
-import img1 from "../../assets/stays1.png";
-import img2 from "../../assets/stays3.png";
+import { IoChevronBack, IoChevronForward } from 'react-icons/io5';
 
-const rooms = [
-  {
-    title: 'Classic Queen',
-    guests: 'Up to 2 Guests',
-    bedroom: '1 Bedroom',
-    bathroom: '1 Bathroom',
-    images: [img1, img2],
-  },
-  {
-    title: 'Studio Apartment',
-    guests: 'Up to 2 Guests',
-    bedroom: '1 Bedroom',
-    bathroom: '1 Bathroom',
-    images: [img1, img2],
-  },
-  {
-    title: 'Studio Plus Apartment',
-    guests: 'Up to 2 Guests',
-    bedroom: '1 Bedroom',
-    bathroom: '1 Bathroom',
-    images: [img1, img2],
-  },
-  {
-    title: 'Studio Deluxe Apartment',
-    guests: 'Up to 4 Guests',
-    bedroom: '1 Bedroom',
-    bathroom: '1 Bathroom',
-    images: [img1, img2],
-  },
-];
-
-export default function RoomTypes() {
+export default function RoomTypes( { rooms } ) {
   return (
     <div className="max-w-7xl mx-auto px-4 py-12">
       <h2 className="text-3xl font-[PlayfairBold] mb-6">Room Types</h2>
@@ -54,22 +22,18 @@ export default function RoomTypes() {
           return (
             <div
               key={idx}
-              className="bg-white rounded-lg overflow-hidden shadow-md flex flex-col md:flex-row"
+              className="bg-gray-100 rounded-lg overflow-hidden shadow-md flex flex-col md:flex-row"
             >
               {/* Image Slider */}
-              <div className="relative w-full md:w-1/2">
+              <div className="relative w-full md:w-1/2 h-[260px] md:h-auto">
                 <Swiper
-                  modules={[Navigation, Autoplay]}
-                  autoplay={{
-                    delay: 3000,  // 3 seconds delay
-                    disableOnInteraction: false,
-                  }}
+                  modules={[Navigation]}
                   navigation={{
                     prevEl: prevRef.current,
                     nextEl: nextRef.current,
                   }}
                   loop
-                  speed={800}  // Transition speed in ms
+                  speed={800}
                   onInit={(swiper) => {
                     swiper.params.navigation.prevEl = prevRef.current;
                     swiper.params.navigation.nextEl = nextRef.current;
@@ -83,7 +47,7 @@ export default function RoomTypes() {
                         src={src}
                         alt={room.title}
                         width={400}
-                        height={300}
+                        height={400}
                         className="object-cover w-full h-full"
                       />
                     </SwiperSlide>
@@ -91,29 +55,29 @@ export default function RoomTypes() {
                 </Swiper>
 
                 {/* Custom Navigation */}
-                <div className="absolute inset-0 flex items-center justify-between px-2">
+                <div className="absolute inset-0 flex items-end mb-0 gap-[0.5px] z-10">
                   <button
                     ref={prevRef}
-                    className="bg-black/50 text-white p-2 rounded hover:bg-black"
+                    className="bg-black/60 text-white p-2  hover:bg-black"
                   >
-                    &lt;
+                    <IoChevronBack size={30} />
                   </button>
                   <button
                     ref={nextRef}
-                    className="bg-black/50 text-white p-2 rounded hover:bg-black"
+                    className="bg-black/60 text-white p-2  hover:bg-black"
                   >
-                    &gt;
+                    <IoChevronForward size={30} />
                   </button>
                 </div>
               </div>
 
               {/* Details */}
-              <div className="p-6 flex flex-col justify-center md:w-1/2">
-                <h4 className="text-xl font-[PlayfairMedium] mb-2">{room.title}</h4>
+              <div className="p-6 flex flex-col justify-center md:w-[50%]">
+                <h4 className="text-2xl font-[PlayfairBold] mb-6">{room.title}</h4>
                 <p className="mb-1">{room.guests}</p>
                 <p className="mb-1">{room.bedroom}</p>
                 <p className="mb-4">{room.bathroom}</p>
-                <button className="bg-[#002d1d] text-white py-2 px-4 rounded hover:opacity-90 text-sm tracking-wider uppercase">
+                <button className="bg-[#002d1d] text-white py-2 px-2 rounded-lg hover:opacity-90 text-sm tracking-wider uppercase">
                   Check Availability
                 </button>
               </div>

@@ -17,7 +17,7 @@ import {
   XMarkIcon,
   ChevronUpIcon,
 } from "@heroicons/react/24/outline";
-import Logo from "../../assets/mainLogo.png"
+import Logo from "../../assets/Navlogo.png"
 import  Link  from "next/link";
 import Image from "next/image";
 import Topbar from "./Topbar";
@@ -202,7 +202,7 @@ export default function NavbarTwo() {
  
   return (
     <>
-     <div className=" top-0 left-0 w-full z-[999]">
+     <div className=" sticky top-0 left-0 w-full z-[999]">
         
         {/* <div
           className={`transition-all duration-300 ease-in-out ${

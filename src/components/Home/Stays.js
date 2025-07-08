@@ -19,8 +19,8 @@ const Stays = () => {
   return (
     <div className="w-full py-8 bg-[#f6f1ec] relative overflow-hidden">
       <div className="pt-2 pl-6 lg:pt-8 lg:pl-12">
-        <h1 className="text-black text-4xl lg:text-6xl font-semibold  font-[PlayfairBold] tracking-wide">
-          What’s on now
+        <h1 className="text-black text-[28px] lg:text-[52px] font-semibold  font-[PlayfairBold] tracking-wide">
+          Find Your Daily Stays
         </h1>
       </div>
 

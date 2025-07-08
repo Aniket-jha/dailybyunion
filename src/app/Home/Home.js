@@ -1,6 +1,8 @@
 "use client"
 import About from '@/components/Home/About'
 import Amenities from '@/components/Home/Amenities'
+import FloatingSearchBar from '@/components/Home/BookingFloatingSearchBar'
+import BookingFloatingSearchBar from '@/components/Home/BookingFloatingSearchBar'
 import ContactUs from '@/components/Home/ContactUs'
 import Corporate from '@/components/Home/Corporate'
 import CorporateStays from '@/components/Home/CorporateStays'
@@ -22,8 +24,9 @@ const Home = () => {
         <NavbarTwo />
         <div className=''>
         <HomeBanner />
-        <FeaturesSection /> 
-        <About />
+        <BookingFloatingSearchBar />
+        <FeaturesSection  /> 
+        {/* <About /> */}
         <Corporate/>
         <Stays />
         {/* <CorporateStays /> */}

@@ -1,7 +1,7 @@
 import React from 'react'
 import PuneMainPage from './PuneMainPage'
 
-const page = () => {
+const Pune = () => {
   return (
     <div>
         <PuneMainPage />
@@ -9,4 +9,4 @@ const page = () => {
   )
 }
 
-export default page
+export default Pune

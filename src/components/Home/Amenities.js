@@ -13,7 +13,7 @@ import Parking from "../../assets/parking.png"
 import Housekeeping from "../../assets/housekeeping.png"
 import Laundry from "../../assets/laundry.png"
 import Wifi from "../../assets/wifi.png"
-import Breakfast from "../../assets/Breakfast.png"
+import Breakfast from "../../assets/Dinner.png"
 
 const Amenities = ({homeContent}) => {
   const amenitiesData = [
@@ -59,8 +59,8 @@ const Amenities = ({homeContent}) => {
     <div className="w-full py-8 bg-[#f2ece4] relative overflow-hidden">
       {/* Header */}
       <div className="pt-12 pl-6 lg:pt-12 lg:pl-12">
-        <h1 className="text-[#000] text-4xl lg:text-6xl font-semibold font-[PlayfairBold] tracking-wide">
-          Amenities
+        <h1 className="text-[#000] text-[28px] lg:text-[52px] font-semibold font-[PlayfairBold] tracking-wide">
+          Privilege
         </h1>
       </div>
 

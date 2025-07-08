@@ -15,40 +15,40 @@ export default function TestimonialsSection() {
       id: 0,
       quote:
         "Beautiful stay and was blown away by the thoughtful design and attention to detail of the apartment. Can't wait to visit other Sonders in the future.",
-      name: "Sarah",
-      location: "London",
+      name: "Niraj",
+      location: "Pune",
       bgColor: "bg-[#9EC6F3]",
       borderRadius: "rounded-tl-[60px]", // top-left corner
     },
     {
       id: 1,
       quote: "Absolutely perfect for a stay whether you're a solo traveler, couple or a family.",
-      name: "Joanne",
-      location: "Rome",
+      name: "Ritu",
+      location: "Baner",
       bgColor: "bg-[#FFDCDC]",
       borderRadius: "rounded-tr-[60px]", // top-right corner
     },
     {
       id: 2,
       quote: "Love the app! It works seamlessly and all the information is so clear to make the experience seamless.",
-      name: "Jimena",
-      location: "Miami",
+      name: "Priya",
+      location: "Santacruz",
       bgColor: "bg-[#CB9DF0]",
       borderRadius: "rounded-bl-[60px]", // bottom-left corner
     },
     {
       id: 3,
       quote: "The location was perfect and the space was exactly what we needed for our weekend getaway.",
-      name: "Marcus",
-      location: "Barcelona",
+      name: "Akash",
+      location: "Mahalaxmi",
       bgColor: "bg-[#F6AE99]",
       borderRadius: "rounded-br-[60px]", // bottom-right corner
     },
     {
       id: 4,
       quote: "Exceptional service and beautiful accommodations. Will definitely be staying again!",
-      name: "Elena",
-      location: "Paris",
+      name: "Neha",
+      location: "Pune",
       bgColor: "bg-[#EBD6FB]",
       borderRadius: "rounded-tl-[60px]", // back to top-left (cycle repeats)
     },

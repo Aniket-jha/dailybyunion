@@ -70,63 +70,64 @@ export default function HotelSection() {
       </div>
 
       {/* Content Section */}
-      <div className="max-w-5xl mx-auto px-4 py-12 grid grid-cols-1 md:grid-cols-2 gap-12 relative z-10">
+      <div className="max-w-7xl mx-auto px-4 py-12 grid grid-cols-1 md:grid-cols-2 gap-16 relative z-10">
 
-        {/* Left Content */}
-        <div className="space-y-4">
-          <h1 className="text-3xl md:text-4xl font-[PlayfairBold]">Mint House at 70 Pine – NYC</h1>
-          <p className="text-lg text-gray-700">70 Pine Street, New York, NY 10005</p>
-          <button className="text-sm underline text-black">VIEW ON MAP</button>
+  {/* Left Content */}
+  <div className="space-y-4">
+    <h1 className="text-3xl md:text-5xl font-[PlayfairBold]">Mint House at 70 Pine – NYC</h1>
+    <p className="text-lg text-gray-700">70 Pine Street, New York, NY 10005</p>
+    <button className="text-sm underline text-black">VIEW ON MAP</button>
 
-          <h2 className="font-semibold mt-4">Hotel in NYC’s Financial District</h2>
-          <p className="text-gray-700 mt-2">
-            As a guest of Mint House at 70 Pine – NYC, you will live your best New York life in a historic Art Deco building 
-            in the heart of Lower Manhattan. Ranging from Studios to Two Bedroom suites with up to three times the space of 
-            traditional short-term rentals, a full kitchen, free WiFi, comfortable beds and spacious living areas, each space 
-            is perfect for relaxing, entertaining, and remote working.
-          </p>
+    <h2 className="font-semibold mt-6 text-xl">Hotel in NYC’s Financial District</h2>
+    <p className="text-gray-700 mt-2 leading-relaxed">
+      As a guest of Mint House at 70 Pine – NYC, you will live your best New York life in a historic Art Deco building 
+      in the heart of Lower Manhattan. Ranging from Studios to Two Bedroom suites with up to three times the space of 
+      traditional short-term rentals, a full kitchen, free WiFi, comfortable beds and spacious living areas, each space 
+      is perfect for relaxing, entertaining, and remote working.
+    </p>
+  </div>
+
+  {/* Right Booking Box */}
+  <div className="relative md:top-[-120px] z-10 flex justify-center md:justify-end">
+    <div className="w-full max-w-[500px] bg-white shadow-2xl rounded-2xl overflow-hidden border border-gray-200">
+      <div className="divide-y divide-gray-200">
+        
+        <div className="p-8">
+          <label className="block text-xs font-semibold mb-1">CHECK IN</label>
+          <select className="w-full text-sm rounded border border-gray-300 p-3">
+            <option>Select date</option>
+          </select>
         </div>
 
-        {/* Right Booking Box */}
-        <div className="relative md:top-[-80px] z-10">
-          <div className="w-full max-w-[400px] bg-white shadow-md rounded-xl overflow-hidden border border-gray-200">
-            <div className="divide-y divide-gray-200">
-              
-              <div className="p-6">
-                <label className="block text-xs font-semibold mb-1">CHECK IN</label>
-                <select className="w-full text-sm rounded">
-                  <option>Select date</option>
-                </select>
-              </div>
+        <div className="p-8">
+          <label className="block text-xs font-semibold mb-1">CHECK OUT</label>
+          <select className="w-full text-sm rounded border border-gray-300 p-3">
+            <option>Select date</option>
+          </select>
+        </div>
 
-              <div className="p-6">
-                <label className="block text-xs font-semibold mb-1">CHECK OUT</label>
-                <select className="w-full text-sm rounded">
-                  <option>Select date</option>
-                </select>
-              </div>
-
-              <div className="p-6 flex items-center justify-between">
-                <span className="text-xs font-semibold">GUESTS</span>
-                <div className="flex items-center space-x-4">
-                  <button onClick={decrementGuests} className="p-1 border border-gray-300 rounded">
-                    <FiMinus size={14} />
-                  </button>
-                  <span>{guests}</span>
-                  <button onClick={incrementGuests} className="p-1 border border-gray-300 rounded">
-                    <FiPlus size={14} />
-                  </button>
-                </div>
-              </div>
-            </div>
-
-            <button className="w-full bg-[#002d1d] text-white py-6 text-sm tracking-wider uppercase hover:opacity-90">
-              SEARCH
+        <div className="p-8 flex items-center justify-between">
+          <span className="text-xs font-semibold">GUESTS</span>
+          <div className="flex items-center space-x-4">
+            <button onClick={decrementGuests} className="p-2 border border-gray-300 rounded">
+              <FiMinus size={16} />
+            </button>
+            <span className="text-base">{guests}</span>
+            <button onClick={incrementGuests} className="p-2 border border-gray-300 rounded">
+              <FiPlus size={16} />
             </button>
           </div>
         </div>
-
       </div>
+
+      <button className="w-full bg-[#002d1d] text-white py-6 text-sm tracking-wider uppercase hover:opacity-90">
+        SEARCH
+      </button>
+    </div>
+  </div>
+
+</div>
+
     </div>
   );
 }

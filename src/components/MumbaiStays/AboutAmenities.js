@@ -6,28 +6,7 @@ export default function AboutAmenities() {
   return (
     <div className="max-w-7xl mx-auto px-4 py-12 space-y-16">
 
-      {/* About the Location */}
-      <div className='grid grid-cols-1 md:grid-cols-3 gap-8'>
-        <h2 className="text-2xl md:text-3xl font-[PlayfairBold] mb-4">About the Location</h2>
-        <div className=" text-gray-700">
-          <p>
-            There is no better backdrop for your New York stories than the 1932-built, 67-story Art Deco skyscraper, 70 Pine, 
-            which, at times, has been the tallest building in Lower Manhattan. Staying just a stone’s throw from the New York 
-            Stock Exchange and Wall Street, and an easy walk to the Seaport, Tribeca, Chinatown and the Two Bridges Historic 
-            District, you will be at the intersection of
-          </p>
-          <div /> {/* Empty third column to visually match your screenshot */}
-          
-        </div>
-
-        <div className=" text-gray-700">
-          <p>
-            Manhattan’s past, present and future. Take your pick of nearby flagship museums: from the edgy New Museum on the Bowery, and family-friendly Tenement Museum, both a scenic 30-minute walk away, to the very nearby National September 11th Memorial and Museum, which will imbue your stay in this neighborhood with unforgettable poignance.
-          </p>
-          <div /> {/* Empty third column to visually match your screenshot */}
-          
-        </div>
-      </div>
+      
 
       {/* Standard Amenities */}
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8 bg-gray-50 py-8 px-4 md:px-8 rounded-md">

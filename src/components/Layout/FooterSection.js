@@ -1,6 +1,7 @@
 import { LuInstagram, LuLinkedin, LuFacebook, LuTwitter } from "react-icons/lu"
 import Logo from "../../assets/Navlogo.png"
 import Image from "next/image"
+import Link from "next/link"
 
 export default function FooterSection() {
   return (
@@ -57,9 +58,9 @@ export default function FooterSection() {
             <h3 className="text-sm font-medium text-gray-300 mb-6 tracking-wide">EXPLORE</h3>
             <ul className="space-y-4">
               <li>
-                <a href="#" className="text-white hover:text-gray-300 transition-colors duration-200">
+                <Link href="/about" className="text-white hover:text-gray-300 transition-colors duration-200">
                   Our Story
-                </a>
+                </Link>
               </li>
               
               <li>

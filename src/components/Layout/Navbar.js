@@ -148,8 +148,8 @@ export default function NavbarTwo() {
         </MenuHandler>
         <MenuList  className="hidden mainMenuItem  bg-gray-100 text-center shadow-lg border-none max-w-screen-xl  lg:block">
         <ul className="grid grid-cols-1   bg-none grid-flow-row gap-y-2 text-center  outline-none outline-0">
-        <MenuItem className="subMenuText1">
-          <Link href="/about" >About</Link></MenuItem>
+        <Link href="/about" > <MenuItem className="subMenuText1">
+        About</MenuItem></Link>
           <MenuItem className="subMenuText1">
           <Link href="/contact" >Contact</Link></MenuItem>
           </ul>
@@ -157,12 +157,12 @@ export default function NavbarTwo() {
       </Menu>
       <div className="block lg:hidden">
         <Collapse open={isMobileMenuOpen}>
-          
+        <Link className=""  href="/about" >
           <MenuItem className="text-[.8rem] px-2 font-[SohneOne] py-0">
-          <Link className=""  href="/about" >
+          
          About
-      </Link>
-      </MenuItem>
+      
+      </MenuItem></Link>
       <MenuItem className="text-[.8rem] px-2 font-[SohneOne] py-0">
           <Link className=""  href="/contact" >
          Contact
@@ -227,7 +227,7 @@ export default function NavbarTwo() {
      
         <IconButton
               variant="text"
-              className="ml-auto h-6 w-6 col-span-4 text-black hover:bg-transparent focus:bg-transparent active:bg-transparent lg:hidden"
+              className="ml-auto h-6 w-6 col-span-4  text-black hover:bg-transparent focus:bg-transparent active:bg-transparent lg:hidden"
               ripple={false}
               onClick={() => setOpenNav(!openNav)}
             >

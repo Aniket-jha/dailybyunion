@@ -21,7 +21,7 @@ const PuneLocations = () => {
                     <div className="flex flex-col md:flex-row items-stretch bg-gray-200 rounded-lg shadow-lg hover:border hover:border-black transition">
         
                       {/* Image Column */}
-                      <div className="md:w-1/2 w-full h-[450px]">
+                      <div className="md:w-1/2 w-full h-[400px]">
                         <Image
                           src={Mahalaxmi} // Replace with your image
                           alt="Stay"
@@ -32,13 +32,28 @@ const PuneLocations = () => {
                       {/* Text Column */}
                       <div className="md:w-1/2 w-full flex flex-col justify-between p-6">
                         <div className="space-y-3">
-                          <h3 className="text-xl font-semibold">Hamlet By Union</h3>
-                          <span className="text-sm text-gray-700">Baner</span>
-                          <span className="text-sm text-gray-700">S.No.18, opposite Jubilate Bldg, Plot
-No. G1, Pan Card Club Rd, Baner,
-Pune, Maharashtra 411045</span>
-                          <p className="text-sm text-black">Studio</p>
-                        </div>
+                  <h3 className="mb-4 text-[28px] font-medium">Hamlet</h3>
+                  
+                  <span className="mb-4 text-[20px] text-gray-700">Baner, Pune</span>
+
+                  {/* View Map link (opens Google Maps in new tab) */}
+                  <div>
+                    <a
+                      href="https://maps.app.goo.gl/EVqNDPsAuPdovtRd6"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-gray-600 underline text-sm font-medium hover:text-gray-800 transition-colors"
+                    >
+                      View Map
+                    </a>
+                  </div>
+
+                  {/* Bullet points for BHK types */}
+                  <ul className="list-disc list-inside text-[16px] text-black space-y-1 mt-3">
+                    <li>Studio Rooms</li>
+                    
+                  </ul>
+                </div>
         
                         <Link
                           href="/hamlet"

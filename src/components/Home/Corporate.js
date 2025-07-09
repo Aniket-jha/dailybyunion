@@ -13,10 +13,10 @@ const Corporate = () => {
           {/* Left Content Section */}
           <div className="space-y-6">
             <div>
-              <h2 className="text-[28px] font-[PlayfairBold] lg:text-[2.5rem]  text-gray-900 leading-tight mb-4">
+              <h2 className="text-[28px] font-[QuicksandBold] lg:text-[2.5rem]  text-gray-900 leading-tight mb-4">
                 Corporate Stays 
               </h2>
-              <p className="italic text-[18px] lg:text-[20px] font-semibold font-[PlayfairBold] text-[#8a7970]  relative inline-block mb-2">
+              <p className="italic text-[18px] lg:text-[20px] font-[QuicksandBold] text-[#8a7970]  relative inline-block mb-2">
           The ultimate shortstay solution for professionals on the move
         </p>
 
@@ -25,8 +25,8 @@ const Corporate = () => {
             </div>
 
             <div className="space-y-4">
-              <p className="text-[14px] font-[NeueRegular] lg:text-[18px] text-gray-700 leading-relaxed"> 	
-our spaces are designed for modern individuals who value both efficiency and comfort.
+              <p className="text-[14px] font-[MontserratRegular] lg:text-[16px] text-gray-700 leading-relaxed"> 	
+Our spaces are designed for modern individuals who value both efficiency and comfort.
 <br />
  Whether you're a consultant, digital nomad, or executive on assignment, our fully-furnished accommodations offer a seamless living.
  

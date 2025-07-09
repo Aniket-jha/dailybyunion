@@ -1,7 +1,6 @@
 import { LuInstagram, LuLinkedin, LuFacebook, LuTwitter } from "react-icons/lu"
-import Logo from "../../assets/Navlogo.png"
+import Logo from "../../assets/thedailystayswhite.png"
 import Image from "next/image"
-import Link from "next/link"
 
 export default function FooterSection() {
   return (
@@ -14,7 +13,7 @@ export default function FooterSection() {
             {/* Brand */}
             <div>
               {/* <h2 className="text-2xl md:text-3xl font-light tracking-wider text-white">THE DAILY STAYS</h2> */}
-              <Image src={Logo}alt="Logo" className="w-[200px] h-[80px] object-cover" />
+              <Image src={Logo}alt="Logo" className="w-full h-[40px] object-cover" />
             </div>
 
             {/* Contact Information */}
@@ -26,7 +25,7 @@ export default function FooterSection() {
 
               <div>
                 <h3 className="text-sm font-medium text-gray-300 mb-2 tracking-wide">CALL</h3>
-                <p className="text-white">+91 702165226</p>
+                <p className="text-white">702165226</p>
               </div>
 
               <div>
@@ -58,9 +57,9 @@ export default function FooterSection() {
             <h3 className="text-sm font-medium text-gray-300 mb-6 tracking-wide">EXPLORE</h3>
             <ul className="space-y-4">
               <li>
-                <Link href="/about" className="text-white hover:text-gray-300 transition-colors duration-200">
+                <a href="#" className="text-white hover:text-gray-300 transition-colors duration-200">
                   Our Story
-                </Link>
+                </a>
               </li>
               
               <li>
@@ -80,11 +79,11 @@ export default function FooterSection() {
                   The Daily Stays for Business
                 </a>
               </li>
-              <li>
+              {/* <li>
                 <a href="#" className="text-white hover:text-gray-300 transition-colors duration-200">
                   Real Estate Partnerships
                 </a>
-              </li>
+              </li> */}
             </ul>
           </div>
         </div>

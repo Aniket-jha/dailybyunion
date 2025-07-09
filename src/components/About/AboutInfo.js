@@ -6,7 +6,7 @@ const AboutInfo = () => {
   return (
     <div className='lg:px-24 grid grid-cols-1 items-center gap-12 grid-flow-row  lg:grid-cols-2  lg:py-24 py-4 px-4' >
         <div>
-            <h3 className='lg:text-[2.5rem] text-[1.5rem] mb-2 font-[PlayfairMedium]'>About the Daily Stay</h3>
+            <h3 className='lg:text-[2.5rem] text-[1.5rem] mb-2 font-[QuicksandMedium]'>About the Daily Stay</h3>
             <p className='text-[0.7rem] lg:text-[1rem]'>
             In a world where mobility is the norm and lifestyles are ever-evolving, Daily Stay offers a smarter, more flexible way to live. We provide fully furnished, ready-to-move-in apartments for both short and long-term stays, blending the comfort of home with the reliability of hospitality.
             <br /> <br />

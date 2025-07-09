@@ -19,7 +19,7 @@ const Stays = () => {
   return (
     <div className="w-full py-8 bg-[#f6f1ec] relative overflow-hidden">
       <div className="pt-2 pl-6 lg:pt-8 lg:pl-12">
-        <h1 className="text-black text-[28px] lg:text-[52px] font-semibold  font-[PlayfairBold] tracking-wide">
+        <h1 className="text-black text-[28px] lg:text-[52px] font-semibold  font-[QuicksandBold] tracking-wide">
           Find Your Daily Stays
         </h1>
       </div>
@@ -66,7 +66,7 @@ const Stays = () => {
                     className="object-cover transition-all duration-500 ease-in-out group-hover:rounded-b-[50%]"
                   />
                   <div className="absolute inset-0 flex flex-col justify-center items-center text-center p-6">
-                    <h2 className="text-white text-3xl lg:text-5xl font-semibold font-[ReciaSerifDisplay] mb-4 leading-tight">
+                    <h2 className="text-white text-3xl lg:text-5xl font-semibold font-[QuicksandBold] mb-4 leading-tight">
                       {slide.title}
                     </h2>
                    

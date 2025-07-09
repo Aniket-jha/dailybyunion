@@ -10,7 +10,7 @@ const Whyus = () => {
                 <Image src={WhyusBanner} />
             </div>
             <div>
-            <h3 className='text-[1.5rem] font-[PlayfairMedium] mb-1 lg:text-[2.5rem]'>Why Choose <span className='text-[#75665f] italic uppercase'>The Daily Stays? </span> </h3>
+            <h3 className='text-[1.5rem] font-[QuicksandMedium] mb-1 lg:text-[2.5rem]'>Why Choose <span className='text-[#75665f] italic uppercase'>The Daily Stays? </span> </h3>
             <div className='h-[5px] mb-4 w-[150px] bg-[#f47133]'></div>
             <p className='text-[0.8rem] font-[NeueRegular] lg:text-[1.1rem]'>
             At The Daily Stays, we know what it’s like to live out of a suitcase, jump from meeting to meeting, and just want to come back to a place that’s calm, clean, and comforting. A place that doesn’t feel cold or temporary — but warm, simple, and thoughtfully put together.

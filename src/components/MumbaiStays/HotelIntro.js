@@ -74,12 +74,12 @@ export default function HotelIntro({title, location, locationLink, desc, bannerI
 
   {/* Left Content */}
   <div className="space-y-4">
-    <h1 className="text-3xl md:text-5xl font-[PlayfairBold]">{title}</h1>
+    <h1 className="text-3xl md:text-5xl font-[QuicksandBold]">{title}</h1>
     <p className="text-lg text-gray-700">{location}</p>
-    <button className="text-sm underline text-black">VIEW ON MAP</button>
+    <button className="text-sm underline font-[QuicksandMedium] text-black">VIEW ON MAP</button>
 
     {/* <h2 className="font-semibold mt-6 text-xl">Varsity</h2> */}
-    <p className="text-gray-700 mt-2 leading-relaxed">{desc}</p>
+    <p className="text-gray-700 mt-2 font-[MontserratRegular] leading-relaxed">{desc}</p>
   </div>
 
   {/* Right Booking Box */}
@@ -115,7 +115,7 @@ export default function HotelIntro({title, location, locationLink, desc, bannerI
         </div>
       </div>
 
-      <button className="w-full bg-[#002d1d] text-white py-6 text-sm tracking-wider uppercase hover:opacity-90">
+      <button className="w-full bg-black hover:bg-gray-800 text-white py-6 text-sm tracking-wider uppercase">
         SEARCH
       </button>
     </div>

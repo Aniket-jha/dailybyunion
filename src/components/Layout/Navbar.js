@@ -17,7 +17,7 @@ import {
   XMarkIcon,
   ChevronUpIcon,
 } from "@heroicons/react/24/outline";
-import Logo from "../../assets/Navlogo.png"
+import Logo from "../../assets/thedailystayswhite.png"
 import  Link  from "next/link";
 import Image from "next/image";
 import Topbar from "./Topbar";
@@ -57,7 +57,7 @@ export default function NavbarTwo() {
         allowHover={true}
       >
         <MenuHandler>
-          <Typography as="div" variant="small" className="p-1 text-[#ffffff]  font-[PlayfairMedium] cursor-pointer  text-[18px] flex items-center">
+          <Typography as="div" variant="small" className="p-1 text-[#ffffff]  font-[QuicksandMedium] cursor-pointer  text-[18px] flex items-center">
             <p
               className="flex items-center gap-2"
               selected={isMenuOpen || isMobileMenuOpen}
@@ -123,7 +123,7 @@ export default function NavbarTwo() {
         allowHover={true}
       >
         <MenuHandler>
-          <Typography as="div" variant="small" className="p-1 text-[#ffffff]  font-[PlayfairMedium] cursor-pointer  text-[18px] flex items-center">
+          <Typography as="div" variant="small" className="p-1 text-[#ffffff]  font-[QuicksandMedium] cursor-pointer  text-[18px] flex items-center">
             <p
               className="flex items-center gap-2"
               selected={isMenuOpen || isMobileMenuOpen}
@@ -148,8 +148,8 @@ export default function NavbarTwo() {
         </MenuHandler>
         <MenuList  className="hidden mainMenuItem  bg-gray-100 text-center shadow-lg border-none max-w-screen-xl  lg:block">
         <ul className="grid grid-cols-1   bg-none grid-flow-row gap-y-2 text-center  outline-none outline-0">
-        <Link href="/about" > <MenuItem className="subMenuText1">
-        About</MenuItem></Link>
+        <MenuItem className="subMenuText1">
+          <Link href="/about" >About</Link></MenuItem>
           <MenuItem className="subMenuText1">
           <Link href="/contact" >Contact</Link></MenuItem>
           </ul>
@@ -157,12 +157,12 @@ export default function NavbarTwo() {
       </Menu>
       <div className="block lg:hidden">
         <Collapse open={isMobileMenuOpen}>
-        <Link className=""  href="/about" >
-          <MenuItem className="text-[.8rem] px-2 font-[SohneOne] py-0">
           
+          <MenuItem className="text-[.8rem] px-2 font-[SohneOne] py-0">
+          <Link className=""  href="/about" >
          About
-      
-      </MenuItem></Link>
+      </Link>
+      </MenuItem>
       <MenuItem className="text-[.8rem] px-2 font-[SohneOne] py-0">
           <Link className=""  href="/contact" >
          Contact
@@ -176,7 +176,7 @@ export default function NavbarTwo() {
   }
  
   const navList = (
-    <ul className="mb-4 mt-2 flex flex-col font-[PlayfairMedium] text-[#ffffff] tracking-[0px]  lg:mb-0 lg:mt-0 lg:justify-end lg:flex-row lg:items-center lg:gap-6">
+    <ul className="mb-4 mt-2 flex flex-col font-[QuicksandMedium] text-[#ffffff] tracking-[0px]  lg:mb-0 lg:mt-0 lg:justify-end lg:flex-row lg:items-center lg:gap-6">
 
          <div className="block lg:hidden">
        <AboutNavListMenu />
@@ -216,7 +216,7 @@ export default function NavbarTwo() {
       <div className="  grid grid-cols-5 justify-between items-center text-blue-gray-900">
         <div className="col-span-1 flex items-center justify-start gap-12 lg:col-span-3">
        <Link className="" href="/">
-        <Image className="w-[120px]" src={Logo} alt="" />
+        <Image className="lg:py-2 w-[180px]" src={Logo} alt="" />
        
        </Link>
        <div className="lg:block hidden">
@@ -227,7 +227,7 @@ export default function NavbarTwo() {
      
         <IconButton
               variant="text"
-              className="ml-auto h-6 w-6 col-span-4  text-black hover:bg-transparent focus:bg-transparent active:bg-transparent lg:hidden"
+              className="ml-auto h-6 w-6 col-span-4 text-black hover:bg-transparent focus:bg-transparent active:bg-transparent lg:hidden"
               ripple={false}
               onClick={() => setOpenNav(!openNav)}
             >

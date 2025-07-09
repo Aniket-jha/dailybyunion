@@ -19,7 +19,7 @@ const MumbaiLocations = () => {
             <div className="flex flex-col md:flex-row items-stretch bg-gray-200 rounded-lg shadow-lg hover:border hover:border-black transition">
 
               {/* Image Column */}
-              <div className="md:w-1/2 w-full h-[450px]">
+              <div className="md:w-1/2 w-full h-[400px]">
                 <Image
                   src={Mahalaxmi} // Replace with your image
                   alt="Stay"
@@ -30,10 +30,31 @@ const MumbaiLocations = () => {
               {/* Text Column */}
               <div className="md:w-1/2 w-full flex flex-col justify-between p-6">
                 <div className="space-y-3">
-                  <h3 className="text-xl font-semibold">Southside By Union</h3>
-                  <span className="text-sm text-gray-700">Union/Sapphire Apartments, opposite RAHEJA VIVAREA, Dagdi Chowl, Agripada, Mumbai, Maharashtra 400011</span>
-                  <p className="text-sm text-black">1BHK | 1BHK Cozy | 2BHK | 2.5BHK | Lux 2BHK | 3BHK</p>
+                  <h3 className="mb-4 text-[28px] font-medium">Southside</h3>
+                  
+                  <span className="mb-4 text-[20px] text-gray-700">Mahalaxmi, Mumbai</span>
+
+                  {/* View Map link (opens Google Maps in new tab) */}
+                  <div>
+                    <a
+                      href="https://maps.app.goo.gl/oJP2DATTACjCPEGM6"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-gray-600 underline text-sm font-medium hover:text-gray-800 transition-colors"
+                    >
+                      View Map
+                    </a>
+                  </div>
+
+                  {/* Bullet points for BHK types */}
+                  <ul className="list-disc list-inside text-[16px] text-black space-y-1 mt-3">
+                    <li>1BHK</li>
+                    <li>2.5BHK</li>
+                    <li>3BHK</li>
+                  </ul>
                 </div>
+
+
 
                 <Link
                   href="/southside"
@@ -76,7 +97,7 @@ const MumbaiLocations = () => {
             <div className="flex flex-col md:flex-row items-stretch bg-gray-200 rounded-lg shadow-lg hover:border hover:border-black transition">
 
               {/* Image Column */}
-              <div className="md:w-1/2 w-full h-[450px]">
+              <div className="md:w-1/2 w-full h-[400px]">
                 <Image
                   src={Mahalaxmi} // Replace with your image
                   alt="Stay"
@@ -87,14 +108,32 @@ const MumbaiLocations = () => {
               {/* Text Column */}
               <div className="md:w-1/2 w-full flex flex-col justify-between p-6">
                 <div className="space-y-3">
-                  <h3 className="text-xl font-semibold">Varsity By Union</h3>
-                  <span className="text-sm text-gray-700">Linking Rd, Shastri Nagar, Santacruz (West), Mumbai, Maharashtra 400054</span>
-                  <p className="text-sm text-black">3BHK</p>
+                  <h3 className="mb-4 text-[28px] font-medium">Varsity</h3>
+                  
+                  <span className="mb-4 text-[20px] text-gray-700">Santracruz, Mumbai</span>
+
+                  {/* View Map link (opens Google Maps in new tab) */}
+                  <div>
+                    <a
+                      href="https://maps.app.goo.gl/SHQ2iDMbyhxk5T1p8"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-gray-600 underline text-sm font-medium hover:text-gray-800 transition-colors"
+                    >
+                      View Map
+                    </a>
+                  </div>
+
+                  {/* Bullet points for BHK types */}
+                  <ul className="list-disc list-inside text-[16px] text-black space-y-1 mt-3">
+                    <li>3BHK</li>
+                    
+                  </ul>
                 </div>
 
                 <Link
                   href="/varsity"
-            
+                 
                   className="bg-black text-white text-sm px-8 py-3 rounded-lg hover:bg-gray-800 transition w-max mt-4"
                 >
                   DISCOVER MORE

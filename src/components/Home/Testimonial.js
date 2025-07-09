@@ -59,7 +59,7 @@ export default function TestimonialsSection() {
       <div className="mx-auto max-w-7xl">
         {/* Header */}
         <div className="mb-12 sm:mb-16 max-w-full">
-          <h2 className="mb-6 text-3xl font-[PlayfairMedium] sm:text-4xl md:text-5xl lg:text-6xl font-light leading-tight text-gray-900">
+          <h2 className="mb-6 text-3xl font-[QuicksandMedium] sm:text-4xl md:text-5xl lg:text-6xl font-light leading-tight text-gray-900">
             Every stay has a story
           </h2>
           <p className="text-lg  text-gray-700 leading-relaxed max-w-2xl">
@@ -155,12 +155,12 @@ export default function TestimonialsSection() {
                   <div
                     className={`${testimonial.bgColor} ${testimonial.borderRadius} p-6 sm:p-8 min-h-[250px] sm:min-h-[280px] md:min-h-[280px] flex flex-col justify-between`}
                   >
-                    <blockquote className="text-lg sm:text-xl leading-relaxed text-gray-900 flex-grow mb-6">
+                    <blockquote className="text-lg  font-[MontserratRegular] sm:text-xl leading-relaxed text-gray-900 flex-grow mb-6">
                       "{testimonial.quote}"
                     </blockquote>
                     <div>
-                      <div className="font-semibold text-gray-900 text-lg">{testimonial.name}</div>
-                      <div className="text-gray-600">{testimonial.location}</div>
+                      <div className="font-semibold font-[QuicksandBold] text-gray-900 text-lg">{testimonial.name}</div>
+                      <div className="text-gray-600 font-[QuicksandMedium]">{testimonial.location}</div>
                     </div>
                   </div>
                 </SwiperSlide>

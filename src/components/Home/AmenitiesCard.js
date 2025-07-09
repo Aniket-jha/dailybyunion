@@ -6,7 +6,7 @@ const AmenitiesCard = ({image,title,description}) => {
     <div className='bg-white border-b-[3px] h-[350px] lg:h-[420px] mx-4 border-[#f47133]'>
         <Image className='rounded-t-lg' src={image} alt={title}  />
         <div className='px-4 py-3'>
-        <h3 className='text-[1.2rem]  lg:text-[1.5rem] mb-2 font-[PlayfairMedium]'>{title}</h3>
+        <h3 className='text-[1.2rem]  lg:text-[1.5rem] mb-2 font-[QuicksandMedium]'>{title}</h3>
         <p className='text-[0.8rem] lg:text-[0.9rem] font-[NeueRegular]'>{description}</p>
         </div>
     </div>

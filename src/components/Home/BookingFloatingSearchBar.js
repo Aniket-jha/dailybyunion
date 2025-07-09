@@ -37,7 +37,7 @@ export default function BookingFloatingSearchBar() {
         <div className="grid grid-cols-1 md:grid-cols-5 divide-y md:divide-y-0 md:divide-x">
           {/* Destination */}
           <div className="flex flex-col items-center py-4 px-6">
-            <label className="text-sm text-gray-700 font-[PlayfairMedium] uppercase mb-2">
+            <label className="text-sm text-gray-700 font-[QuicksandMedium] uppercase mb-2">
               Destination
             </label>
             <div className="relative w-full">
@@ -53,7 +53,7 @@ export default function BookingFloatingSearchBar() {
 
           {/* Check In */}
           <div className="flex flex-col items-center py-4 px-6">
-            <label className="text-sm text-gray-700 font-[PlayfairMedium] uppercase mb-2">
+            <label className="text-sm text-gray-700 font-[QuicksandMedium] uppercase mb-2">
               Check In
             </label>
             <input
@@ -64,7 +64,7 @@ export default function BookingFloatingSearchBar() {
 
           {/* Check Out */}
           <div className="flex flex-col items-center py-4 px-6">
-            <label className="text-sm text-gray-700 font-[PlayfairMedium] uppercase mb-2">
+            <label className="text-sm text-gray-700 font-[QuicksandMedium] uppercase mb-2">
               Check Out
             </label>
             <input
@@ -75,7 +75,7 @@ export default function BookingFloatingSearchBar() {
 
           {/* Guests */}
           <div className="flex flex-col items-center py-4 px-6">
-            <label className="text-sm text-gray-700 font-[PlayfairMedium] uppercase mb-2">
+            <label className="text-sm text-gray-700 font-[QuicksandMedium] uppercase mb-2">
               Guests
             </label>
             <div className="flex items-center gap-4">

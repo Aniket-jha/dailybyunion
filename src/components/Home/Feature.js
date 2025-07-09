@@ -64,7 +64,7 @@ export default function FeaturesSection() {
   ]
 
   return (
-    <section className="bg-gray-50 py-[30px] px-6 md:py-24 md:px-12 lg:px-16">
+    <section className="bg-gray-50 lg:py-[30px] px-6 pt-[260px] pb-8 md:py-24 md:px-12 lg:px-16">
       <div className="mx-auto max-w-7xl">
         <div className="grid grid-cols-1 gap-12 md:grid-cols-2 lg:grid-cols-4 lg:gap-12">
           {features.map((feature, index) => (
@@ -73,10 +73,10 @@ export default function FeaturesSection() {
               <div className="mb-6 flex justify-center lg:justify-start">{feature.icon}</div>
 
               {/* Title */}
-              <h3 className="mb-4 text-[1.3rem] font-[PlayfairMedium] text-gray-900 md:text-2xl">{feature.title}</h3>
+              <h3 className="mb-4 text-[1.3rem] font-[QuicksandMedium] text-gray-900 md:text-2xl">{feature.title}</h3>
 
               {/* Description */}
-              <p className="text-gray-600 text-[0.8rem] leading-relaxed">{feature.description}</p>
+              <p className="text-gray-600 font-[MontserratRegular] text-[0.8rem] leading-relaxed">{feature.description}</p>
             </div>
           ))}
         </div>

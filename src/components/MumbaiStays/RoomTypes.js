@@ -11,8 +11,8 @@ import { IoChevronBack, IoChevronForward } from 'react-icons/io5';
 export default function RoomTypes( { rooms } ) {
   return (
     <div className="max-w-7xl mx-auto px-4 py-12">
-      <h2 className="text-3xl font-[PlayfairBold] mb-6">Room Types</h2>
-      <h3 className="text-xl font-[PlayfairMedium] mb-8">Studio Apartments</h3>
+      <h2 className="text-3xl font-[QuicksandBold] mb-6">Room Types</h2>
+      <h3 className="text-xl font-[QuicksandMedium] mb-8">Studio Apartments</h3>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         {rooms.map((room, idx) => {
@@ -73,7 +73,7 @@ export default function RoomTypes( { rooms } ) {
 
               {/* Details */}
               <div className="p-6 flex flex-col justify-center md:w-[50%]">
-                <h4 className="text-2xl font-[PlayfairBold] mb-6">{room.title}</h4>
+                <h4 className="text-2xl font-[QuicksandBold] mb-6">{room.title}</h4>
                 <p className="mb-1">{room.guests}</p>
                 <p className="mb-1">{room.bedroom}</p>
                 <p className="mb-4">{room.bathroom}</p>

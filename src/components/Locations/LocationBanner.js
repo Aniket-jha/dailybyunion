@@ -15,7 +15,7 @@ const LocationBanner = ({ image, location, sublocation, desc }) => {
           
           {/* Left Side */}
           <div>
-            <h3 className="text-[1.5rem] lg:text-[2.5rem] font-[PlayfairBold] mb-4">
+            <h3 className="text-[1.5rem] lg:text-[2.5rem] font-[QuicksandBold] mb-4">
 
              <i>{location}</i><i>{sublocation}</i>
             </h3>
@@ -26,7 +26,7 @@ const LocationBanner = ({ image, location, sublocation, desc }) => {
 
           {/* Right Side */}
           <div>
-            <h3 className="font-[PlayfairMedium] text-[1.2rem] lg:text-[1.5rem] leading-relaxed">
+            <h3 className="font-[QuicksandMedium] text-[1.2rem] lg:text-[1.5rem] leading-relaxed">
               <i>{desc}</i>
             </h3>
           </div>

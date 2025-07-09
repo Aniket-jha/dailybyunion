@@ -4,7 +4,7 @@ import img1 from '../../assets/stays1.png'; // Replace with your image
 
 const LocalFavorites = () => {
   return (
-    <div className="max-w-7xl mx-auto lg:px-0 px-4 font-[PlayfairMedium]">
+    <div className="max-w-7xl mx-auto lg:px-0 px-4 font-[QuicksandMedium]">
       <h2 className="text-3xl lg:text-4xl font-medium mb-10">Local Favorites</h2>
 
       <div className="flex flex-col lg:flex-row items-start lg:pt-12 lg:gap-10 gap-5">

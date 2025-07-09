@@ -30,7 +30,6 @@ import VarsityBannerOne from "../../assets/southsidebanner/1.webp"
 import VarsityBannerTwo from "../../assets/southsidebanner/2.webp"
 import VarsityBannerThree from "../../assets/southsidebanner/3.webp"
 
-
 const MumbaiPages = () => {
   const rooms = [
       {
@@ -47,13 +46,7 @@ const MumbaiPages = () => {
         bathroom: '1 Bathroom',
         images: [img13, img14],
       },
-      {
-        title: '2BHK',
-        guests: 'Up to 2 Guests',
-        bedroom: '1 Bedroom',
-        bathroom: '1 Bathroom',
-        images: [img21, img22, ],
-      },
+      
       {
         title: '2.5BHK',
         guests: 'Up to 2 Guests',
@@ -61,13 +54,7 @@ const MumbaiPages = () => {
         bathroom: '1 Bathroom',
         images: [img31, img32, img33, img34],
       },
-      {
-        title: 'Lux 2BHK',
-        guests: 'Up to 2 Guests',
-        bedroom: '1 Bedroom',
-        bathroom: '1 Bathroom',
-        images: [img23, img24, img25],
-      },
+      
       {
         title: '3BHK',
         guests: 'Up to 2 Guests',
@@ -85,7 +72,7 @@ const MumbaiPages = () => {
     <div>
     <NavbarTwo />
     
-    <HotelIntro title="Southside By Union" bannerImages={bannerImages} location='Mahalaxmi, Mumbai' desc="Southside by Union Living is an elevated living experience designed for modern professionals who seek both style and substance in the heart of the city. Offering fully furnished, thoughtfully designed residences with flexible leasing options, Southside combines the ease of serviced living with the warmth of a well-curated home. From minimalist interiors and functional layouts to curated communal spaces and seamless support, every detail is crafted for comfort, connection, and quiet sophistication. Whether for a season or something more permanent, Southside offers a place to live on your terms—without compromise" />
+    <HotelIntro title="Southside" location='Mahalaxmi, Mumbai'  bannerImages={bannerImages} desc="Southside by Union Living is an elevated living experience designed for modern professionals who seek both style and substance in the heart of the city. Offering fully furnished, thoughtfully designed residences with flexible leasing options, Southside combines the ease of serviced living with the warmth of a well-curated home. From minimalist interiors and functional layouts to curated communal spaces and seamless support, every detail is crafted for comfort, connection, and quiet sophistication. Whether for a season or something more permanent, Southside offers a place to live on your terms—without compromise" />
     <AboutAmenities />
     <RoomTypes rooms={rooms} />
    

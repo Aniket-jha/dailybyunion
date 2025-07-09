@@ -4,7 +4,7 @@ import React from 'react'
 const Topbar = () => {
   return (
     <Link href="/property/zest-coliving-chembur" >
-    <div className='w-full text-center font-[PlayfairBold] bg-[#75665f] text-white py-2' >
+    <div className='w-full text-center font-[QuicksandBold] bg-[#75665f] text-white py-2' >
         Welcome to The Daily Stays
     </div>
     </Link>

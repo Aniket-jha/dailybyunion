@@ -4,7 +4,7 @@ const Partner = () => {
   return (
     <div className="px-4 py-8 lg:px-16 lg:py-16 ">
         <div>
-            <div className='bg-[#f47133] py-4 px-6 font-[PlayfairMedium] rounded-t-lg text-[1.3rem] lg:text-[1.8rem] text-white'>
+            <div className='bg-[#f47133] py-4 px-6 font-[QuicksandMedium] rounded-t-lg text-[1.3rem] lg:text-[1.8rem] text-white'>
             <h3 className='' >Corporate Housing Partner </h3>
             </div>
             <div className='bg-[#ebebeb] h-[350px] overflow-scroll py-4 px-6'>
@@ -15,7 +15,7 @@ Each stay comes equipped with everything a working professional needs: high-spee
 <br />    <br />
 By registering The Daily Stays as your official corporate housing vendor, your company gains access to standardized, high-quality accommodations; pre-negotiated corporate rates; simplified monthly billing; and GST-compliant invoicing. Our dedicated account managers work directly with your HR, admin, or travel teams to tailor stay plans, manage bookings, and ensure a smooth, consistent experience for every team member, every time. We understand the nuances of corporate travel, and we’re here to make it more reliable, more human, and completely stress-free.
                 </p>
-                <h5 className='font-[PlayfairMedium] mt-3 text-[1.2rem] lg:text-[1.5rem]'>Getting started is easy.</h5>
+                <h5 className='font-[QuicksandMedium] mt-3 text-[1.2rem] lg:text-[1.5rem]'>Getting started is easy.</h5>
                 <p>Just drop us an email at 📧 thedailystays@gmail.com to express your interest in onboarding us as a vendor. Our team will reach out to understand your accommodation needs, share our property portfolio and pricing, and walk you through the vendor registration process step by step. Within days, you’ll have a trusted stay partner who’s ready to support your team’s travel with care, comfort, and consistency.</p>
             </div>
         </div>

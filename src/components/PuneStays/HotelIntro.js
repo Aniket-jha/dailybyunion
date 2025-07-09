@@ -74,7 +74,7 @@ export default function HotelSection() {
 
   {/* Left Content */}
   <div className="space-y-4">
-    <h1 className="text-3xl md:text-5xl font-[PlayfairBold]">Mint House at 70 Pine – NYC</h1>
+    <h1 className="text-3xl md:text-5xl font-[QuicksandBold]">Mint House at 70 Pine – NYC</h1>
     <p className="text-lg text-gray-700">70 Pine Street, New York, NY 10005</p>
     <button className="text-sm underline text-black">VIEW ON MAP</button>
 
@@ -120,7 +120,7 @@ export default function HotelSection() {
         </div>
       </div>
 
-      <button className="w-full bg-[#002d1d] text-white py-6 text-sm tracking-wider uppercase hover:opacity-90">
+      <button className="w-full bg-black text-white py-6 text-sm tracking-wider uppercase hover:bg-gray-800">
         SEARCH
       </button>
     </div>

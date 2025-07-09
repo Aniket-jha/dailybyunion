@@ -11,7 +11,7 @@ export default function About() {
         {/* Title & Subheading outside grid */}
         <div className="space-y-6 text-center lg:text-left">
           <div className="w-16 h-px bg-gray-400 mx-auto lg:mx-0"></div>
-          <h1 className="text-4xl md:text-5xl lg:text-[40px] font-[PlayfairMedium] leading-tight text-gray-900">
+          <h1 className="text-4xl md:text-5xl lg:text-[40px] font-[QuicksandMedium] leading-tight text-gray-900">
             Where style and sustainability are a package deal.
           </h1>
         </div>

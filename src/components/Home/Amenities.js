@@ -58,8 +58,8 @@ const Amenities = ({homeContent}) => {
   return (
     <div className="w-full py-8 bg-[#f2ece4] relative overflow-hidden">
       {/* Header */}
-      <div className="pt-12 pl-6 lg:pt-12 lg:pl-12">
-        <h1 className="text-[#000] text-[28px] lg:text-[52px] font-semibold font-[PlayfairBold] tracking-wide">
+      <div className="pt-2 pl-6 lg:pt-12 lg:pl-12">
+        <h1 className="text-[#000] text-[28px] lg:text-[52px] font-semibold font-[QuicksandBold] tracking-wide">
           Privilege
         </h1>
       </div>
@@ -114,17 +114,17 @@ const Amenities = ({homeContent}) => {
                   
                   {/* Hover Overlay with Description */}
                   <div className="absolute inset-0 bg-black bg-opacity-30 group-hover:rounded-b-[50%] opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col justify-center items-center text-center p-6">
-                    <h2 className="text-white text-2xl lg:text-3xl font-semibold font-[ReciaSerifDisplay] mb-4 leading-tight">
+                    <h2 className="text-white text-2xl lg:text-3xl  font-[QuicksandBold] mb-4 leading-tight">
                       {amenity.title}
                     </h2>
-                    <p className="text-white text-sm lg:text-base font-medium leading-relaxed max-w-xs">
+                    <p className="text-white text-sm lg:text-base font-[MonserratRegular] font-medium leading-relaxed max-w-xs">
                       {amenity.description}
                     </p>
                   </div>
 
                   {/* Static Title Overlay (visible by default) */}
                   <div className="absolute inset-0 flex flex-col justify-center items-center text-center p-6 group-hover:opacity-0 transition-opacity duration-500">
-                    <h2 className="text-white text-3xl lg:text-5xl font-semibold font-[ReciaSerifDisplay] mb-4 leading-tight">
+                    <h2 className="text-white text-3xl lg:text-5xl font-semibold font-[QuicksandBold] mb-4 leading-tight">
                       {amenity.title}
                     </h2>
                   </div>

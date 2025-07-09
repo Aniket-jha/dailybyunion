@@ -72,7 +72,7 @@ export default function FAQSection() {
       <div className="mx-auto max-w-7xl">
         {/* Header */}
         <div className="mb-12">
-          <h2 className="text-3xl md:text-4xl font-[PlayfairMedium] font-light text-gray-900">FAQs</h2>
+          <h2 className="text-3xl md:text-4xl font-[QuicksandMedium] font-light text-gray-900">FAQs</h2>
         </div>
 
         {/* FAQ Items */}
@@ -81,11 +81,11 @@ export default function FAQSection() {
             <div key={faq.id} className="border-b border-gray-200">
               <button
                 onClick={() => toggleItem(faq.id)}
-                className="w-full py-6 lg:px-4 flex items-center justify-between text-left transition-colors duration-200 focus:outline-none focus:bg-gray-50"
+                className="w-full py-6  flex items-center justify-between text-left transition-colors duration-200  "
                 aria-expanded={openItems.has(faq.id)}
                 aria-controls={`faq-answer-${faq.id}`}
               >
-                <span className="text-lg md:text-xl text-gray-900 pr-8 leading-relaxed">{faq.question}</span>
+                <span className="text-lg md:text-xl font-[QuicksandMedium] text-gray-900 pr-8 leading-relaxed">{faq.question}</span>
                 <LuChevronDown
                   className={`w-5 h-5 text-gray-600 flex-shrink-0 transition-transform duration-200 ${
                     openItems.has(faq.id) ? "rotate-180" : ""
@@ -100,7 +100,7 @@ export default function FAQSection() {
                   openItems.has(faq.id) ? "max-h-96 opacity-100 pb-6" : "max-h-0 opacity-0"
                 }`}
               >
-                <div className="text-gray-600 leading-relaxed pr-8">{faq.answer}</div>
+                <div className="text-gray-600 font-[MontserratRegular] leading-relaxed pr-8">{faq.answer}</div>
               </div>
             </div>
           ))}

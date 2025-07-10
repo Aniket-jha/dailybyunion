@@ -12,7 +12,7 @@ export default function FeaturesSection() {
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M8 21l4-4 4 4" />
         </svg>
       ),
-      title: "Community with Purpose",
+      title: "Community",
       description:
         "Union is designed to encourage organic connections, offering more than just a place to stay, it’s a space where people can interact, collaborate, and feel at home.",
     },

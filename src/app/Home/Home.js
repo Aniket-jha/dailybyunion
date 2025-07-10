@@ -17,6 +17,7 @@ import Footer from '@/components/Layout/Footer'
 import FooterSection from '@/components/Layout/FooterSection'
 import NavbarTwo from '@/components/Layout/Navbar'
 import React from 'react'
+import BookingForm from '../../../dailycode/src/components/MumbaiStays/ReservationStays'
 
 const Home = () => {
   return (
@@ -36,7 +37,9 @@ const Home = () => {
         {/* <Whyus /> */}
         {/* <ContactUs /> */}
         {/* <Partner /> */}
+        <BookingForm />
         <FooterSection />
+      
         {/* <Footer /> */}
         </div>
     </div>

@@ -98,6 +98,14 @@ src="https://www.facebook.com/tr?id=1424619772031368&ev=PageView&noscript=1"
       </Script>
     
       <link rel="icon" href="./favicon.png" sizes="any" />
+      <link 
+          href="https://live.ipms247.com/themes/reservation/css/bookingbtn/resui_bookingbox.css" 
+          rel="stylesheet" 
+        />
+        <link 
+          href="https://live.ipms247.com/themes/reservation/css/bookingbtn/resui_datepicker.css" 
+          rel="stylesheet" 
+        />
       <link
   rel="apple-touch-icon"
   href="./favicon.png"

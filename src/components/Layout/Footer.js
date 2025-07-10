@@ -18,7 +18,7 @@ const Footer = () => {
         </div>
         <div className='col-span-5 flex lg:items-start justify-around pb-4 lg:flex-row flex-col gap-6    mt-3 md:mt-4' >
                 <div>
-                    <h3 className='font-[QuicksandMedium] text-[1.5rem] text-[#272727]'>Sitemap</h3>
+                    <h3 className='font-[LexandMedium] tracking-tighter text-[1.5rem] text-[#272727]'>Sitemap</h3>
                     <div>
                         <Link href="/"><p> Home</p></Link>
                         <Link href="/properties"><p>City</p></Link>
@@ -28,7 +28,7 @@ const Footer = () => {
                     </div>
                 </div>
                 <div>
-                    <h3 className='font-[QuicksandMedium] text-[1.5rem] text-[#272727]'>Important Links</h3>
+                    <h3 className='font-[LexandMedium] tracking-tighter text-[1.5rem] text-[#272727]'>Important Links</h3>
                     <div>
                         <Link href="/onboardingpolicy"><p> Rules and Regulations</p></Link>
                         <Link href="/termsandcondition"><p> Terms and Condition</p></Link>
@@ -38,7 +38,7 @@ const Footer = () => {
         </div>
         <div className='col-span-1 mt-3 md:mt-6' >
             <p className='font-[NeueRegular]'>
-         <strong className='font-[QuicksandBold]' >  Customer Service </strong> 
+         <strong className='font-[LexandSemibold] tracking-tighter' >  Customer Service </strong> 
          <br />
        <a className='' href='mailto:csteam.unionliving@gmail.com' > thedailytays@gmail.com</a>
         <br /> 

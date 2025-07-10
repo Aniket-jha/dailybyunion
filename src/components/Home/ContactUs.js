@@ -11,31 +11,31 @@ const ContactUs = () => {
                 <Image className='rounded-[20px]' src={ContactImage} />
             </div>
        <div className='flex lg:px-8 items-start justify-start flex-col w-full h-full'>
-        <h3 className='text-center text-[1.4rem] lg:text-[2.5rem] text-[#75665f] font-[QuicksandBold]'>Contact Us</h3>
+        <h3 className='text-center text-[1.4rem] lg:text-[2.5rem] text-[#75665f] font-[LexandSemibold] tracking-tighter'>Contact Us</h3>
         
         <div className='h-[5px] mb-4 w-[60px] lg:w-[100px] bg-[#f47133]'></div>
         <div className='flex items-center flex-wrap w-full gap-3 mt-3 '>
             <div className='flex items-start w-full lg:w-[47%]  flex-col'>
-                <label className='font-[QuicksandMedium] text-[1.1rem]'>Full Name</label>
+                <label className='font-[LexandMedium] tracking-tighter text-[1.1rem]'>Full Name</label>
                 <input className='px-3 py-3 font-[NeueRegular] rounded-lg  w-full border-[1px] border-[#c6c6c6]' placeholder='Name' />
             </div>
             <div className='flex items-startw-full w-full lg:w-[47%] flex-col'>
-                <label className='font-[QuicksandMedium] text-[1.1rem]'>Mobile Number</label>
+                <label className='font-[LexandMedium] tracking-tighter text-[1.1rem]'>Mobile Number</label>
                 <input className='px-3 py-3 font-[NeueRegular] rounded-lg w-full border-[1px] border-[#c6c6c6]' placeholder='Phone Number' />
             </div>
         </div>
         <div className='flex items-center flex-wrap w-full gap-3 mt-3 '>
             <div className='flex items-start w-full lg:w-[47%]  flex-col'>
-                <label className='font-[QuicksandMedium] text-[1.1rem]'>Check In</label>
+                <label className='font-[LexandMedium] tracking-tighter text-[1.1rem]'>Check In</label>
                 <input type='date' className='px-3 font-[NeueRegular] py-3 rounded-lg w-full border-[1px] border-[#c6c6c6]' placeholder='Check In Date' />
             </div>
             <div className='flex items-start w-full lg:w-[47%] flex-col'>
-                <label className='font-[QuicksandMedium] text-[1.1rem]'>Check Out</label>
+                <label className='font-[LexandMedium] tracking-tighter text-[1.1rem]'>Check Out</label>
                 <input type='date' className='px-3 font-[NeueRegular] py-3 rounded-lg w-full border-[1px] border-[#c6c6c6]' placeholder='Check Out Date' />
             </div>
             <div className='flex items-center flex-wrap w-full gap-3 mt-0 '>
             <div className='flex items-start w-full lg:w-[47%] flex-col'>
-                <label className='font-[QuicksandMedium] text-[1.1rem]'>Location</label>
+                <label className='font-[LexandMedium] tracking-tighter text-[1.1rem]'>Location</label>
                 <select className='px-3 py-3 font-[NeueRegular] rounded-lg w-full border-[1px] border-[#c6c6c6]' placeholder='Select an Location' >
                 <option value="">Select an Location</option>
                     <option value="mahalaxmi">Mahalaxmi</option>
@@ -45,7 +45,7 @@ const ContactUs = () => {
                      </select>
             </div>
             <div className='flex items-start w-full lg:w-[47%] flex-col'>
-                <label className='font-[QuicksandMedium] text-[1.1rem]'>No of Rooms</label>
+                <label className='font-[LexandMedium] tracking-tighter text-[1.1rem]'>No of Rooms</label>
                 <select className='px-3 py-3 rounded-lg font-[NeueRegular] w-full border-[1px] border-[#c6c6c6]' placeholder='Rooms' >
                 <option value="">Select Room(s)</option>
                     <option value="mahalaxmi">01</option>

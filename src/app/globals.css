@@ -22,4 +22,17 @@
     font-weight: bold;
   }
 
+  @font-face {
+    font-family: "LexandMedium";
+    src: local("LexandMedium"),
+        url("../webfonts/LexendExa-Medium.ttf") format("truetype");
+    font-weight: bold;
+  }
+  @font-face {
+    font-family: "LexandSemibold";
+    src: local("LexandSemibold"),
+        url("../webfonts/LexendExa-SemiBold.ttf") format("truetype");
+    font-weight: bold;
+  }
+
 

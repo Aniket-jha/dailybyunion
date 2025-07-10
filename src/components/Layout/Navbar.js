@@ -57,7 +57,7 @@ export default function NavbarTwo() {
         allowHover={true}
       >
         <MenuHandler>
-          <Typography as="div" variant="small" className="p-1 text-[#ffffff]  font-[QuicksandMedium] cursor-pointer  text-[18px] flex items-center">
+          <Typography as="div" variant="small" className="p-1 text-[#ffffff]  font-[LexandMedium] tracking-tighter cursor-pointer  text-[18px] flex items-center">
             <p
               className="flex items-center gap-2"
               selected={isMenuOpen || isMobileMenuOpen}
@@ -123,7 +123,7 @@ export default function NavbarTwo() {
         allowHover={true}
       >
         <MenuHandler>
-          <Typography as="div" variant="small" className="p-1 text-[#ffffff]  font-[QuicksandMedium] cursor-pointer  text-[18px] flex items-center">
+          <Typography as="div" variant="small" className="p-1 text-[#ffffff]  font-[LexandMedium] tracking-tighter cursor-pointer  text-[18px] flex items-center">
             <p
               className="flex items-center gap-2"
               selected={isMenuOpen || isMobileMenuOpen}
@@ -176,7 +176,7 @@ export default function NavbarTwo() {
   }
  
   const navList = (
-    <ul className="mb-4 mt-2 flex flex-col font-[QuicksandMedium] text-[#ffffff] tracking-[0px]  lg:mb-0 lg:mt-0 lg:justify-end lg:flex-row lg:items-center lg:gap-6">
+    <ul className="mb-4 mt-2 flex flex-col font-[LexandMedium] tracking-tighter text-[#ffffff] tracking-[0px]  lg:mb-0 lg:mt-0 lg:justify-end lg:flex-row lg:items-center lg:gap-6">
 
          <div className="block lg:hidden">
        <AboutNavListMenu />
@@ -212,11 +212,11 @@ export default function NavbarTwo() {
           <Topbar />
         </div> */}
   
-    <Navbar className={` z-[999] ${topNav ? "top-0" : ""} opacity-100 bg-opacity-100 w-[100vw !important] max-w-full bg-[#343434]  border-none shadow-none  rounded-none  py-2 px-4 lg:px-16 lg:py-2`}>
-      <div className="  grid grid-cols-5 justify-between items-center text-blue-gray-900">
+    <Navbar className={` z-[999] ${topNav ? "top-0" : ""} opacity-100 bg-opacity-100 w-[100vw !important] max-w-full bg-[#343434]  border-none shadow-none  rounded-none  py-2 px-4 lg:px-8 lg:py-2`}>
+      <div className="grid-cols-2  grid lg:grid-cols-5 justify-between items-center text-blue-gray-900">
         <div className="col-span-1 flex items-center justify-start gap-12 lg:col-span-3">
        <Link className="" href="/">
-        <Image className="lg:py-2 w-[180px]" src={Logo} alt="" />
+        <Image className="lg:py-2 lg:w-[280px]" src={Logo} alt="" />
        
        </Link>
        <div className="lg:block hidden">
@@ -227,7 +227,7 @@ export default function NavbarTwo() {
      
         <IconButton
               variant="text"
-              className="ml-auto h-6 w-6 col-span-4 text-black hover:bg-transparent focus:bg-transparent active:bg-transparent lg:hidden"
+              className="ml-auto h-6 w-6  col-span-1 text-black hover:bg-transparent focus:bg-transparent active:bg-transparent lg:hidden"
               ripple={false}
               onClick={() => setOpenNav(!openNav)}
             >

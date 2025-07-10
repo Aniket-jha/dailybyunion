@@ -13,10 +13,10 @@ const Corporate = () => {
           {/* Left Content Section */}
           <div className="space-y-6">
             <div>
-              <h2 className="text-[28px] font-[QuicksandBold] lg:text-[2.5rem]  text-gray-900 leading-tight mb-4">
+              <h2 className="text-[28px] font-[LexandSemibold] tracking-tighter lg:text-[2.5rem]  text-gray-900 leading-tight mb-4">
                 Corporate Stays 
               </h2>
-              <p className="italic text-[18px] lg:text-[20px] font-[QuicksandBold] text-[#8a7970]  relative inline-block mb-2">
+              <p className=" text-[18px] lg:text-[20px] font-[LexandSemibold] tracking-tighter text-[#8a7970]  relative inline-block mb-2">
           The ultimate shortstay solution for professionals on the move
         </p>
 

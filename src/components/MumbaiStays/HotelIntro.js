@@ -12,7 +12,7 @@ import banner1 from '../../assets/stays1.png';
 import banner2 from '../../assets/stays3.png';
 import banner3 from '../../assets/stays4.png';
 
-export default function HotelIntro({title, location, locationLink, desc, bannerImages}) {
+export default function HotelIntro({title, location, locationLink, desc, bannerImages,link}) {
   const [guests, setGuests] = useState(1);
   const prevRef = useRef(null);
   const nextRef = useRef(null);
@@ -115,9 +115,9 @@ export default function HotelIntro({title, location, locationLink, desc, bannerI
         </div>
       </div>
 
-      <button className="w-full bg-black hover:bg-gray-800 text-white py-6 text-sm tracking-wider uppercase">
+     <a href={link} > <button className="w-full bg-black hover:bg-gray-800 text-white py-6 text-sm tracking-wider uppercase">
         SEARCH
-      </button>
+      </button> </a>
     </div>
   </div>
 

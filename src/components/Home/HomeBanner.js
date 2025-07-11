@@ -13,9 +13,21 @@ import "swiper/css";
 import "react-calendar/dist/Calendar.css";
 
 const destinations = [
-  { city: "Varsity - Santacruz" },
-  { city: "Southside - Mahalaxmi" },
-  { city: "Hamlet - Baner" },
+  {
+    city: "Varsity - Santacruz",
+    // areas: ["Dallas – Downtown"]
+    link:'https://live.ipms247.com/booking/book-rooms-varsitybyunionliving'
+  },
+  {
+    city: "Southside - Mahalaxmi",
+    // areas: ["Denver – Downtown", "Union Station"]
+    link:'https://live.ipms247.com/booking/book-rooms-southsidebyunionliving'
+  },
+  {
+    city: "Hamlet - Baner",
+    // areas: ["Greenville – West End"]
+    link:'https://live.ipms247.com/booking/book-rooms-hamletbyunionliving'
+  },
 ];
 
 const HomeBanner = () => {
@@ -26,7 +38,7 @@ const HomeBanner = () => {
   const [checkOutDate, setCheckOutDate] = useState(null);
   const [showCheckIn, setShowCheckIn] = useState(false);
   const [showCheckOut, setShowCheckOut] = useState(false);
-
+  const [property, setProperty] = useState({})
   const dropdownRef = useRef(null);
   const checkInRef = useRef(null);
   const checkOutRef = useRef(null);
@@ -50,7 +62,9 @@ const HomeBanner = () => {
   const incrementGuests = () => setGuests((prev) => prev + 1);
   const decrementGuests = () => setGuests((prev) => Math.max(1, prev - 1));
   const handleDestinationSelect = (destination) => {
-    setSelectedDestination(destination);
+    setSelectedDestination(destination.city);
+    setProperty(destination)
+    console.log(destination)
     setShowDropdown(false);
   };
 
@@ -101,7 +115,7 @@ const HomeBanner = () => {
                       <div key={i} className="flex items-center justify-center p-3">
                         <p
                           className="font-semibold cursor-pointer hover:text-black text-gray-700"
-                          onClick={() => handleDestinationSelect(city.city)}
+                          onClick={() => handleDestinationSelect(city)}
                         >
                           {city.city}
                         </p>
@@ -161,9 +175,9 @@ const HomeBanner = () => {
 
             {/* Search Button */}
             <div className="md:col-span-1">
-              <button className="w-full bg-emerald-800 hover:bg-emerald-900 bg-black text-white font-semibold py-4 px-8 h-full lg:rounded-tr-xl lg:rounded-br-xl rounded-br-xl rounded-bl-xl lg:rounded-bl-none transition-colors duration-200 text-base tracking-wide">
+            <a href={property.link} target="_blank" >   <button className="w-full bg-emerald-800 hover:bg-emerald-900 bg-black text-white font-semibold py-4 px-8 h-full lg:rounded-tr-xl lg:rounded-br-xl rounded-br-xl rounded-bl-xl lg:rounded-bl-none transition-colors duration-200 text-base tracking-wide">
                 SEARCH
-              </button>
+              </button> </a>
             </div>
           </div>
         </div>

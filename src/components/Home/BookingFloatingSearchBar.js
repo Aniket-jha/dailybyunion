@@ -8,14 +8,17 @@ const destinations = [
   {
     city: "Varsity - Santacruz",
     // areas: ["Dallas – Downtown"]
+    link:'https://live.ipms247.com/booking/book-rooms-varsitybyunionliving'
   },
   {
     city: "Southside - Mahalaxmi",
     // areas: ["Denver – Downtown", "Union Station"]
+    link:'https://live.ipms247.com/booking/book-rooms-southsidebyunionliving'
   },
   {
     city: "Hamlet - Baner",
     // areas: ["Greenville – West End"]
+    link:'https://live.ipms247.com/booking/book-rooms-hamletbyunionliving'
   },
 ];
 
@@ -29,7 +32,7 @@ export default function BookingFloatingSearchBar() {
 
   const [selectedDestination, setSelectedDestination] = useState("Where to next");
   const [showDropdown, setShowDropdown] = useState(false);
-
+  const [property, setProperty] = useState({})
   const [checkInDate, setCheckInDate] = useState(null);
   const [checkOutDate, setCheckOutDate] = useState(null);
   const [showCheckIn, setShowCheckIn] = useState(false);
@@ -66,9 +69,11 @@ export default function BookingFloatingSearchBar() {
 
 
   const handleDestinationSelect = (area) => {
-    setSelectedDestination(area);
+    setSelectedDestination(area.city);
+    setProperty(city)
     setShowDropdown(false);
   };
+
 
   if (!isVisible) return null;
 
@@ -96,7 +101,7 @@ export default function BookingFloatingSearchBar() {
               {showDropdown && (
                 <div className="absolute z-30 bg-white shadow-lg rounded-md mt-2 w-60 max-h-64 overflow-y-auto left-1/2 transform -translate-x-1/2">
                   {destinations.map((city, i) => (
-                    <div key={i} className="p-3">
+                    <div onClick={() => handleDestinationSelect(city)}key={i} className="p-3">
                       <p className="font-semibold">{city.city}</p>
                       
                     </div>
@@ -173,10 +178,10 @@ export default function BookingFloatingSearchBar() {
           </div>
 
           {/* Search Button */}
-          <div className="md:col-span-1 bg-black">
-            <button className="w-full h-full bg-black text-white text-lg font-semibold uppercase hover:bg-gray-900 transition-all">
+       <div className="md:col-span-1 bg-black">
+       <a href={property.link} >   <button className="w-full h-full bg-black text-white text-lg font-semibold uppercase hover:bg-gray-900 transition-all">
               Search
-            </button>
+            </button></a>
           </div>
         </div>
       </div>

@@ -48,7 +48,7 @@ export default function RoomTypes( { rooms } ) {
                         alt={room.title}
                         width={400}
                         height={400}
-                        className="object-cover w-full h-full"
+                        className="object-contain w-full h-full"
                       />
                     </SwiperSlide>
                   ))}

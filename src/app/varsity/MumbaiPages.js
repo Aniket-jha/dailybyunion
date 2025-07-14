@@ -7,12 +7,10 @@ import HotelIntro from '@/components/MumbaiStays/HotelIntro'
 import LocalFavorites from '@/components/MumbaiStays/LocalFavorites'
 import RoomTypes from '@/components/MumbaiStays/RoomTypes'
 import React from 'react'
-import img1 from "../../assets/3BHK/7.png";
-import img2 from "../../assets/3BHK/8.png";
-import img3 from "../../assets/3BHK/9.png";
-import img4 from "../../assets/3BHK/10.png";
-import img5 from "../../assets/3BHK/6.png";
-import img6 from "../../assets/3BHK/5.png";
+import img1 from "../../assets/varsity1.webp";
+import img2 from "../../assets/varsity2.webp";
+import img3 from "../../assets/varsity3.webp";
+
 import VarsityBannerOne from "../../assets/varsitybanner/1.webp"
 import VarsityBannerTwo from "../../assets/varsitybanner/2.webp"
 import VarsityBannerThree from "../../assets/varsitybanner/3.webp"
@@ -24,7 +22,7 @@ const MumbaiPages = () => {
           guests: 'Up to 2 Guests',
           bedroom: '1 Bedroom',
           bathroom: '1 Bathroom',
-          images: [img1, img2, img3, img4, img5, img6],
+          images: [img1, img2, img3],
         },
         
       ];

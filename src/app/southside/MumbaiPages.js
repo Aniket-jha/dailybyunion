@@ -9,23 +9,11 @@ import RoomTypes from '@/components/MumbaiStays/RoomTypes'
 import React from 'react'
 
 
-import img11 from "../../assets/1BHK/2.png";
-import img12 from "../../assets/1BHK/3.png";
-import img13 from "../../assets/1BHK/5.png";
-import img14 from "../../assets/1BHK/6.png";
-import img21 from "../../assets/2BHK/1.png";
-import img22 from "../../assets/2BHK/3.png";
-import img23 from "../../assets/2BHK/4.png";
-import img24 from "../../assets/2BHK/11.png";
-import img25 from "../../assets/2BHK/12.png";
-import img31 from "../../assets/2.5BHK/1.png";
-import img32 from "../../assets/2.5BHK/4.png";
-import img33 from "../../assets/2.5BHK/6.png";
-import img34 from "../../assets/2.5BHK/7.png";
-import img41 from "../../assets/3BHK/10.png";
-import img42 from "../../assets/3BHK/1.png";
-import img43 from "../../assets/3BHK/3.png";
-import img44 from "../../assets/3BHK/9.png";
+import img1 from "../../assets/southside1.webp";
+import img2 from "../../assets/southside2.webp";
+import img3 from "../../assets/southside3.webp";
+import img4 from "../../assets/southside4.webp";
+
 import VarsityBannerOne from "../../assets/southsidebanner/1.webp"
 import VarsityBannerTwo from "../../assets/southsidebanner/2.webp"
 import VarsityBannerThree from "../../assets/southsidebanner/3.webp"
@@ -37,14 +25,14 @@ const MumbaiPages = () => {
         guests: 'Up to 2 Guests',
         bedroom: '1 Bedroom',
         bathroom: '1 Bathroom',
-        images: [img11, img12],
+        images: [ img1],
       },
       {
         title: '1BHK Cozy',
         guests: 'Up to 2 Guests',
         bedroom: '1 Bedroom',
         bathroom: '1 Bathroom',
-        images: [img13, img14],
+        images: [img2],
       },
       
       {
@@ -52,7 +40,7 @@ const MumbaiPages = () => {
         guests: 'Up to 2 Guests',
         bedroom: '1 Bedroom',
         bathroom: '1 Bathroom',
-        images: [img31, img32, img33, img34],
+        images: [img3],
       },
       
       {
@@ -60,7 +48,7 @@ const MumbaiPages = () => {
         guests: 'Up to 2 Guests',
         bedroom: '1 Bedroom',
         bathroom: '1 Bathroom',
-        images: [img41, img42, img43, img44],
+        images: [img4],
       },
       
       

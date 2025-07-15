@@ -44,14 +44,14 @@ const Footer = () => {
         <br /> 
        
             </p>
-           <h3 className='font-[NeueRegular] py-2'>+919137915406</h3>
+           <h3 className='font-[NeueRegular] py-2'>+91 7021654226</h3>
            
         </div>
     </div>
     <div className='md:grid grid-cols-7 mt-6  grid-flow-col'>
         <div className='col-span-1' ></div>
         <div className='col-span-5 flex items-center justify-center' >
-            <h3 className='font-[NeueRegular]' >2024 Union Living. All right reserved</h3>
+            <h3 className='font-[NeueRegular]' >2025 Daily Stays by Union Living. All right reserved</h3>
         </div>
         <div className='col-span-1 flex items-center md:ml-[-25px] justify-center md:justify-start gap-3' >
            <a target='_blank' rel='noreferrer' href='https://www.instagram.com/union_living/?hl=en'> <PiInstagramLogo className='text-[25px]' /></a>

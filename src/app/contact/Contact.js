@@ -83,7 +83,7 @@ const ContactUs = () => {
 
       {/* Footer Note */}
       <p className="mt-16 text-center text-sm text-black max-w-xl">
-        If you need immediate help or need access to a property, please call <span className="cursor-pointer underline">702165226</span>.
+        If you need immediate help or need access to a property, please call  <a href="tel:7021654226" className="text-white"> <span className="cursor-pointer underline">702165226</span> </a>.
       </p>
     </div>
   );

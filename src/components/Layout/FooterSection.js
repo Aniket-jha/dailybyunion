@@ -25,7 +25,7 @@ export default function FooterSection() {
 
               <div>
                 <h3 className="text-sm font-medium text-gray-300 mb-2 tracking-wide">CALL</h3>
-                <p className="text-white">702165226</p>
+                <a href="tel:7021654226" className="text-white">7021654226</a>
               </div>
 
               <div>

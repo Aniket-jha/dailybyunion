@@ -14,26 +14,29 @@ export default function TestimonialsSection() {
     {
       id: 0,
       quote:
-        "Stayed at Varsity for a month during a work trip and it felt like home from day one. The check-in was seamless, the apartment was spotless, and the amenities were far better than a hotel. Will definitely book again.",
+        "Stayed at Varsity for a month during a work trip and it felt like home from day one.",
       name: "Niraj",
       location: "Pune",
-      bgColor: "bg-[#9EC6F3]",
+      bgColor: "bg-[#ffeebf]",
+      textColor: "text-black",
       borderRadius: "rounded-tl-[60px]", // top-left corner
     },
     {
       id: 1,
-      quote: "As a digital nomad, I need clean, quiet, and well-connected homes—and that’s exactly what I got. Fast Wi-Fi, comfy workspace, and a cozy bed after long workdays. Plus, the neighbourhood had great cafés.",
+      quote: "I needed a clean, quiet, and well-connected space and that’s exactly what I got. Fast Wi-Fi, comfy workspace, and a cozy bed after long workdays. Plus, the neighbourhood had great cafés.",
       name: "Ritu",
       location: "Baner",
-      bgColor: "bg-[#FFDCDC]",
+      bgColor: "bg-[#fadcb9]",
+      textColor: "text-black",
       borderRadius: "rounded-tr-[60px]", // top-right corner
     },
     {
       id: 2,
-      quote: "I booked a apartment while house-hunting in Pune and ended up extending my stay twice. No paperwork hassles, no broker calls, just smooth, easy living. Highly recommended for anyone in transition.",
+      quote: "I booked a apartment while house-hunting in Pune. Would highly recommended to anyone.",
       name: "Priya",
       location: "Santacruz",
-      bgColor: "bg-[#CB9DF0]",
+      bgColor: "bg-[#0f4865]",
+     textColor: "text-white",
       borderRadius: "rounded-bl-[60px]", // bottom-left corner
     },
     {
@@ -41,7 +44,17 @@ export default function TestimonialsSection() {
       quote: "I needed a place for my parents to stay near my college, and The Daily Stays was the best decision. They felt safe, the staff was polite, and everything was well-maintained. It’s a great option for families too.",
       name: "Akash",
       location: "Mahalaxmi",
-      bgColor: "bg-[#F6AE99]",
+      bgColor: "bg-[#156d51]",
+      textColor: "text-white",
+      borderRadius: "rounded-br-[60px]", // bottom-right corner
+    },
+    {
+      id: 4,
+      quote: "A perfect place for short-term stays near the city. We stayed here during my convocation week.",
+      name: "Akash",
+      location: "Mahalaxmi",
+      bgColor: "bg-[#eaece2]",
+      textColor: "text-black",
       borderRadius: "rounded-br-[60px]", // bottom-right corner
     },
 
@@ -52,10 +65,10 @@ export default function TestimonialsSection() {
       <div className="mx-auto max-w-7xl">
         {/* Header */}
         <div className="mb-12 sm:mb-16 max-w-full">
-          <h2 className="mb-6 text-3xl font-[LexandMedium] tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl font-light leading-tight text-gray-900">
+          <h2 className="mb-6 text-3xl font-[HelveticaWorldRegular] tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl font-light leading-tight text-gray-900">
             Every stay has a story
           </h2>
-          <p className="text-lg  text-gray-700 leading-relaxed max-w-2xl">
+          <p className="text-lg font-[HelveticaWorldRegular]  text-gray-700 leading-relaxed max-w-2xl">
             But don't just take our word for it — see what our guests have to say.
           </p>
         </div>
@@ -146,15 +159,20 @@ export default function TestimonialsSection() {
               {testimonials.map((testimonial) => (
                 <SwiperSlide key={testimonial.id}>
                   <div
-                    className={`${testimonial.bgColor} ${testimonial.borderRadius} p-6 sm:p-8 min-h-[250px] sm:min-h-[280px] md:min-h-[280px] flex flex-col justify-between`}
+                    className={`${testimonial.bgColor}  ${testimonial.borderRadius} p-6 sm:p-8 min-h-[250px] sm:min-h-[280px] md:min-h-[280px] flex flex-col justify-between`}
                   >
-                    <blockquote className="text-lg  font-[MontserratRegular] sm:text-xl leading-relaxed text-gray-900 flex-grow mb-6">
-                      "{testimonial.quote}"
+                    <blockquote className={`text-sm leading-6 font-[GaretRegular] ${testimonial.textColor} flex-grow mb-6`}>
+                    "{testimonial.quote}"
                     </blockquote>
                     <div>
-                      <div className="font-semibold font-[LexandSemibold] tracking-tighter text-gray-900 text-lg">{testimonial.name}</div>
-                      <div className="text-gray-600 font-[LexandMedium] tracking-tighter">{testimonial.location}</div>
+                      <div className={`font-semibold font-[HelveticaWorldRegular] tracking-tighter ${testimonial.textColor} text-lg`}>
+                        {testimonial.name}
+                      </div>
+                      <div className={`font-[GaretRegular] tracking-tighter ${testimonial.textColor}`}>
+                        {testimonial.location}
+                      </div>
                     </div>
+
                   </div>
                 </SwiperSlide>
               ))}

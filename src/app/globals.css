@@ -34,5 +34,17 @@
         url("../webfonts/LexendExa-SemiBold.ttf") format("truetype");
     font-weight: bold;
   }
+  @font-face {
+    font-family: "GaretRegular";
+    src: local("GaretRegular"),
+        url("../webfonts/Garet-Book.ttf") format("truetype");
+    font-weight: bold;
+  }
+  @font-face {
+    font-family: "HelveticaWorldRegular";
+    src: local("HelveticaWorldRegular"),
+        url("../webfonts/HelveticaWorld-Regular.ttf") format("truetype");
+    font-weight: bold;
+  }
 
 

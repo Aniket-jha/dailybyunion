@@ -17,7 +17,7 @@ import {
   XMarkIcon,
   ChevronUpIcon,
 } from "@heroicons/react/24/outline";
-import Logo from "../../assets/thedailystayswhite.png"
+import Logo from "../../assets/newdailylogo.png"
 import  Link  from "next/link";
 import Image from "next/image";
 import Topbar from "./Topbar";
@@ -57,7 +57,7 @@ export default function NavbarTwo() {
         allowHover={true}
       >
         <MenuHandler>
-          <Typography as="div" variant="small" className="p-1 text-[#ffffff]  font-[LexandMedium] tracking-tighter cursor-pointer  text-[18px] flex items-center">
+          <Typography as="div" variant="small" className="p-1 text-[#ffffff]  font-[HelveticaWorldRegular] tracking-wider cursor-pointer  text-[18px] flex items-center">
             <p
               className="flex items-center gap-2"
               selected={isMenuOpen || isMobileMenuOpen}
@@ -123,7 +123,7 @@ export default function NavbarTwo() {
         allowHover={true}
       >
         <MenuHandler>
-          <Typography as="div" variant="small" className="p-1 text-[#ffffff]  font-[LexandMedium] tracking-tighter cursor-pointer  text-[18px] flex items-center">
+          <Typography as="div" variant="small" className="p-1 text-[#ffffff]  font-[HelveticaWorldRegular] tracking-wider cursor-pointer  text-[18px] flex items-center">
             <p
               className="flex items-center gap-2"
               selected={isMenuOpen || isMobileMenuOpen}
@@ -176,7 +176,7 @@ export default function NavbarTwo() {
   }
  
   const navList = (
-    <ul className="mb-4 mt-2 flex flex-col font-[LexandMedium] tracking-tighter text-[#ffffff] tracking-[0px]  lg:mb-0 lg:mt-0 lg:justify-end lg:flex-row lg:items-center lg:gap-6">
+    <ul className="mb-4 mt-2 flex flex-col font-[HelveticaWorldRegular] tracking-wider text-[#ffffff] tracking-[0px]  lg:mb-0 lg:mt-0 lg:justify-end lg:flex-row lg:items-center lg:gap-6">
 
          <div className="block lg:hidden">
        <AboutNavListMenu />

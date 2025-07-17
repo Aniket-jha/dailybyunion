@@ -10,11 +10,12 @@ const PuneLocations = () => {
       <div className="w-full flex flex-col gap-16 px-4 lg:px-16 py-10">
   
         {/* First Location Block */}
+        <h2 className="text-2xl lg:text-3xl font-semibold mb-2">Our Locations in Pune</h2>
               <div className="flex flex-col lg:flex-row">
                 
                 {/* Left Side - Property Card */}
                 <div className="lg:w-1/2 w-full flex flex-col justify-Start">
-                  <h2 className="text-2xl lg:text-3xl font-semibold mb-6">Our Locations in Pune</h2>
+                 
               
         
                   <div className="w-full">
@@ -42,14 +43,14 @@ const PuneLocations = () => {
                       href="https://maps.app.goo.gl/EVqNDPsAuPdovtRd6"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-gray-600 underline text-sm font-medium hover:text-gray-800 transition-colors"
+                      className="text-gray-600 underline text-sm font-[GaretRegular] hover:text-gray-800 transition-colors"
                     >
                       View Map
                     </a>
                   </div>
 
                   {/* Bullet points for BHK types */}
-                  <ul className="list-disc list-inside text-[16px] text-black space-y-1 mt-3">
+                  <ul className=" list-inside text-[16px] font-[GaretRegular] text-black space-y-1 mt-3">
                     <li>Studio Rooms</li>
                     
                   </ul>
@@ -73,7 +74,7 @@ const PuneLocations = () => {
                 <div className="lg:w-1/2 w-full mt-10 lg:mt-0 lg:pl-10 h-[400px] lg:h-[700px]">
                   <div className="w-full h-full">
                     <iframe
-                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3595.3135679979287!2d73.77582847496379!3d18.552978682546755!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2bff4afa8145f%3A0x6d7da05eef0c7ce1!2sUnion%20Hamlet!5e1!3m2!1sen!2sin!4v1751957886545!5m2!1sen!2sin"
+                      src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15129.867506521172!2d73.7784034!3d18.5529787!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2bff4afa8145f%3A0x6d7da05eef0c7ce1!2sUnion%20Hamlet!5e0!3m2!1sen!2sin!4v1712824758554!5m2!1sen!2sin"
                       width="100%"
                       height="100%"
                       allowFullScreen=""

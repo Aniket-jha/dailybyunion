@@ -5,6 +5,8 @@ import { IoArrowBack, IoArrowForward } from "react-icons/io5";
 import Image from "next/image";
 import Mahalaxmi from "../../assets/stays1.png";
 import Baner from "../../assets/stays3.png";
+import mumbai from "../../assets/home-mumbai.png";
+import pune from "../../assets/home-pune.png";
 
 import "swiper/css";
 import "swiper/css/navigation";
@@ -12,14 +14,14 @@ import Link from 'next/link';
 
 const Stays = () => {
   const slides = [
-    { id: 1, image: Mahalaxmi, title: "Mumbai", subtitle: "Mumbai", link:'/mumbai' },
-    { id: 2, image: Baner, title: "Pune", subtitle: "Baner", link:'pune' },
+    { id: 1, image: mumbai, title: "Mumbai", subtitle: "Mumbai", link:'/mumbai' },
+    { id: 2, image: pune, title: "Pune", subtitle: "Baner", link:'pune' },
   ];
 
   return (
-    <div className="w-full py-8 bg-[#f6f1ec] relative overflow-hidden">
+    <div className="w-full py-8 bg-[#66694A] relative overflow-hidden">
       <div className="pt-2 pl-6 lg:pt-8 lg:pl-12">
-        <h1 className="text-black text-[28px] lg:text-[52px] font-semibold  font-[LexandSemibold] tracking-tighter">
+        <h1 className="text-white text-[28px] lg:text-[52px] font-semibold  font-[HelveticaWorldRegular] tracking-wider">
           Find Your Daily Stays
         </h1>
       </div>
@@ -63,12 +65,21 @@ const Stays = () => {
                     src={slide.image}
                     alt={slide.title}
                     fill
-                    className="object-cover transition-all duration-500 ease-in-out group-hover:rounded-b-[50%]"
+                    className="object-cover transition-all duration-500 ease-in-out"
                   />
-                  <div className="absolute inset-0 flex flex-col justify-center items-center text-center p-6">
-                    <h2 className="text-white text-3xl lg:text-5xl font-semibold font-[LexandSemibold] tracking-tighter mb-4 leading-tight">
+
+                  {/* Hover Overlay with Description */}
+                  <div className="absolute inset-0 bg-black bg-opacity-30  opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col justify-center items-center text-center p-6">
+                    <h2 className="text-white text-2xl lg:text-4xl  font-[LexandSemibold] tracking-tighter mb-4 leading-tight">
                       {slide.title}
                     </h2>
+                    
+                  </div>
+
+                  <div className="absolute inset-0 flex flex-col justify-center items-center text-center p-6">
+                    {/* <h2 className="text-white text-3xl lg:text-5xl font-semibold font-[LexandSemibold] tracking-tighter mb-4 leading-tight">
+                      {slide.title}
+                    </h2> */}
                    
                   </div>
                 </div>

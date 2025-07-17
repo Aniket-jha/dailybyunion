@@ -79,7 +79,7 @@ const HomeBanner = () => {
         loop={true}
         modules={[Autoplay]}
       >
-        {[BannerOne, BannerTwo, BannerThree].map((banner, index) => (
+        {[BannerOne].map((banner, index) => (
           <SwiperSlide key={index}>
             <div className="relative w-full h-full">
               <Image
@@ -100,14 +100,14 @@ const HomeBanner = () => {
           <div className="grid grid-cols-1 md:grid-cols-4 lg:grid-cols-5">
             {/* Destination */}
             <div className="space-y-2 flex lg:border-r-[1px] border-[#272727] flex-col items-center relative" ref={dropdownRef}>
-              <label className="text-base pt-4 font-[LexandMedium] tracking-tighter text-black uppercase tracking-wide">DESTINATION</label>
+              <label className="text-base pt-4 font-[HelveticaWorldRegular] text-black uppercase tracking-wide">DESTINATION</label>
               <div className="relative w-full flex justify-center">
                 <div
                   onClick={() => setShowDropdown(!showDropdown)}
-                  className="cursor-pointer px-10 py-0 flex items-center justify-center w-full bg-transparent text-black text-base"
+                  className="text-[12px] cursor-pointer pl-[1.5rem] pr-[0.5rem] py-0 flex items-center justify-center w-full bg-transparent text-black text-base"
                 >
                   <span>{selectedDestination}</span>
-                  <IoChevronDown className="ml-4 w-5 h-5 text-gray-400" />
+                  <IoChevronDown className="ml-[0.5rem] w-5 h-5 text-gray-400" />
                 </div>
                 {showDropdown && (
                   <div className="absolute z-30 bg-white shadow-lg rounded-md mt-8 w-60 max-h-64 overflow-y-auto">
@@ -128,7 +128,7 @@ const HomeBanner = () => {
 
             {/* Check In */}
             <div className="space-y-2 lg:border-r-[1px] border-[#272727] flex flex-col items-center relative" ref={checkInRef}>
-              <label className="text-base pt-4 font-[LexandMedium] tracking-tighter text-black uppercase tracking-wide">CHECK IN</label>
+              <label className="text-base pt-4 font-[HelveticaWorldRegular]  text-black uppercase tracking-wide">CHECK IN</label>
               <div onClick={() => setShowCheckIn(!showCheckIn)} className="cursor-pointer p-4 !pt-0">
                 {checkInDate ? checkInDate.toDateString() : 'Select date'}
               </div>
@@ -141,7 +141,7 @@ const HomeBanner = () => {
 
             {/* Check Out */}
             <div className="space-y-2 lg:border-r-[1px] border-[#272727] flex flex-col items-center relative" ref={checkOutRef}>
-              <label className="text-base pt-4 font-[LexandMedium] tracking-tighter text-black uppercase tracking-wide">CHECK OUT</label>
+              <label className="text-base pt-4 font-[HelveticaWorldRegular]  text-black uppercase tracking-wide">CHECK OUT</label>
               <div onClick={() => setShowCheckOut(!showCheckOut)} className="cursor-pointer p-4 !pt-0">
                 {checkOutDate ? checkOutDate.toDateString() : 'Select date'}
               </div>
@@ -154,7 +154,7 @@ const HomeBanner = () => {
 
             {/* Guests */}
             <div className="space-y-2 lg:border-r-[1px] border-[#272727] flex flex-col items-center">
-              <label className="text-base pt-4 font-[LexandMedium] tracking-tighter text-black uppercase tracking-wide">GUESTS</label>
+              <label className="text-base pt-4 font-[HelveticaWorldRegular]  text-black uppercase tracking-wide">GUESTS</label>
               <div className="flex items-center justify-between p-4 !pt-0">
                 <button
                   onClick={decrementGuests}
@@ -175,7 +175,7 @@ const HomeBanner = () => {
 
             {/* Search Button */}
             <div className="md:col-span-1">
-            <a href={property.link} target="_blank" >   <button className="w-full bg-emerald-800 hover:bg-emerald-900 bg-black text-white font-semibold py-4 px-8 h-full lg:rounded-tr-xl lg:rounded-br-xl rounded-br-xl rounded-bl-xl lg:rounded-bl-none transition-colors duration-200 text-base tracking-wide">
+            <a href={property.link} target="_blank" >   <button className="w-full bg-emerald-800 hover:bg-emerald-900 bg-black text-white font-[GaretRegular] py-4 px-8 h-full lg:rounded-tr-xl lg:rounded-br-xl rounded-br-xl rounded-bl-xl lg:rounded-bl-none transition-colors duration-200 text-base tracking-wide">
                 SEARCH
               </button> </a>
             </div>

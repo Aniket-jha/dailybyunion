@@ -12,9 +12,9 @@ export default function FeaturesSection() {
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M8 21l4-4 4 4" />
         </svg>
       ),
-      title: "Community",
+      title: "Home-like Comfort",
       description:
-        "Union is designed to encourage organic connections, offering more than just a place to stay, it’s a space where people can interact, collaborate, and feel at home.",
+        "Thoughtfully designed and fully furnished, each apartment offers cozy living spaces, private kitchens, and a sense of warmth that makes short or long stays feel just right.",
     },
     {
       icon: (
@@ -27,9 +27,9 @@ export default function FeaturesSection() {
           />
         </svg>
       ),
-      title: "Seamless Living",
+      title: "Easy Booking",
       description:
-        "From digital entry to reliable Wi-Fi and helpful on-call support, our tech-enabled setup makes daily life easier and more convenient.",
+        "Reserve your stay in minutes through our seamless online system, no calls, no paperwork, just a smooth, mobile-first experience from start to finish.",
     },
     {
       icon: (
@@ -42,9 +42,9 @@ export default function FeaturesSection() {
           />
         </svg>
       ),
-      title: "Thoughtful Design",
+      title: "Prime Locations",
       description:
-        "Each unit is carefully planned to offer a blend of comfort, functionality, and clean aesthetics, making the most of space without compromising on style.",
+        "Stay where the action is, near cafés, coworking spots, and cultural hubs. Our apartments are nestled in handpicked neighborhoods with easy access to everything you need.",
     },
     {
       icon: (
@@ -57,9 +57,9 @@ export default function FeaturesSection() {
           />
         </svg>
       ),
-      title: "Wellness Everyday",
+      title: "Everyday Essentials",
       description:
-        "We offer simple, nourishing meals, peaceful environments, and community activities that support both mental and physical well-being.",
+        "Enjoy the convenience of high-speed Wi-Fi, fresh linens, kitchen basics, and more, all set up so you can focus on what matters.",
     },
   ]
 
@@ -73,10 +73,10 @@ export default function FeaturesSection() {
               <div className="mb-6 flex justify-center lg:justify-start">{feature.icon}</div>
 
               {/* Title */}
-              <h3 className="mb-4 text-[1.3rem] font-[LexandMedium] tracking-tighter text-gray-900 md:text-2xl">{feature.title}</h3>
+              <h3 className="mb-4 text-[1.3rem] font-[HelveticaWorldRegular] tracking-tighter text-gray-900 md:text-2xl">{feature.title}</h3>
 
               {/* Description */}
-              <p className="text-gray-600 font-[MontserratRegular] text-[0.8rem] leading-relaxed">{feature.description}</p>
+              <p className="text-gray-600 font-[GaretRegular] text-[0.8rem] leading-relaxed">{feature.description}</p>
             </div>
           ))}
         </div>

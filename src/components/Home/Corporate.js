@@ -3,37 +3,30 @@
 import Image from "next/image"
 import img from "../../assets/corparate5.png"
 import img2 from "../../assets/corparate4.png"
-import img3 from "../../assets/corparate3.png"
+import img3 from "../../assets/corporate7.jpeg"
 
 const Corporate = () => {
   return (
-    <section className="py-12 lg:py-20 px-4 sm:px-6 lg:px-16 !pr-0 bg-white">
-      <div className="max-w-8xl ml-auto mr-0 ">
+    <section className=" bg-white">
+      <div className="max-w-8xl ml-auto mr-0 px-4 py-6 lg:py-0 lg:pl-12 pr-0 ">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-14 items-center">
           {/* Left Content Section */}
           <div className="space-y-6">
             <div>
               <h2 className="text-[28px] font-[LexandSemibold] tracking-tighter lg:text-[2.5rem]  text-gray-900 leading-tight mb-4">
-                Corporate Stays 
+              Shortstay Solution for Professionals <span>on the move.</span>
               </h2>
-              <p className=" text-[18px] lg:text-[20px] font-[LexandSemibold] tracking-tighter text-[#8a7970]  relative inline-block mb-2">
-          The ultimate shortstay solution for professionals on the move
-        </p>
+             
 
               {/* Purple accent line */}
-              <div className="w-24 h-1 bg-purple-600 mb-6"></div>
+          
             </div>
 
             <div className="space-y-4">
-              <p className="text-[14px] font-[MontserratRegular] lg:text-[16px] text-gray-700 leading-relaxed"> 	
-Our spaces are designed for modern individuals who value both efficiency and comfort.
-<br />
- Whether you're a consultant, digital nomad, or executive on assignment, our fully-furnished accommodations offer a seamless living.
- 
- experience with high-speed Wi-Fi, ergonomic workstations, smart access, and premium essentials. Each unit is curated to feel like home while
- delivering the consistency of a hotel—complete with stocked kitchens, on-demand housekeeping, and local lifestyle recommendations. With tech-enabled
- check-ins and prime locations near business hubs and transit, we eliminate hassle so you can focus on what matters. Whether for a few nights
- or a few months, we’re redefining how professionals live, work, and move.
+              <p className="text-[14px] font-[GaretRegular] text-justify lg:text-[16px] mr-12 text-gray-700 leading-relaxed"> 	
+Our spaces are designed for modern individuals who seek ease, elegance, and quiet efficiency in every journey. Thoughtfully furnished and warmly lit, every apartment blends the familiarity of home with the gentle rhythm of a well-run stay. High-speed Wi-Fi, ergonomic workspaces, smart access, and elevated essentials are all in place—designed to support both focus and flow.
+<br /> <br /> From equipped kitchens and on-demand housekeeping to curated local recommendations, we take care of the details that make a space feel lived in, not just stayed in. It’s comfort that doesn’t ask for attention, and functionality that quietly works in the background. Whether for a few nights or a few months, we offer a softer way to live, work, and move. For bookings, questions, or corporate partnerships, feel free to reach out at <span className="text-[#156d51] font-[LexandMedium]">thedailystaysofficial@gmail.com</span> .
+
               </p>
 
               
@@ -41,45 +34,17 @@ Our spaces are designed for modern individuals who value both efficiency and com
           </div>
 
           {/* Right Images Section */}
-          <div className="relative">
-            <div className="grid grid-cols-2 gap-4 h-full">
-              {/* Left Column - Two smaller images */}
-              <div className="flex flex-col gap-4">
-                {/* Top small image */}
-                <div className="relative overflow-hidden rounded-lg shadow-lg group">
-                  <Image
-                    src={img}
-                    alt="Modern kitchen and living area"
-                    width="100%"
-                    // height={200}
-                    className="w-full h-32 sm:h-40 lg:h-56 object-cover transition-transform duration-300 group-hover:scale-105"
-                  />
-                </div>
-
-                {/* Bottom small image */}
-                <div className="relative overflow-hidden rounded-lg shadow-lg group">
-                  <Image
-                    src={img2}
-                    alt="Bedroom with modern amenities and TV"
-                    width={250}
-                    height={200}
-                    className="w-full h-32 sm:h-40 lg:h-56 object-cover transition-transform duration-300 group-hover:scale-105"
-                  />
-                </div>
-              </div>
-
-              {/* Right Column - Large image */}
-              <div className="relative overflow-hidden rounded-l-lg shadow-lg group">
-                <Image
-                  src={img3}
-                  alt="Luxury hotel bedroom with elegant curtains and comfortable bed"
-                  width={300}
-                  height={400}
-                  className="w-full h-full min-h-[280px] sm:min-h-[340px] lg:min-h-[420px] xl:min-h-[480px] object-cover transition-transform duration-300 group-hover:scale-105"
-                />
-              </div>
+          <div className="w-full h-[700px] relative">
+            <div className="relative w-full h-full overflow-hidden">
+              <Image
+                src={img3}
+                alt="Luxury hotel bedroom with elegant curtains and comfortable bed"
+                fill
+                className=" object-cover w-full h-full transition-transform duration-300 group-hover:scale-105"
+              />
             </div>
-          </div>
+</div>
+
         </div>
       </div>
     </section>

@@ -227,7 +227,7 @@ export default function NavbarTwo() {
      
         <IconButton
               variant="text"
-              className="ml-auto h-6 w-6  col-span-1 text-black hover:bg-transparent focus:bg-transparent active:bg-transparent lg:hidden"
+              className="ml-auto h-6 w-6  col-span-1 text-white hover:bg-transparent focus:bg-transparent active:bg-transparent lg:hidden"
               ripple={false}
               onClick={() => setOpenNav(!openNav)}
             >

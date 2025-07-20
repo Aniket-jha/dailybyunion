@@ -14,6 +14,7 @@ import img3 from "../../assets/varsity3.webp";
 import VarsityBannerOne from "../../assets/varsitybanner/1.webp"
 import VarsityBannerTwo from "../../assets/varsitybanner/2.webp"
 import VarsityBannerThree from "../../assets/varsitybanner/3.webp"
+import AboutAmenitiesTwo from '@/components/MumbaiStays/AboutAmenitiesTwo'
 
 const MumbaiPages = () => {
   const rooms = [
@@ -32,7 +33,7 @@ const MumbaiPages = () => {
     <NavbarTwo />
     
     <HotelIntro link="https://live.ipms247.com/booking/book-rooms-varsitybyunionliving" title="Varsity" bannerImages={bannerImages} location='Santacruz, Mumbai' desc="Varsity by Union Living is a modern residential concept crafted for students and young professionals who value flexibility, design, and a sense of belonging. Offering fully furnished, move-in-ready spaces with flexible stay options, Varsity blends the comforts of private living with the energy of a vibrant community. Thoughtfully designed rooms, curated common areas, and seamless services create an elevated living experience—whether you’re staying for a semester, a few months, or longer. At Varsity, you’re not just renting a space—you’re joining a lifestyle" />
-    <AboutAmenities />
+    <AboutAmenitiesTwo />
     <RoomTypes  rooms={rooms}/>
    
     <FooterSection />

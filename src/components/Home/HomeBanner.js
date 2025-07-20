@@ -72,7 +72,7 @@ const HomeBanner = () => {
     <div className="relative lg:pt-0">
       <Swiper
         spaceBetween={0}
-        className="h-[600px] lg:h-[650px]"
+        className="h-[550px] lg:h-[650px]"
         draggable={true}
         slidesPerView={1}
         autoplay={{ delay: 4000, disableOnInteraction: false }}

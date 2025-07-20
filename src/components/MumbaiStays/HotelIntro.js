@@ -26,7 +26,7 @@ export default function HotelIntro({title, location, locationLink, desc, bannerI
     <div className="relative">
 
       {/* Banner Slider */}
-      <div className="relative h-[200px] md:h-[550px] overflow-hidden z-0">
+      <div className="relative h-[300px] md:h-[650px] overflow-hidden z-0">
         <Swiper
           modules={[Navigation, Autoplay]}
           navigation={{
@@ -70,7 +70,7 @@ export default function HotelIntro({title, location, locationLink, desc, bannerI
       </div>
 
       {/* Content Section */}
-      <div className="max-w-7xl mx-auto px-4 py-12 grid grid-cols-1 md:grid-cols-2 gap-16 relative z-10">
+      <div className="max-w-7xl mx-auto px-4 py-8 lg:py-12 grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-16 relative z-10">
 
   {/* Left Content */}
   <div className="space-y-4">
@@ -79,7 +79,7 @@ export default function HotelIntro({title, location, locationLink, desc, bannerI
     <button className="text-sm underline font-[HelveticaWorldRegular] tracking-wider text-black">VIEW ON MAP</button>
 
     {/* <h2 className="font-semibold mt-6 text-xl">Varsity</h2> */}
-    <p className="text-gray-700 mt-2 font-[GaretRegular] leading-relaxed">{desc}</p>
+    <p className="text-gray-700 lg:text-[1rem] text-[0.7rem] text-justify mt-2 font-[GaretRegular] leading-relaxed">{desc}</p>
   </div>
 
   {/* Right Booking Box */}

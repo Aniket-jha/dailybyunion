@@ -20,13 +20,13 @@ const Stays = () => {
 
   return (
     <div className="w-full py-8 bg-[#66694A] relative overflow-hidden">
-      <div className="pt-2 pl-6 lg:pt-8 lg:pl-12">
+      <div className="pt-2 pl-4 lg:pt-8 lg:pl-12">
         <h1 className="text-white text-[28px] lg:text-[52px] font-semibold  font-[HelveticaWorldRegular] tracking-wider">
           Find Your Daily Stays
         </h1>
       </div>
 
-      <div className="mt-8 lg:my-12 relative px-8">
+      <div className="lg:mt-8 mt-4 lg:my-12 relative px-4 lg:px-8">
         <Swiper
           modules={[Navigation, Autoplay]}
           spaceBetween={10}
@@ -54,6 +54,7 @@ const Stays = () => {
               autoplay: false,
             },
           }}
+          autoplay={{ delay: 3000 }}
           className="whats-on-swiper"
         >
           {slides.map((slide) => (

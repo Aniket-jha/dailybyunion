@@ -1,18 +1,18 @@
 import React from 'react'
-import AboutInfoImage from "../../assets/stays3.png"
+import AboutInfoImage from "../../assets/fully_furnished2.png"
 import Image from 'next/image'
 
 const AboutInfo = () => {
   return (
-    <div className='lg:px-[21rem]  grid grid-cols-1 items-center gap-12 grid-flow-row  lg:grid-cols-1  lg:py-12 py-4 px-4' >
-        <div>
-            <h3 className='lg:text-[2.5rem] text-center text-[1.5rem] mb-2 font-[HelveticaWorldRegular] tracking-wider'>About Us</h3>
-            <p className='text-[0.7rem] text-justify font-[GaretRegular] lg:text-[1rem]'>
+    <div className='lg:px-[4rem] bg-[#f5f1eb] text-[#66694A]  grid grid-cols-1 items-center gap-12 grid-flow-row  lg:grid-cols-1  lg:py-12 py-4 px-4' >
+        <div className='grid lg:grid-cols-3 gap-24 grid-cols-1 items-center justify-center '>
+          <div className='flex items-center justify-end'>
+            <h3 className='lg:text-[2.5rem] uppercase col-span-1 text-center text-[1.5rem] mb-2 font-[HelveticaWorldRegular] tracking-wider'>About Us</h3>
+            </div>
+            <Image className='w-[100%] col-span-1' src={AboutInfoImage} />
+            <p className='text-[0.7rem] w-[80%] col-span-1 text-justify font-[GaretRegular] lg:text-[0.8rem]'>
             In a world where mobility is the norm and lifestyles are ever-evolving, Daily Stay offers a smarter, more flexible way to live. We provide fully furnished, ready-to-move-in apartments for both short and long-term stays, blending the comfort of home with the reliability of hospitality.
-            <br /> <br />
-Whether you’re a business traveler, digital nomad, relocating family, or someone in between leases, our thoughtfully curated spaces are designed for ease, style, and convenience. Every apartment comes equipped with high-speed Wi-Fi, modern amenities, and functional layouts—making it easy to live, work, and relax.
-<br /> <br />
-With flexible booking options, no long-term commitments, and seamless digital support, Daily Stay empowers you to move freely without sacrificing comfort. Think of us as your dependable home—whether it’s for a weekend or a year.
+           
 
 
             </p>

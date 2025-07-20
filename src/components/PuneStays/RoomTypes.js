@@ -11,9 +11,9 @@ import { IoChevronBack, IoChevronForward } from 'react-icons/io5';
 
 export default function RoomTypes( { rooms } ) {
   return (
-    <div className="max-w-7xl mx-auto px-4 py-12">
+    <div className="max-w-7xl mx-auto px-4 py-6 lg:py-12">
       <h2 className="text-3xl font-[HelveticaWorldRegular] tracking-wider mb-6">Room Types</h2>
-      <h3 className="text-xl font-[HelveticaWorldRegular] tracking-wider mb-8">Studio Apartments</h3>
+      
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               {rooms.map((room, idx) => {
@@ -26,7 +26,7 @@ export default function RoomTypes( { rooms } ) {
                     className="bg-gray-100 rounded-lg overflow-hidden shadow-md flex flex-col md:flex-row"
                   >
                     {/* Image Slider */}
-                    <div className="relative w-full md:w-1/2 lg:h-[260px] h-full">
+                    <div className="relative w-full md:w-1/2 lg:h-[260px] h-[250px]">
                       <Swiper
                         modules={[Navigation]}
                         navigation={{
@@ -49,7 +49,7 @@ export default function RoomTypes( { rooms } ) {
                               alt={room.title}
                               width={400}
                               height={400}
-                              className="object-cover w-full h-full"
+                              className="object-cover w-full h-[250px] lg:h-full"
                             />
                           </SwiperSlide>
                         ))}
@@ -74,12 +74,12 @@ export default function RoomTypes( { rooms } ) {
       
                     {/* Details */}
                     <div className="p-6 flex flex-col justify-center md:w-[50%]">
-                      <h4 className="text-2xl font-[HelveticaWorldRegular] tracking-wider mb-6">{room.title}</h4>
-                      <p className="mb-1">{room.guests}</p>
-                      <p className="mb-1">{room.bedroom}</p>
-                      <p className="mb-1">{room.balcony}</p>
-                      <p className="mb-4">{room.bathroom}</p>
-                      <button className="bg-black text-white py-2 px-2 rounded-lg hover:bg-gray-800 text-sm tracking-wider uppercase">
+                      <h4 className="text-2xl font-[HelveticaWorldRegular] tracking-wider mb-4">{room.title}</h4>
+                      <p className="mb-1 font-[GaretRegular]">{room.guests}</p>
+                      <p className="mb-1 font-[GaretRegular]">{room.bedroom}</p>
+                      <p className="mb-1 font-[GaretRegular] ">{room.balcony}</p>
+                      <p className="mb-4 font-[GaretRegular]">{room.bathroom}</p>
+                      <button className="bg-black text-white py-2 px-2 font-[GaretRegular] rounded-lg hover:bg-gray-800 text-sm tracking-wider uppercase">
                         Check Availability
                       </button>
                     </div>

@@ -68,10 +68,10 @@ export default function FAQSection() {
   }
 
   return (
-    <section className="bg-white py-16 px-6 md:py-24 md:px-12 lg:px-16">
+    <section className="bg-white py-8 lg:py-16 px-6 md:py-24 md:px-12 lg:px-16">
       <div className="mx-auto max-w-7xl">
         {/* Header */}
-        <div className="mb-12">
+        <div className=" mb-4 lg:mb-12">
           <h2 className="text-3xl md:text-4xl font-[HelveticaWorldRegular] tracking-wider font-light text-gray-900">FAQs</h2>
         </div>
 
@@ -85,7 +85,7 @@ export default function FAQSection() {
                 aria-expanded={openItems.has(faq.id)}
                 aria-controls={`faq-answer-${faq.id}`}
               >
-                <span className="text-lg md:text-xl font-[HelveticaWorldRegular] tracking-wider text-gray-900 pr-8 leading-relaxed">{faq.question}</span>
+                <span className="text-[.9rem] md:text-xl font-[HelveticaWorldRegular] tracking-wider text-gray-900 pr-8 leading-relaxed">{faq.question}</span>
                 <LuChevronDown
                   className={`w-5 h-5 text-gray-600 flex-shrink-0 transition-transform duration-200 ${
                     openItems.has(faq.id) ? "rotate-180" : ""
@@ -100,7 +100,7 @@ export default function FAQSection() {
                   openItems.has(faq.id) ? "max-h-96 opacity-100 pb-6" : "max-h-0 opacity-0"
                 }`}
               >
-                <div className="text-gray-600 font-[GaretRegular] leading-relaxed pr-8">{faq.answer}</div>
+                <div className="text-gray-600 font-[GaretRegular] text-[0.7rem] lg:text-[1rem] leading-relaxed pr-8">{faq.answer}</div>
               </div>
             </div>
           ))}

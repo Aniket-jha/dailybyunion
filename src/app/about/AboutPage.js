@@ -10,7 +10,7 @@ const AboutPage = () => {
   return (
     <div>
         <NavbarTwo />
-        <AboutBanner />
+     
         <AboutInfo />
         <MissionVision />
         <FooterSection />

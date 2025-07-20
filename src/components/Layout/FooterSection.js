@@ -1,114 +1,24 @@
 import { LuInstagram, LuLinkedin, LuFacebook, LuTwitter } from "react-icons/lu"
 import Logo from "../../assets/thedailystayswhite.png"
 import Image from "next/image"
+import Link from "next/link"
 
 export default function FooterSection() {
   return (
-    <footer className="bg-[#343434] text-white py-16 px-6 md:py-20 md:px-12 lg:px-16 mx-auto">
-      <div className="mx-auto max-w-7xl">
-        {/* Main Footer Content */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-16 mb-16">
-          {/* Brand and Contact Info */}
-          <div className="lg:col-span-1 space-y-8">
-            {/* Brand */}
-            <div>
-              {/* <h2 className="text-2xl md:text-3xl font-light tracking-wider text-white">THE DAILY STAYS</h2> */}
-              <Image src={Logo}alt="Logo" className="w-full h-[40px] object-cover" />
-            </div>
-
-            {/* Contact Information */}
-            <div className="space-y-6">
-              {/* <div>
-                <h3 className="text-sm font-medium text-gray-300 mb-2 tracking-wide">TEXT</h3>
-                <p className="text-white">1-646-646-7374</p>
-              </div> */}
-
-              <div>
-                <h3 className="text-sm font-medium text-gray-300 mb-2 tracking-wide">CALL</h3>
-                <a href="tel:7021654226" className="text-white">7021654226</a>
-              </div>
-
-              <div>
-                <h3 className="text-sm font-medium text-gray-300 mb-2 tracking-wide">EMAIL</h3>
-                <p className="text-white">thedailystaysofficial@gmail.com</p>
-              </div>
-            </div>
-          </div>
-
-          {/* Experience Column */}
-          <div>
-            <h3 className="text-sm font-medium text-gray-300 mb-6 tracking-wide">EXPERIENCE</h3>
-            <ul className="space-y-4">
-              <li>
-                <a href="https://unionliving.in/community" className="text-white hover:text-gray-300 transition-colors duration-200">
-                  Groups and Events
-                </a>
-              </li>
-              <li>
-                <a href="#" className="text-white hover:text-gray-300 transition-colors duration-200">
-                  Long Term Stay
-                </a>
-              </li>
-            </ul>
-          </div>
-
-          {/* Explore Column */}
-          <div>
-            <h3 className="text-sm font-medium text-gray-300 mb-6 tracking-wide">EXPLORE</h3>
-            <ul className="space-y-4">
-              <li>
-                <a href="#" className="text-white hover:text-gray-300 transition-colors duration-200">
-                  Our Story
-                </a>
-              </li>
-              
-              <li>
-                <a href="#" className="text-white hover:text-gray-300 transition-colors duration-200">
-                  Contact us
-                </a>
-              </li>
-            </ul>
-          </div>
-
-          {/* Partners Column */}
-          <div>
-            <h3 className="text-sm font-medium text-gray-300 mb-6 tracking-wide">PARTNERS</h3>
-            <ul className="space-y-4">
-              <li>
-                <a href="#" className="text-white hover:text-gray-300 transition-colors duration-200">
-                  The Daily Stays for Business
-                </a>
-              </li>
-              {/* <li>
-                <a href="#" className="text-white hover:text-gray-300 transition-colors duration-200">
-                  Real Estate Partnerships
-                </a>
-              </li> */}
-            </ul>
-          </div>
+    <footer className="bg-[#343434] grid grid-cols-1 lg:grid-cols-3 justify-between lg:gap-0 gap-6 text-white py-16 px-6 md:py-8 md:px-12 lg:px-16 mx-auto">
+      <div className="col-span-2">
+        <div className="flex items-center  justify-center lg:justify-start gap-8">
+          <Link href="/about" > <p className="lg:text-[1.2rem] text-[0.8rem] uppercase font-[GaretRegular]">About</p></Link>
+          <Link href="/contact" > <p className="lg:text-[1.2rem] text-[0.8rem] uppercase  font-[GaretRegular]">Contact</p></Link>
+          <Link href="/mumbai" > <p className="lg:text-[1.2rem] text-[0.8rem] uppercase font-[GaretRegular]">Mumbai</p></Link>
+          <Link href="/pune" > <p className="lg:text-[1.2rem] text-[0.8rem] uppercase font-[GaretRegular]">Pune</p></Link>
         </div>
-
-        {/* Bottom Section */}
-        <div className="border-t border-gray-600 pt-8">
-          <div className="flex flex-col md:flex-row justify-between items-start md:items-center space-y-6 md:space-y-0">
-            {/* Copyright and Legal Links */}
-            <div className="flex flex-col md:flex-row md:items-center space-y-4 md:space-y-0 md:space-x-8">
-              <p className="text-gray-300 text-sm">© The daily stays, Inc. 2025 All Rights Reserved.</p>
-              <div className="flex flex-wrap gap-6">
-                <a href="#" className="text-gray-300 hover:text-white text-sm transition-colors duration-200">
-                  Terms of Service
-                </a>
-                <a href="#" className="text-gray-300 hover:text-white text-sm transition-colors duration-200">
-                  Privacy Policy
-                </a>
-                <a href="#" className="text-gray-300 hover:text-white text-sm transition-colors duration-200">
-                  Accessibility Policy
-                </a>
-              </div>
-            </div>
-
-            {/* Social Media Icons */}
-            <div className="flex space-x-4">
+        <div className="mt-6">
+        <p className="text-gray-300 font-[GaretRegular] lg:text-left text-center text-[.7rem] lg:text-base">© The daily stays, Inc. 2025 All Rights Reserved.</p>
+        </div>
+      </div>
+      <div className="flex justify-center lg:justify-end flex-col">
+      <div className="flex space-x-4 justify-center lg:justify-end">
               <a
                 href="#"
                 className="text-gray-300 hover:text-white transition-colors duration-200"
@@ -138,9 +48,15 @@ export default function FooterSection() {
                 <LuTwitter className="w-5 h-5" />
               </a>
             </div>
-          </div>
+        <div className="">
+          <p className="text-[0.6rem] lg:text-[1rem] mt-6 flex justify-center lg:justify-end  gap-3 ">
+        <a href="tel:7021654226" className="text-white pr-3 font-[GaretRegular] border-r-[1px] border-white">7021654226 </a> 
+        <p className="text-white font-[GaretRegular] text-[0.6rem] lg:text-[1rem]">thedailystaysofficial@gmail.com</p>
+        </p>
         </div>
       </div>
     </footer>
   )
 }
+
+

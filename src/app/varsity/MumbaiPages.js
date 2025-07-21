@@ -7,9 +7,16 @@ import HotelIntro from '@/components/MumbaiStays/HotelIntro'
 import LocalFavorites from '@/components/MumbaiStays/LocalFavorites'
 import RoomTypes from '@/components/MumbaiStays/RoomTypes'
 import React from 'react'
-import img1 from "../../assets/varsity1.webp";
-import img2 from "../../assets/varsity2.webp";
-import img3 from "../../assets/varsity3.webp";
+
+import img11 from "../../assets/santacruz/1.webp";
+import img12 from "../../assets/santacruz/2.webp";
+import img13 from "../../assets/santacruz/3.webp";
+import img14 from "../../assets/santacruz/4.webp";
+import img15 from "../../assets/santacruz/5.webp";
+import img16 from "../../assets/santacruz/6.webp";
+import img17 from "../../assets/santacruz/7.webp";
+import img18 from "../../assets/santacruz/8.webp";
+import img19 from "../../assets/santacruz/9.webp";
 
 import VarsityBannerOne from "../../assets/varsitybanner/1.webp"
 import VarsityBannerTwo from "../../assets/varsitybanner/2.webp"
@@ -19,11 +26,39 @@ import AboutAmenitiesTwo from '@/components/MumbaiStays/AboutAmenitiesTwo'
 const MumbaiPages = () => {
   const rooms = [
         {
-          title: '3BHK',
-          guests: 'Up to 2 Guests',
-          bedroom: '1 Bedroom',
-          bathroom: '1 Bathroom',
-          images: [img1, img2, img3],
+          title: '104, 3 BHK',
+          guests: 'Upto 5 Guests',
+          bedroom: '3 Bedroom ',
+          bathroom: '2 Bathroom',
+          images: [img11, img12, img13, img14, img15, img16, img17, img18, img19],
+        },
+        {
+          title: '801, 3 BHK',
+          guests: 'Upto 5 Guests',
+          bedroom: '3 Bedroom ',
+          bathroom: '2 Bathroom',
+          images: [img11, img12, img13, img14, img15, img16, img17, img18, img19],
+        },
+        {
+          title: '802, 3 BHK',
+          guests: 'Upto 5 Guests',
+          bedroom: '3 Bedroom ',
+          bathroom: '2 Bathroom',
+          images: [img12, img11, img13, img14, img15, img16, img17, img18, img19],
+        },
+        {
+          title: '804, 3 BHK',
+          guests: 'Upto 5 Guests',
+          bedroom: '3 Bedroom ',
+          bathroom: '2 Bathroom',
+          images: [img12, img11, img13, img14, img15, img16, img17, img18, img19],
+        },
+        {
+          title: '805, 3 BHK',
+          guests: 'Upto 5 Guests',
+          bedroom: '3 Bedroom ',
+          bathroom: '2 Bathroom',
+          images: [img11, img12, img13, img14, img15, img16, img17, img18, img19],
         },
         
       ];

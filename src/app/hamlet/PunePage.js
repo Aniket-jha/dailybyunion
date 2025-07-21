@@ -8,9 +8,16 @@ import LocalFavorites from '@/components/PuneStays/LocalFavorites'
 import RoomTypes from '@/components/PuneStays/RoomTypes'
 import React from 'react'
 
-import img1 from "../../assets/hamlet1.png";
-import img2 from "../../assets/hamlet2.png";
-import img3 from "../../assets/hamlet3.webp";
+import img1 from "../../assets/baner/1.webp";
+import img2 from "../../assets/baner/2.webp";
+import img3 from "../../assets/baner/3.webp";
+import img4 from "../../assets/baner/4.webp";
+import img5 from "../../assets/baner/5.webp";
+import img6 from "../../assets/baner/6.webp";
+import img7 from "../../assets/baner/7.webp";
+
+
+
 import VarsityBannerOne from "../../assets/hamletbanner/1.webp"
 import VarsityBannerTwo from "../../assets/hamletbanner/2.webp"
 import VarsityBannerThree from "../../assets/hamletbanner/3.webp"
@@ -21,11 +28,11 @@ const PunePage = () => {
   const rooms = [
     {
       title: 'Studio Rooms',
-      guests: 'Up to 2 Guests',
+      // guests: 'Up to 2 Guests',
       bedroom: '1 Bedroom',
       balcony: '1 Balcony',
       bathroom: '1 Bathroom',
-      images: [img3, img1, img2,],
+      images: [img1, img2, img3, img4, img5, img6, img7],
     },
     
   ];

@@ -6,12 +6,12 @@ import 'swiper/css';
 import Image from 'next/image';
 
 import mainimg from '../../assets/previlages.png';
-import img1 from '../../assets/fully_furnished2.png';
-import img2 from '../../assets/parking2.png';
-import img3 from '../../assets/housekeeping2.png';
-import img4 from '../../assets/wifi3.png';
-import img5 from '../../assets/food2.png';
-import img6 from '../../assets/laundry2.png';
+import img1 from '../../assets/privilages/fully-furnished.png';
+import img2 from '../../assets/privilages/parking.png';
+import img3 from '../../assets/privilages/house.png';
+import img4 from '../../assets/privilages/wifi.png';
+import img5 from '../../assets/privilages/food.png';
+import img6 from '../../assets/privilages/laundry.png';
 
 const experienceData = [
   {
@@ -75,7 +75,7 @@ export default function AltrExperiences() {
   
 
   {/* Right Section - Swiper Grid */}
-  <div className=" h-full bg-[#f3f0ea] text-[#253243]  border-[#63654B]">
+  <div className=" h-full bg-[#fff] text-[#253243]  border-[#63654B]">
     <Swiper
       modules={[Autoplay]}
       spaceBetween={20}
@@ -93,15 +93,15 @@ export default function AltrExperiences() {
         <SwiperSlide key={idx} className="h-[100%] py-4 border-r-[1px] border-[#63654B]">
           <div className=" h-[100%] flex flex-col justify-center items-center text-center  px-2 pb-2 ">
             <div>
-            <h2 className="lg:text-[16px] text-[12px] font-[HelveticaWorldRegular] mb-4">{item.title}</h2>
             <Image src={item.img} alt={item.title} width={250} height={150} className="mb-2" />
+            <h2 className="lg:text-[16px] text-[12px] font-[HelveticaWorldRegular] mb-4">{item.title}</h2>
             </div>
             {/* <p className="text-[14px] mx-4 mb-4">{item.description}</p> */}
-            <div>
+            {/* <div>
             <button className="bg-[#63654B] text-white px-3 mt-8  py-2 text-[13px] font-[GaretRegular] hover:bg-[#4f503d] transition">
               Learn More
             </button>
-            </div>
+            </div> */}
           </div>
         </SwiperSlide>
       ))}

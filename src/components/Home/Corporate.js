@@ -9,7 +9,7 @@ const Corporate = () => {
   return (
     <section className=" bg-white">
       <div className="  lg:py-0 pr-0 ">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-4   items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2   items-center">
           {/* Left Content Section */}
           <div className="space-y-6 px-4 order-2 lg:order-1 py-6 lg:py-0 lg:px-12">
             <div>

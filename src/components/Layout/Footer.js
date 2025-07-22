@@ -116,33 +116,14 @@ const Footer = () => {
             {/* Social Media Icons */}
             <div className="flex space-x-4">
               <a
-                href="#"
+                href="https://www.instagram.com/dailybyunion/"
+                target='_blank'
                 className="text-gray-300 hover:text-white transition-colors duration-200"
                 aria-label="Instagram"
               >
                 <LuInstagram className="w-5 h-5" />
               </a>
-              <a
-                href="#"
-                className="text-gray-300 hover:text-white transition-colors duration-200"
-                aria-label="LinkedIn"
-              >
-                <LuLinkedin className="w-5 h-5" />
-              </a>
-              <a
-                href="#"
-                className="text-gray-300 hover:text-white transition-colors duration-200"
-                aria-label="Facebook"
-              >
-                <LuFacebook className="w-5 h-5" />
-              </a>
-              <a
-                href="#"
-                className="text-gray-300 hover:text-white transition-colors duration-200"
-                aria-label="Twitter"
-              >
-                <LuTwitter className="w-5 h-5" />
-              </a>
+             
             </div>
           </div>
         </div>

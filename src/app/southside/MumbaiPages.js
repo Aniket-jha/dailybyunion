@@ -88,10 +88,10 @@ const MumbaiPages = () => {
       },
       
       {
-        title: '1204, 2 BHK',
-        guests: 'Upto 6 Guests',
+        title: '1201, 2 & 1/2 BHK',
+        guests: 'Upto 5 Guests',
         bedroom: '2 Bedroom ',
-        spare: 'Single bedroom',
+        spare: 'Single Bedroom',
         bathroom: '2 Bathroom',
         images: [img31, img32, img33, img34, img35, img36, img37, img38],
       },
@@ -105,15 +105,15 @@ const MumbaiPages = () => {
       },
       {
         title: '1402, 3 BHK',
-        guests: 'Upto 5 Guests',
+        guests: 'Upto 6 Guests',
         bedroom: '3 Bedroom ',
         bathroom: '2 Bathroom',
         images: [img51, img52, img53, img54, img55, img56, img57, img58, img59],
       },
       {
-        title: '1501, 2 BHK with Kid’s Space',
+        title: '1501, 2 BHK + Bunk Beds',
         guests: 'Upto 6 Guests',
-        bedroom: '2 Bedroom ',
+        bedroom: '2 Bedroom + Bunk Beds',
         kid: '1 Kids Room',
         bathroom: '3 Bathroom',
         images: [img61, img62, img63, img64, img65, img66, img67, img68, img69, img610, img611, img612, img613],

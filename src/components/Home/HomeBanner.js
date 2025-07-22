@@ -11,22 +11,23 @@ import BannerTwo from "../../assets/pcBanner2.webp";
 import BannerThree from "../../assets/pcBanner3.webp";
 import "swiper/css";
 import "react-calendar/dist/Calendar.css";
+import Link from "next/link";
 
 const destinations = [
   {
     city: "Varsity - Santacruz",
     // areas: ["Dallas – Downtown"]
-    link:'https://live.ipms247.com/booking/book-rooms-varsitybyunionliving'
+    link:'/varsity'
   },
   {
     city: "Southside - Mahalaxmi",
     // areas: ["Denver – Downtown", "Union Station"]
-    link:'https://live.ipms247.com/booking/book-rooms-southsidebyunionliving'
+    link:'/southside'
   },
   {
     city: "Hamlet - Baner",
     // areas: ["Greenville – West End"]
-    link:'https://live.ipms247.com/booking/book-rooms-hamletbyunionliving'
+    link:'/hamlet'
   },
 ];
 
@@ -104,9 +105,9 @@ const HomeBanner = () => {
               <div className="relative w-full flex justify-center">
                 <div
                   onClick={() => setShowDropdown(!showDropdown)}
-                  className="text-[12px] cursor-pointer pl-[1.5rem] pr-[0.5rem] py-0 flex items-center justify-center w-full bg-transparent text-black text-base"
+                  className="text-[10px] cursor-pointer pl-[1.5rem] pr-[0.5rem] py-0 flex items-center justify-center w-full bg-transparent text-black text-base"
                 >
-                  <span>{selectedDestination}</span>
+                  <span className="text-[0.9rem]">{selectedDestination}</span>
                   <IoChevronDown className="ml-[0.5rem] w-5 h-5 text-gray-400" />
                 </div>
                 {showDropdown && (
@@ -114,7 +115,7 @@ const HomeBanner = () => {
                     {destinations.map((city, i) => (
                       <div key={i} className="flex items-center justify-center p-3">
                         <p
-                          className="font-semibold cursor-pointer hover:text-black text-gray-700"
+                          className="font-semibold  cursor-pointer hover:text-black text-gray-700"
                           onClick={() => handleDestinationSelect(city)}
                         >
                           {city.city}
@@ -175,9 +176,9 @@ const HomeBanner = () => {
 
             {/* Search Button */}
             <div className="md:col-span-1">
-            <a href={property.link} target="_blank" >   <button className="w-full bg-emerald-800 hover:bg-emerald-900 bg-black text-white font-[GaretRegular] py-4 px-8 h-full lg:rounded-tr-xl lg:rounded-br-xl rounded-br-xl rounded-bl-xl lg:rounded-bl-none transition-colors duration-200 text-base tracking-wide">
+            <Link href={property.link ? property.link : '/'} >   <button className="w-full bg-emerald-800 hover:bg-emerald-900 bg-black text-white font-[GaretRegular] py-4 px-8 h-full lg:rounded-tr-xl lg:rounded-br-xl rounded-br-xl rounded-bl-xl lg:rounded-bl-none transition-colors duration-200 text-base tracking-wide">
                 SEARCH
-              </button> </a>
+              </button> </Link>
             </div>
           </div>
         </div>

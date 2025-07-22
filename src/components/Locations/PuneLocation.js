@@ -2,7 +2,7 @@ import React from 'react'
 import FullyFurnished from "../../assets/fullyfurnished.png"
 import Image from 'next/image'
 import Baner from "../../assets/baner.png"
-import Mahalaxmi from "../../assets/stays1.png";
+import Mahalaxmi from "../../assets/hamletcover.png";
 import Link from 'next/link';
 
 const PuneLocations = () => {
@@ -26,7 +26,7 @@ const PuneLocations = () => {
                         <Image
                           src={Mahalaxmi} // Replace with your image
                           alt="Stay"
-                          className="w-full h-full object-cover rounded-t-lg lg:rounded-tl-lg lg:rounded-bl-lg"
+                          className="w-full h-full object-cover rounded-t-lg  lg:rounded-t-none lg:rounded-tl-lg lg:rounded-bl-lg"
                         />
                       </div>
         

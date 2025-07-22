@@ -1,11 +1,12 @@
 'use client';
 
 import React, { useState } from 'react';
+import emailjs from "emailjs-com";
 
 const ContactUs = () => {
   const [form, setForm] = useState({
-    firstName: '',
-    lastName: '',
+    name: '',
+    phone: '',
     email: '',
     message: '',
   });
@@ -15,9 +16,41 @@ const ContactUs = () => {
   };
 
   const handleSubmit = (e) => {
-    e.preventDefault();
-    console.log(form);
-    // Submit logic (API, email, etc.)
+    console.log(
+    form
+    )
+    if(form.name?.length === 0 || form.email?.length === 0 || form.phone?.length === 0){
+      alert("Fill all the details")
+    }
+    else{
+      e.preventDefault();
+      console.log(form);
+      // Submit logic (API, email, etc.)
+      const emailParams = {
+        from_name: form.name,
+        from_email: form.email,
+        message: form.message,
+        from_phn: form.phone,
+      
+      };
+      emailjs.send(
+          process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID || "",
+          process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID || "",
+          emailParams,
+          process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY || ""
+        )
+  
+        .then((res) => {
+         
+          setTimeout(() => window.location.reload(), 5000); // Add a delay before reload to allow the toast to display
+        })
+        .catch((error) => {
+      
+          console.error(error);
+        });
+    }
+    
+
   };
 
   return (
@@ -28,24 +61,24 @@ const ContactUs = () => {
       </h1>
 
       {/* Form */}
-      <form onSubmit={handleSubmit} className="w-full max-w-2xl space-y-6">
+      <div className="w-full max-w-2xl space-y-6">
         {/* First & Last Name */}
         <div className="flex flex-col md:flex-row gap-6">
           <input
             type="text"
-            name="firstName"
-            placeholder="First Name*"
+            name="name"
+            placeholder="Name*"
             required
-            value={form.firstName}
+            value={form.name}
             onChange={handleChange}
             className="w-full border  border-gray-200 px-4 py-3 text-sm outline-none focus:ring-1 focus:ring-black"
           />
           <input
-            type="text"
-            name="lastName"
-            placeholder="Last Name*"
+            type="tel"
+            name="phone"
+            placeholder="Phone No*"
             required
-            value={form.lastName}
+            value={form.phone}
             onChange={handleChange}
             className="w-full border border-gray-200 px-4 py-3 text-sm outline-none focus:ring-1 focus:ring-black"
           />
@@ -75,11 +108,12 @@ const ContactUs = () => {
         {/* Submit Button */}
         <button
           type="submit"
+          onClick={handleSubmit}
           className="w-full border border-black py-3 text-sm tracking-widest font-medium hover:bg-black hover:text-white transition"
         >
           SEND
         </button>
-      </form>
+      </div>
 
       {/* Footer Note */}
       <p className="mt-16 text-center text-sm text-black max-w-xl">

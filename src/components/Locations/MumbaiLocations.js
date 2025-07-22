@@ -1,6 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 import Mahalaxmi from "../../assets/stays7.png";
+import Southside from "../../assets/mahalaxmicover.png"
 import Link from 'next/link';
 
 const MumbaiLocations = () => {
@@ -23,9 +24,9 @@ const MumbaiLocations = () => {
               {/* Image Column */}
               <div className="md:w-1/2 w-full h-[300px] lg:h-[400px]">
                 <Image
-                  src={Mahalaxmi} // Replace with your image
+                  src={Southside} // Replace with your image
                   alt="Stay"
-                  className="w-full h-full object-cover rounded-t-lg lg:rounded-tl-lg lg:rounded-bl-lg"
+                  className="w-full h-full object-cover rounded-t-lg  lg:rounded-t-none lg:rounded-tl-lg lg:rounded-bl-lg"
                 />
               </div>
 
@@ -103,7 +104,7 @@ const MumbaiLocations = () => {
                 <Image
                   src={Mahalaxmi} // Replace with your image
                   alt="Stay"
-                  className="w-full h-full object-cover rounded-t-lg lg:rounded-tl-lg lg:rounded-bl-lg"
+                  className="w-full h-full object-cover rounded-t-lg  lg:rounded-t-none lg:rounded-tl-lg lg:rounded-bl-lg"
                 />
               </div>
 
@@ -128,7 +129,7 @@ const MumbaiLocations = () => {
 
                   {/* Bullet points for BHK types */}
                   <ul className=" list-inside text-[12px] lg:text-[16px] font-[GaretRegular] text-black space-y-1 mt-3">
-                    <li>Three Bedrooms</li>
+                    <li>Three Bedroom</li>
                     
                   </ul>
                 </div>

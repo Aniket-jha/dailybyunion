@@ -3,22 +3,23 @@ import { useRef, useEffect, useState } from "react";
 import { IoChevronDown, IoAdd, IoRemove } from 'react-icons/io5';
 import Calendar from 'react-calendar';
 import 'react-calendar/dist/Calendar.css';
+import Link from "next/link";
 
 const destinations = [
   {
     city: "Varsity - Santacruz",
     // areas: ["Dallas – Downtown"]
-    link:'https://live.ipms247.com/booking/book-rooms-varsitybyunionliving'
+    link:'/varsity'
   },
   {
     city: "Southside - Mahalaxmi",
     // areas: ["Denver – Downtown", "Union Station"]
-    link:'https://live.ipms247.com/booking/book-rooms-southsidebyunionliving'
+    link:'/southside'
   },
   {
     city: "Hamlet - Baner",
     // areas: ["Greenville – West End"]
-    link:'https://live.ipms247.com/booking/book-rooms-hamletbyunionliving'
+    link:'/hamlet'
   },
 ];
 
@@ -179,9 +180,9 @@ export default function BookingFloatingSearchBar() {
 
           {/* Search Button */}
        <div className="md:col-span-1 bg-black">
-       <a href={property.link} >   <button className="w-full h-full bg-black text-white text-lg font-semibold uppercase hover:bg-gray-900 transition-all">
+       <Link  href={property.link ? property.link : '/'}>   <button className="w-full h-full bg-black text-white text-lg font-semibold uppercase hover:bg-gray-900 transition-all">
               Search
-            </button></a>
+            </button></Link>
           </div>
         </div>
       </div>

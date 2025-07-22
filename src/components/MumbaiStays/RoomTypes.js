@@ -3,7 +3,7 @@
 import React, { useRef } from 'react';
 import Image from 'next/image';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation } from 'swiper/modules';
+import { Autoplay, Navigation } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import { IoChevronBack, IoChevronForward } from 'react-icons/io5';
@@ -27,7 +27,8 @@ export default function RoomTypes( { rooms } ) {
               {/* Image Slider */}
               <div className="relative w-full md:w-1/2 lg:h-[300px] h-[250px] ">
                 <Swiper
-                  modules={[Navigation]}
+                  modules={[Navigation,Autoplay]}
+                  autoplay={{ delay: 2000, disableOnInteraction: false }}
                   navigation={{
                     prevEl: prevRef.current,
                     nextEl: nextRef.current,

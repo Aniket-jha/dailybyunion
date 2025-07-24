@@ -15,7 +15,7 @@ export const metadata = {
   openGraph: {
     title: 'Daily By Union',
     description: 'Experience the best coliving spaces in Mumbai, Pune and Navi Mumbai. Fully furnished PG rooms with top-notch amenities for boys, girls and couples (students and professionals).',
-    url: 'https://unionliving.in',
+    url: 'https://daily.unionliving.in',
     siteName: 'Union Living',
     images: [
       {
@@ -33,7 +33,7 @@ export const metadata = {
   
   },
   alternates: {
-    canonical: 'https://unionliving.in/',
+    canonical: 'https://daily.unionliving.in/',
   },
  
   icons: {

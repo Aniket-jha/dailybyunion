@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Host
-Host: https://www.unionliving.in/
+Host: https://www.daily.unionliving.in/
 
 # Sitemaps
-Sitemap: https://www.unionliving.in/sitemap.xml
+Sitemap: https://www.daily.unionliving.in/sitemap.xml

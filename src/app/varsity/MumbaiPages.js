@@ -26,40 +26,13 @@ import AboutAmenitiesTwo from '@/components/MumbaiStays/AboutAmenitiesTwo'
 const MumbaiPages = () => {
   const rooms = [
         {
-          title: '104, 3 BHK',
+          title: '3 BKH Apartments',
           guests: 'Upto 5 Guests',
           bedroom: '3 Bedroom ',
           bathroom: '2 Bathroom',
           images: [img11, img12, img13, img14, img15, img16, img17, img18, img19],
         },
-        {
-          title: '801, 3 BHK',
-          guests: 'Upto 5 Guests',
-          bedroom: '3 Bedroom ',
-          bathroom: '2 Bathroom',
-          images: [img11, img12, img13, img14, img15, img16, img17, img18, img19],
-        },
-        {
-          title: '802, 3 BHK',
-          guests: 'Upto 5 Guests',
-          bedroom: '3 Bedroom ',
-          bathroom: '2 Bathroom',
-          images: [img12, img11, img13, img14, img15, img16, img17, img18, img19],
-        },
-        {
-          title: '804, 3 BHK',
-          guests: 'Upto 5 Guests',
-          bedroom: '3 Bedroom ',
-          bathroom: '2 Bathroom',
-          images: [img12, img11, img13, img14, img15, img16, img17, img18, img19],
-        },
-        {
-          title: '805, 3 BHK',
-          guests: 'Upto 5 Guests',
-          bedroom: '3 Bedroom ',
-          bathroom: '2 Bathroom',
-          images: [img11, img12, img13, img14, img15, img16, img17, img18, img19],
-        },
+       
         
       ];
       const bannerImages=[VarsityBannerOne, VarsityBannerTwo, VarsityBannerThree]

@@ -6,14 +6,14 @@ import Script from "next/script";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Luxury Coliving Spaces in Mumbai, Pune & Navi Mumbai | Best PG -  Union Living",
+  title: "Daily By Union",
   description: "Experience the best coliving spaces in Mumbai, Pune and Navi Mumbai. Fully furnished PG rooms with top-notch amenities for boys, girls and couples (students and professionals).",
   keywords: ['Union Living','Union Living Mumbai','Community Living in Mumbai', 'Community Living in Pune', 'Community Living in Thane','Community Living in Navi Mumbai', "Premium Co-living",'Best Community'],
   verification: {
     google: 'd2t3dmGtRE5YMyQqUbiHFM-lWvnz9mpRbS7Wwmb8uS0',
   },
   openGraph: {
-    title: 'Luxury Coliving Spaces in Mumbai, Pune & Navi Mumbai | Best PG -  Union Living',
+    title: '"Daily By Union',
     description: 'Experience the best coliving spaces in Mumbai, Pune and Navi Mumbai. Fully furnished PG rooms with top-notch amenities for boys, girls and couples (students and professionals).',
     url: 'https://unionliving.in',
     siteName: 'Union Living',
@@ -27,7 +27,7 @@ export const metadata = {
         url: 'https://firebasestorage.googleapis.com/v0/b/union-living.appspot.com/o/files%2Fthedailystaysfinal.png?alt=media&token=88129dd6-39b3-473d-8718-e5865748d7b0', // Must be an absolute URL
         width: 1800,
         height: 1600,
-        alt: 'Luxury Coliving Spaces in Mumbai, Pune & Navi Mumbai | Best PG -  Union Living',
+        alt: '"Daily By Union',
       },
     ],
   

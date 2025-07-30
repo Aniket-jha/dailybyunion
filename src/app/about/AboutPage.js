@@ -1,5 +1,6 @@
 import AboutBanner from '@/components/About/AboutBanner'
 import AboutInfo from '@/components/About/AboutInfo'
+import AboutUnion from '@/components/About/AboutUnion'
 import MissionVision from '@/components/About/Mission-Vision'
 import Footer from '@/components/Layout/Footer'
 import FooterSection from '@/components/Layout/FooterSection'
@@ -13,6 +14,7 @@ const AboutPage = () => {
      
         <AboutInfo />
         <MissionVision />
+        <AboutUnion />
         <FooterSection />
     </div>
   )

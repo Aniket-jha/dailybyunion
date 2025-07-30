@@ -20,33 +20,14 @@ export default function FooterSection() {
       <div className="flex justify-center lg:justify-end flex-col">
       <div className="flex space-x-4 justify-center lg:justify-end">
               <a
-                href="#"
+                href="https://www.instagram.com/dailybyunion/"
+                target="_blank"
                 className="text-gray-300 hover:text-white transition-colors duration-200"
                 aria-label="Instagram"
               >
                 <LuInstagram className="w-5 h-5" />
               </a>
-              <a
-                href="#"
-                className="text-gray-300 hover:text-white transition-colors duration-200"
-                aria-label="LinkedIn"
-              >
-                <LuLinkedin className="w-5 h-5" />
-              </a>
-              <a
-                href="#"
-                className="text-gray-300 hover:text-white transition-colors duration-200"
-                aria-label="Facebook"
-              >
-                <LuFacebook className="w-5 h-5" />
-              </a>
-              <a
-                href="#"
-                className="text-gray-300 hover:text-white transition-colors duration-200"
-                aria-label="Twitter"
-              >
-                <LuTwitter className="w-5 h-5" />
-              </a>
+              
             </div>
         <div className="">
           <p className="text-[0.6rem] lg:text-[1rem] mt-6 flex justify-center lg:justify-end  gap-3 ">

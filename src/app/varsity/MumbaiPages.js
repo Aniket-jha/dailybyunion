@@ -27,7 +27,7 @@ const MumbaiPages = () => {
   const rooms = [
         {
           title: '3 BKH Apartments',
-          guests: 'Upto 5 Guests',
+          guests: 'Upto 6 Guests',
           bedroom: '3 Bedroom ',
           bathroom: '2 Bathroom',
           images: [img11, img12, img13, img14, img15, img16, img17, img18, img19],

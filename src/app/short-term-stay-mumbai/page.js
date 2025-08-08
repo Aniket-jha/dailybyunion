@@ -1,17 +1,16 @@
 import React from 'react'
-import AboutPage from './AboutPage'
-
+import MumbaiMainPage from './MumbaiMainPage'
 export const metadata = {
-  title: "About Daily Stay by Union Living | Premium Short Stay Rentals in Mumbai & Pune",
-  description: "Explore Daily stay by Union Living – offering flexible, fully furnished short-term stays in Mumbai and Pune. Book your stay today",
+  title: "Short Term Rental Apartments & Best Hotels in Mumbai | Flexible Stays – Union Living",
+  description: " Find short term rentals in Mumbai with hotel-like comfort. Book short term rental apartments or the best hotels in Mumbai. Instant Mumbai hotel booking for every type of stay.",
   keywords: ['Union Living','Union Living Mumbai','Community Living in Mumbai', 'Community Living in Pune', 'Community Living in Thane','Community Living in Navi Mumbai', "Premium Co-living",'Best Community'],
   verification: {
     google: 'd2t3dmGtRE5YMyQqUbiHFM-lWvnz9mpRbS7Wwmb8uS0',
   },
   openGraph: {
-    title: "About Daily Stay by Union Living | Premium Short Stay Rentals in Mumbai & Pune",
-    description: "Explore Daily stay by Union Living – offering flexible, fully furnished short-term stays in Mumbai and Pune. Book your stay today",
-    url: 'https://daily.unionliving.in/about/',
+    title: "Short Term Rental Apartments & Best Hotels in Mumbai | Flexible Stays – Union Living",
+    description: " Find short term rentals in Mumbai with hotel-like comfort. Book short term rental apartments or the best hotels in Mumbai. Instant Mumbai hotel booking for every type of stay.",
+    url: 'https://daily.unionliving.in/short-term-stay-mumbai/',
     siteName: 'Daily By Union',
     images: [
       {
@@ -29,7 +28,7 @@ export const metadata = {
   
   },
   alternates: {
-    canonical: 'https://daily.unionliving.in/about/',
+    canonical: 'https://daily.unionliving.in/short-term-stay-mumbai/',
   },
  
   icons: {
@@ -43,12 +42,12 @@ export const metadata = {
   },
 }
 
-const About = () => {
+const page = () => {
   return (
     <div>
-        <AboutPage />
+        <MumbaiMainPage />
     </div>
   )
 }
 
-export default About
+export default page

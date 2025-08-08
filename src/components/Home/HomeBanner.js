@@ -90,6 +90,7 @@ const HomeBanner = () => {
                 width={1200}
                 height={600}
               />
+               <h1 className="text-[0rem]">Fully Furnished Apartments for Short-Term Stay & Rentals</h1>
             </div>
           </SwiperSlide>
         ))}
@@ -99,6 +100,7 @@ const HomeBanner = () => {
       <div className="absolute bottom-12 left-1/2 transform -translate-x-1/2 z-10 top-[10%] lg:top-[80%] w-full max-w-[90%] lg:max-w-[80%] px-0">
         <div className="bg-white rounded-2xl shadow-2xl p-0">
           <div className="grid grid-cols-1 md:grid-cols-4 lg:grid-cols-5">
+         
             {/* Destination */}
             <div className="space-y-2 flex lg:border-r-[1px] border-[#272727] flex-col items-center relative" ref={dropdownRef}>
               <label className="text-base pt-4 font-[HelveticaWorldRegular] text-black uppercase tracking-wide">DESTINATION</label>

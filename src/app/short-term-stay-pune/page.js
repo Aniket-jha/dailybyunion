@@ -1,17 +1,17 @@
 import React from 'react'
-import AboutPage from './AboutPage'
+import PuneMainPage from './PuneMainPage'
 
 export const metadata = {
-  title: "About Daily Stay by Union Living | Premium Short Stay Rentals in Mumbai & Pune",
-  description: "Explore Daily stay by Union Living – offering flexible, fully furnished short-term stays in Mumbai and Pune. Book your stay today",
+  title: "Best Short Term Rentals & Hotels in Pune | Book Your Stay Now – Daily Stays by Union Living",
+  description: "Find the best stay in Pune with fully serviced short term rentals and hotel-style amenities. Quick Pune hotel booking, top locations & comfort for every kind of traveler.",
   keywords: ['Union Living','Union Living Mumbai','Community Living in Mumbai', 'Community Living in Pune', 'Community Living in Thane','Community Living in Navi Mumbai', "Premium Co-living",'Best Community'],
   verification: {
     google: 'd2t3dmGtRE5YMyQqUbiHFM-lWvnz9mpRbS7Wwmb8uS0',
   },
   openGraph: {
-    title: "About Daily Stay by Union Living | Premium Short Stay Rentals in Mumbai & Pune",
-    description: "Explore Daily stay by Union Living – offering flexible, fully furnished short-term stays in Mumbai and Pune. Book your stay today",
-    url: 'https://daily.unionliving.in/about/',
+    title: "Best Short Term Rentals & Hotels in Pune | Book Your Stay Now – Daily Stays by Union Living",
+    description: "Find the best stay in Pune with fully serviced short term rentals and hotel-style amenities. Quick Pune hotel booking, top locations & comfort for every kind of traveler.",
+    url: 'https://daily.unionliving.in/short-term-stay-pune/',
     siteName: 'Daily By Union',
     images: [
       {
@@ -29,7 +29,7 @@ export const metadata = {
   
   },
   alternates: {
-    canonical: 'https://daily.unionliving.in/about/',
+    canonical: 'https://daily.unionliving.in/short-term-stay-pune/',
   },
  
   icons: {
@@ -43,12 +43,12 @@ export const metadata = {
   },
 }
 
-const About = () => {
+const page = () => {
   return (
     <div>
-        <AboutPage />
+        <PuneMainPage />
     </div>
   )
 }
 
-export default About
+export default page

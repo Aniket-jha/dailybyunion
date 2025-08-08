@@ -10,8 +10,8 @@ export default function FooterSection() {
         <div className="flex items-center  justify-center lg:justify-start gap-8">
           <Link href="/about" > <p className="lg:text-[1.2rem] text-[0.8rem] uppercase font-[GaretRegular]">About</p></Link>
           <Link href="/contact" > <p className="lg:text-[1.2rem] text-[0.8rem] uppercase  font-[GaretRegular]">Contact</p></Link>
-          <Link href="/mumbai" > <p className="lg:text-[1.2rem] text-[0.8rem] uppercase font-[GaretRegular]">Mumbai</p></Link>
-          <Link href="/pune" > <p className="lg:text-[1.2rem] text-[0.8rem] uppercase font-[GaretRegular]">Pune</p></Link>
+          <Link href="/short-term-stay-mumbai" > <p className="lg:text-[1.2rem] text-[0.8rem] uppercase font-[GaretRegular]">Mumbai</p></Link>
+          <Link href="/short-term-stay-pune" > <p className="lg:text-[1.2rem] text-[0.8rem] uppercase font-[GaretRegular]">Pune</p></Link>
         </div>
         <div className="mt-6">
         <p className="text-gray-300 font-[GaretRegular] lg:text-left text-center text-[.7rem] lg:text-base">© The daily stays, Inc. 2025 All Rights Reserved.</p>

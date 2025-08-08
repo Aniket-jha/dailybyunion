@@ -11,6 +11,9 @@ const PuneLocations = () => {
   
         {/* First Location Block */}
         <h2 className="text-2xl lg:text-3xl font-semibold mb-2">Our Locations in Pune</h2>
+        <h1 className='text-[0rem]'>Book the Best Hotels & Short Term Rentals in Pune
+
+      </h1>
               <div className="flex flex-col lg:flex-row">
                 
                 {/* Left Side - Property Card */}

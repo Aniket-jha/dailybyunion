@@ -92,7 +92,8 @@ const MumbaiLocations = () => {
       {/* Second Location Block - DUPLICATE */}
       
       <div className="flex flex-col mt-10 lg:mt-0 lg:flex-row">
-        
+      <h1 className='text-[0rem]'>Best Short Term Rental Apartments & Hotels for Stay in Mumbai
+      </h1>
         {/* Left Side - Property Card */}
         <div className="lg:w-1/2 w-full flex flex-col justify-Start">      
 

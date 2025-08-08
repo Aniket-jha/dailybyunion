@@ -15,6 +15,7 @@ const LocationBanner = ({ image, location, sublocation, desc }) => {
           
           {/* Left Side */}
           <div>
+            
             <h3 className="text-[1.3rem] lg:w-[70%]  lg:text-[2.1rem] font-[GaretRegular] tracking-wider mb-[-5px]">
 
         {location}{sublocation}

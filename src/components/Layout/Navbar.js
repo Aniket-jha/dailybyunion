@@ -82,9 +82,9 @@ export default function NavbarTwo() {
         </MenuHandler>
         <MenuList  className="hidden mainMenuItem  bg-gray-100 text-center shadow-lg border-none max-w-screen-xl  lg:block">
         <ul className="grid grid-cols-1   bg-none grid-flow-row gap-y-2 text-center  outline-none outline-0">
-        <Link href="/mumbai" >    <MenuItem className="subMenuText1">
+        <Link href="/short-term-stay-mumbai/" >    <MenuItem className="subMenuText1">
           Mumbai</MenuItem></Link>
-          <Link href="/pune" >   <MenuItem className="subMenuText1">
+          <Link href="/short-term-stay-pune" >   <MenuItem className="subMenuText1">
          Pune</MenuItem></Link>
           </ul>
         </MenuList>
@@ -92,12 +92,12 @@ export default function NavbarTwo() {
       <div className="block lg:hidden">
         <Collapse open={isMobileMenuOpen}>
           
-        <Link className=""  href="/mumbai" >   <MenuItem className="text-[.8rem] px-2 font-[NeueMedium] py-0">
+        <Link className=""  href="/short-term-stay-mumbai" >   <MenuItem className="text-[.8rem] px-2 font-[NeueMedium] py-0">
           
          Mumbai
     
       </MenuItem>  </Link>
-      <Link className=""  href="/pune" >  <MenuItem className="text-[.8rem] px-2 font-[NeueMedium] py-0">
+      <Link className=""  href="/short-term-stay-pune" >  <MenuItem className="text-[.8rem] px-2 font-[NeueMedium] py-0">
           
          Pune
      

@@ -53,9 +53,9 @@ export default function AltrExperiences() {
     {/* Left Section - Text */}
     <div className='col-span-1 py-4 lg:py-12 lg:px-8 flex items-center justify-center lg:justify-between'>
     <div className=" p-10  pr-0 flex flex-col justify-center items-start">
-      <h1 className="lg:text-4xl text-[1.4rem] font-[HelveticaWorldRegular] tracking-wide mb-2">
+      <h2 className="lg:text-4xl text-[1.4rem] font-[HelveticaWorldRegular] tracking-wide mb-2">
         Privileges
-      </h1>
+      </h2>
       {/* <p className="text-md text-[#d8c6b3] mt-4">
         STAYING IN FEELS JUST AS ALIVE <br /> AS HEADING OUT.
       </p> */}

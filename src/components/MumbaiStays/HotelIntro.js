@@ -7,7 +7,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Autoplay } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
-
+import Calendar from "react-calendar";
 import banner1 from '../../assets/stays1.png';
 import banner2 from '../../assets/stays3.png';
 import banner3 from '../../assets/stays4.png';
@@ -16,6 +16,12 @@ export default function HotelIntro({title, location, locationLink, desc, bannerI
   const [guests, setGuests] = useState(1);
   const prevRef = useRef(null);
   const nextRef = useRef(null);
+  const [checkInDate, setCheckInDate] = useState(null);
+  const [checkOutDate, setCheckOutDate] = useState(null);
+  const [showCheckIn, setShowCheckIn] = useState(false);
+  const [showCheckOut, setShowCheckOut] = useState(false);
+  const checkInRef = useRef(null);
+  const checkOutRef = useRef(null);
 
   const images = [banner1, banner2, banner3];
 
@@ -84,21 +90,40 @@ export default function HotelIntro({title, location, locationLink, desc, bannerI
 
   {/* Right Booking Box */}
   <div className="relative md:top-[-170px] z-10 flex justify-center md:justify-end">
-    <div className="w-full max-w-[400px] h-[400px] bg-white shadow-2xl rounded-2xl overflow-hidden border border-gray-200">
+    <div className="w-full max-w-[400px]  bg-white shadow-2xl rounded-2xl overflow-hidden border border-gray-200">
       <div className="divide-y divide-gray-200">
       
         <div className="p-8">
           <label className="block text-xs font-semibold mb-1">CHECK IN</label>
-          <select className="w-full text-sm rounded py-2">
-            <option>Select date</option>
-          </select>
+          <div className="space-y-2 flex flex-col items-start relative" ref={checkInRef}>
+             
+              <div onClick={() => setShowCheckIn(!showCheckIn)} className="cursor-pointer !pt-0">
+                {checkInDate ? checkInDate.toDateString() : 'Select date'}
+              </div>
+              {showCheckIn && (
+                <div className="absolute z-30 mt-2 bg-white rounded-lg shadow-lg">
+                  <Calendar onChange={(date) => { setCheckInDate(date); setShowCheckIn(false); }} value={checkInDate} />
+                </div>
+              )}
+              
+            </div>
+
         </div>
 
         <div className="p-8">
           <label className="block text-xs font-semibold mb-1">CHECK OUT</label>
-          <select className="w-full text-sm rounded py-2">
-            <option>Select date</option>
-          </select>
+          <div className="space-y-2 flex flex-col items-start relative" ref={checkInRef}>
+             
+             <div onClick={() => setShowCheckIn(!showCheckIn)} className="cursor-pointer !pt-0">
+               {checkInDate ? checkInDate.toDateString() : 'Select date'}
+             </div>
+             {showCheckIn && (
+               <div className="absolute z-30 mt-2 bg-white rounded-lg shadow-lg">
+                 <Calendar onChange={(date) => { setCheckInDate(date); setShowCheckIn(false); }} value={checkInDate} />
+               </div>
+             )}
+             
+           </div>
         </div>
 
         <div className="p-8 flex items-center justify-between">
@@ -115,7 +140,7 @@ export default function HotelIntro({title, location, locationLink, desc, bannerI
         </div>
       </div>
 
-     <a href={link} > <button className="w-full bg-black hover:bg-gray-800 text-white py-6 text-sm tracking-wider uppercase">
+     <a href={link} > <button className="w-full bg-black hover:bg-gray-800 rounded-b-xl text-white py-6 text-sm tracking-wider uppercase">
         SEARCH
       </button> </a>
     </div>

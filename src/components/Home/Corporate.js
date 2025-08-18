@@ -25,7 +25,7 @@ const Corporate = () => {
             <div className="space-y-4">
               <p className="text-[10px] font-[GaretRegular] text-justify lg:text-[16px] lg:mr-12 text-gray-700 leading-relaxed"> 	
 Our spaces are designed for modern individuals who seek ease, elegance, and quiet efficiency in every journey. Thoughtfully furnished and warmly lit, every apartment blends the familiarity of home with the gentle rhythm of a well-run stay. High-speed Wi-Fi, ergonomic workspaces, smart access, and elevated essentials are all in place—designed to support both focus and flow.
-<br /> <br /> From equipped kitchens and on-demand housekeeping to curated local recommendations, we take care of the details that make a space feel lived in, not just stayed in. It’s comfort that doesn’t ask for attention, and functionality that quietly works in the background. Whether for a few nights or a few months, we offer a softer way to live, work, and move. For bookings, questions, or corporate partnerships, feel free to reach out at <span className="text-[#156d51] font-[LexandMedium]">daily@unionliving.in</span> .
+<br /> <br /> From equipped kitchens and on-demand housekeeping to curated local recommendations, we take care of the details that make a space feel lived in, not just stayed in. It’s comfort that doesn’t ask for attention, and functionality that quietly works in the background. Whether for a few nights or a few months, we offer a softer way to live, work, and move. For bookings, questions, or corporate partnerships, feel free to reach out at <span className="text-[#156d51] font-[LexandMedium]">thedailystays@unionliving.in</span> .
 
               </p>
 

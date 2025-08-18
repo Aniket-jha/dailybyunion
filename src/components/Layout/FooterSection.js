@@ -32,7 +32,7 @@ export default function FooterSection() {
         <div className="">
           <p className="text-[0.6rem] lg:text-[1rem] mt-6 flex justify-center lg:justify-end  gap-3 ">
         <a href="tel:7021654226" className="text-white pr-3 font-[GaretRegular] border-r-[1px] border-white">7021654226 </a> 
-        <p className="text-white font-[GaretRegular] text-[0.6rem] lg:text-[1rem]">thedailystaysofficial@gmail.com</p>
+        <p className="text-white font-[GaretRegular] text-[0.6rem] lg:text-[1rem]">daily@unionliving.in</p>
         </p>
         </div>
       </div>

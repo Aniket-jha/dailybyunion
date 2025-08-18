@@ -8,7 +8,7 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import { IoChevronBack, IoChevronForward } from 'react-icons/io5';
 
-export default function RoomTypes( { rooms } ) {
+export default function RoomTypes( { rooms,link } ) {
   return (
     <div className="max-w-7xl mx-auto px-4 py-6 lg:py-12">
       <h2 className="text-3xl font-[HelveticaWorldRegular] tracking-wider mb-6">Room Types</h2>
@@ -78,9 +78,9 @@ export default function RoomTypes( { rooms } ) {
                 <p className="mb-1 font-[GaretRegular]">{room.bedroom}</p>
                 <p className="mb-1 font-[GaretRegular]">{room.spare}</p>
                 <p className="mb-4 font-[GaretRegular]">{room.bathroom}</p>
-                <button className="bg-black text-white py-2 px-2 font-[GaretRegular] rounded-lg hover:bg-gra text-sm tracking-wider uppercase">
+                <a href={link} className="bg-black text-white text-center py-2 px-2 font-[GaretRegular] rounded-lg hover:bg-gra text-sm tracking-wider uppercase">
                   Check Availability
-                </button>
+                </a>
               </div>
             </div>
           );

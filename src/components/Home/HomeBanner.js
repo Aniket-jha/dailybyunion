@@ -6,7 +6,7 @@ import { Autoplay } from "swiper/modules";
 import { IoChevronDown, IoRemove, IoAdd } from "react-icons/io5";
 import Calendar from "react-calendar";
 import Image from "next/image";
-import BannerOne from "../../assets/bannerOne.webp";
+import BannerOne from "../../assets/bannernew1.png";
 import BannerTwo from "../../assets/pcBanner2.webp";
 import BannerThree from "../../assets/pcBanner3.webp";
 import "swiper/css";

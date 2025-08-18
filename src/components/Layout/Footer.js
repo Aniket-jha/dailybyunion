@@ -36,7 +36,7 @@ const Footer = () => {
 
               <div>
                 <h3 className="text-sm font-medium text-gray-300 mb-2 tracking-wide">EMAIL</h3>
-                <p className="text-white">thedailystaysofficial@gmail.com</p>
+                <p className="text-white">daily@unionliving.in</p>
               </div>
             </div>
           </div>

@@ -15,17 +15,17 @@ import Link from "next/link";
 
 const destinations = [
   {
-    city: "Varsity - Santacruz",
+    city: "Santacruz - Mumbai",
     // areas: ["Dallas – Downtown"]
     link:'/varsity'
   },
   {
-    city: "Southside - Mahalaxmi",
+    city: "Mahalaxmi - Mumbai",
     // areas: ["Denver – Downtown", "Union Station"]
     link:'/southside'
   },
   {
-    city: "Hamlet - Baner",
+    city: "Baner - Baner",
     // areas: ["Greenville – West End"]
     link:'/hamlet'
   },

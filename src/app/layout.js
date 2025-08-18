@@ -2,6 +2,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Hotjar from "@hotjar/browser";
 import Script from "next/script";
+import { FaWhatsapp } from 'react-icons/fa';
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -65,7 +66,28 @@ export default function RootLayout({ children }) {
           
         </noscript>
      
-        {children}</body>
+        {children}
+        
+        {/* Floating WhatsApp Icon - Global */}
+        <div className="fixed bottom-6 right-6 z-50">
+          <a 
+            href="https://wa.me/917021654226" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 flex items-center justify-center group"
+            aria-label="Contact us on WhatsApp"
+          >
+            <FaWhatsapp size={28} className="group-hover:scale-110 transition-transform duration-300" />
+          </a>
+          
+          {/* Phone Number Tooltip */}
+          <div className="absolute right-16 top-1/2 transform -translate-y-1/2 bg-black text-white px-3 py-2 rounded-lg text-sm whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
+            +91 98765 43210
+            <div className="absolute left-full top-1/2 transform -translate-y-1/2 w-0 h-0 border-l-4 border-l-black border-t-4 border-t-transparent border-b-4 border-b-transparent"></div>
+          </div>
+        </div>
+        
+      </body>
       
      
  

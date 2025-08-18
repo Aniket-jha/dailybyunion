@@ -12,6 +12,7 @@ import banner1 from '../../assets/stays1.png';
 import banner2 from '../../assets/stays3.png';
 import banner3 from '../../assets/stays4.png';
 
+
 export default function HotelIntro({title, location, locationLink, desc, bannerImages,link}) {
   const [guests, setGuests] = useState(1);
   const prevRef = useRef(null);
@@ -90,40 +91,70 @@ export default function HotelIntro({title, location, locationLink, desc, bannerI
 
   {/* Right Booking Box */}
   <div className="relative md:top-[-170px] z-10 flex justify-center md:justify-end">
-    <div className="w-full max-w-[400px]  bg-white shadow-2xl rounded-2xl overflow-hidden border border-gray-200">
+    <div className="w-full max-w-[400px]   bg-white shadow-2xl rounded-2xl overflow-hidden border border-gray-200">
       <div className="divide-y divide-gray-200">
       
-        <div className="p-8">
-          <label className="block text-xs font-semibold mb-1">CHECK IN</label>
-          <div className="space-y-2 flex flex-col items-start relative" ref={checkInRef}>
-             
-              <div onClick={() => setShowCheckIn(!showCheckIn)} className="cursor-pointer !pt-0">
-                {checkInDate ? checkInDate.toDateString() : 'Select date'}
-              </div>
-              {showCheckIn && (
-                <div className="absolute z-30 mt-2 bg-white rounded-lg shadow-lg">
-                  <Calendar onChange={(date) => { setCheckInDate(date); setShowCheckIn(false); }} value={checkInDate} />
-                </div>
-              )}
+                 <div className="p-8">
+           <label className="block text-xs font-semibold mb-1">CHECK IN</label>
+           <div className="space-y-2 flex flex-col items-start relative" ref={checkInRef}>
               
-            </div>
+                              <div onClick={() => setShowCheckIn(!showCheckIn)} className="cursor-pointer !pt-0">
+                  {checkInDate ? checkInDate.toDateString() : 'Select date'}
+                </div>
+                                {showCheckIn && (
+                   <div className="fixed z-50 mt-2 bg-white rounded-lg shadow-lg border border-gray-200" style={{
+                     top: checkInRef.current ? checkInRef.current.getBoundingClientRect().bottom + 10 : 'auto',
+                     left: checkInRef.current ? checkInRef.current.getBoundingClientRect().left : 'auto'
+                   }}>
+                     <Calendar 
+                       onChange={(date) => { 
+                         // Validate that check-in date is not after check-out date
+                         if (checkOutDate && date >= checkOutDate) {
+                           alert('Check-in date must be before check-out date');
+                           return;
+                         }
+                         setCheckInDate(date); 
+                         setShowCheckIn(false); 
+                       }} 
+                       value={checkInDate}
+                       minDate={new Date()}
+                     />
+                   </div>
+                 )}
+               
+             </div>
 
         </div>
 
-        <div className="p-8">
-          <label className="block text-xs font-semibold mb-1">CHECK OUT</label>
-          <div className="space-y-2 flex flex-col items-start relative" ref={checkInRef}>
-             
-             <div onClick={() => setShowCheckIn(!showCheckIn)} className="cursor-pointer !pt-0">
-               {checkInDate ? checkInDate.toDateString() : 'Select date'}
-             </div>
-             {showCheckIn && (
-               <div className="absolute z-30 mt-2 bg-white rounded-lg shadow-lg">
-                 <Calendar onChange={(date) => { setCheckInDate(date); setShowCheckIn(false); }} value={checkInDate} />
+                 <div className="p-8">
+           <label className="block text-xs font-semibold mb-1">CHECK OUT</label>
+           <div className="space-y-2 flex flex-col items-start relative" ref={checkOutRef}>
+              
+                            <div onClick={() => setShowCheckOut(!showCheckOut)} className="cursor-pointer !pt-0">
+                 {checkOutDate ? checkOutDate.toDateString() : 'Select date'}
                </div>
-             )}
-             
-           </div>
+                              {showCheckOut && (
+                  <div className="fixed z-50 mt-2 bg-white rounded-lg shadow-lg border border-gray-200" style={{
+                    top: checkOutRef.current ? checkOutRef.current.getBoundingClientRect().bottom + 10 : 'auto',
+                    left: checkOutRef.current ? checkOutRef.current.getBoundingClientRect().left : 'auto'
+                  }}>
+                    <Calendar 
+                      onChange={(date) => { 
+                        // Validate that check-out date is not before check-in date
+                        if (checkInDate && date <= checkInDate) {
+                          alert('Check-out date must be after check-in date');
+                          return;
+                        }
+                        setCheckOutDate(date); 
+                        setShowCheckOut(false); 
+                      }} 
+                      value={checkOutDate}
+                      minDate={checkInDate ? new Date(checkInDate.getTime() + 24 * 60 * 60 * 1000) : new Date()}
+                    />
+                  </div>
+                )}
+              
+            </div>
         </div>
 
         <div className="p-8 flex items-center justify-between">
@@ -147,6 +178,8 @@ export default function HotelIntro({title, location, locationLink, desc, bannerI
   </div>
 
 </div>
+
+  
 
     </div>
   );
